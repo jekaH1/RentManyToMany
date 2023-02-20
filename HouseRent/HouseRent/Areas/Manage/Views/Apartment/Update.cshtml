@@ -112,47 +112,15 @@
                     <div class="form-floating mb-3">
                         <select class="form-select" asp-for="ApartmentFeaturesIds" id="floatingSelect"  asp-items="@(new SelectList(ViewBag.Features, "Id", "FeatureName"))"></select>
                     </div>
-                    @*<div class="mb-3 form-check">
-                        <input asp-for="CCTV" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">CCTV</label>
+                    <div class="form-floating mb-3">
+                        <h5>Previous Features</h5>
+                        @foreach (var item in Model.ApartmentFeatures.Where(x=>x.ApartmentId==Model.Id))
+                        {
+                            <li>
+                                @item.Feature.FeatureName
+                            </li>
+                        }
                     </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="SafetyGrills" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">SafetyGrills</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="ServantsRoom" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">ServantsRoom</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="FireExit" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">FireExit</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="Alcony" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Alcony</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="InterCom" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">InterCom</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="Lift" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Lift</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="Generator" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Generator</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="CommunityHall" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">CommunityHall</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input asp-for="Southfacing" type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Southfacing</label>
-                    </div>*@
-
                     <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </div>
