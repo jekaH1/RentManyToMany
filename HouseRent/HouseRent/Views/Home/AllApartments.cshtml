@@ -1,0 +1,104 @@
+﻿@model AllApartmentsViewModel
+@{
+    string filter = ViewBag.filters;
+}
+@*<h1> @(filter?.ToUpper())</h1>*@
+<!-- ====== Breadcrumbs Area ====== -->
+<div class="breadcrumbs-area bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <span class="first-item">
+                        <a href="index01.html">Home</a>
+                    </span>
+                    <span class="separator">&gt;</span>
+                    <span class="last-item">house</span>
+                </div>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.breadcrumbs-area -->
+<!-- ====== Apartments Area ======= -->
+<div class="apartments-area four bg-gray-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="apartment-tab-area">
+                    <ul role="tablist" class="nav nav-tabs apartment-menu hidden-xs hidden-sm">
+                        <li class="active">
+                            <a asp-action="AllApartments" asp-controller="home" asp-route-filter="popularity">Popular</a>
+                        </li>
+                        <li>
+                            <a asp-action="AllApartments" asp-controller="home" asp-route-filter="dateTimeAsent" >Date<span>Newest to oldest</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="AllApartments" asp-controller="home" asp-route-filter="dateTimeDesent" >Date <span>Older to newest</span> </a>
+                        </li>
+                        <li>
+                            <a asp-action="AllApartments" asp-controller="home" asp-route-filter="AsentPrice">Price<span>Low to high</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="AllApartments" asp-controller="home" asp-route-filter="desent" >Price<span>High to low</span></a>
+                        </li>
+                        <li class="pull-right">
+                            <a href="#" role="tab" class="dropdown-toggle" data-toggle="dropdown">Category<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-action="AllApartments" asp-controller="home" asp-route-filter="family">Family</a></li>
+                                <li><a asp-action="AllApartments" asp-controller="home" asp-route-filter="Warehouse">Warehouse</a></li>
+                                <li><a asp-action="AllApartments" asp-controller="home" asp-route-filter="Office">Office</a></li>
+                                <li><a asp-action="AllApartments" asp-controller="home" asp-route-filter="FemaleMess">Female Mess</a></li>
+                                <li><a asp-action="AllApartments" asp-controller="home" asp-route-filter="Apartment">Apartment</a></li>
+
+                            </ul>
+                        </li><!-- /.pull-right -->
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="popular-apartment" class="tab-pane fade in active">
+                            <div class="row">
+                                <form style="display:contents" method="get" asp-action="AllApartments" asp-controller="home">
+                                    @foreach (var item in Model.Apartments)
+                                    {
+                                        <div class="col-md-4 col-sm-6 col-xs-6">
+                                            <div class="apartments-content">
+                                                <div class="image-content">
+                                                    <a asp-action="detail" asp-controller="home" asp-route-id="@item.Id"><img src="~/uploads/apartments/@item.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" /></a>
+                                                </div><!-- /.image-content -->
+
+                                                <div class="text-content">
+                                                    <div class="top-content">
+                                                        <h3><a href="apartment-single.html">@item.ApartmentCategory.AppartmentCategoryName</a></h3>
+                                                        <span>
+                                                            <i class="fa fa-map-marker"></i>
+                                                            @item.Country, @item.City
+                                                        </span>
+                                                    </div><!-- /.top-content -->
+                                                    <div class="bottom-content clearfix">
+                                                        <div class="meta-bed-room">
+                                                            <i class="fa fa-bed"></i> @item.BedRoomCount Bedrooms
+                                                        </div>
+                                                        <div class="meta-bath-room">
+                                                            <i class="fa fa-bath"></i>@item.BathCount Bathroom
+                                                        </div>
+                                                        <span class="clearfix"></span>
+                                                        <div class="rent-price pull-left">
+                                                            $@item.Rentprice
+                                                            <span class="view" style="margin-left:190px;"><i class="fa fa-eye"></i>@item.TotalViewCount</span>
+                                                        </div>
+
+                                                    </div><!-- /.bottom-content -->
+                                                </div><!-- /.text-content -->
+                                            </div><!-- /.partments-content -->
+                                        </div>
+                                        <!-- /.col-md-4 -->
+                                    }
+                                </form>
+                            </div><!-- /.row -->
+                            <a href="#" class="more-link default-template-gradient">Load More</a>
+                        </div><!-- /.popular-apartment -->
+                    </div><!-- /.tab-content -->
+                </div><!-- /.apartment-tab-area -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.Apartments-area-->

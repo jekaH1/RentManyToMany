@@ -1,0 +1,5 @@
+﻿@model List<ApartmentCategory>
+@foreach (var item in Model)
+{
+    <li>Flat for Rent <a asp-action="AllApartments" asp-controller="home" asp-route-filter="@(item.AppartmentCategoryName)">@item.AppartmentCategoryName</a></li>
+}

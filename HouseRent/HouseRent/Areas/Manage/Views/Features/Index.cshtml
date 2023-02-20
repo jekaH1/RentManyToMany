@@ -1,0 +1,45 @@
+﻿@model List<Feature>
+@{
+    ViewData["Title"] = "Index";
+    int counter = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4">Apartment Features</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Feature</th>
+                                <th scope="col">
+                                    Actions
+                                    <a class="btn btn-info" asp-action="create" asp-controller="features">Create</a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                counter++;
+                                <tr>
+                                    <th scope="row">@counter</th>
+                                    <td>@item.FeatureName</td>
+                                    <td>
+                                        <a class="btn btn-outline-info" asp-action="update" asp-controller="features" asp-route-id="@item.Id">Update</a>
+                                        <a class="btn btn-danger" asp-action="Delete" asp-controller="features" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

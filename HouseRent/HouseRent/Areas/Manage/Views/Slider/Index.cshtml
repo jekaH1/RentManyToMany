@@ -1,0 +1,53 @@
+﻿@model List<Slider>
+@{
+    ViewData["Title"] = "Index";
+    int counter = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Sliders</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Title-1</th>
+                                <th scope="col">Title-2</th>
+                                <th scope="col">Despcription</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">Actions
+                                    <a class="btn btn-info" asp-action="create" asp-controller="slider">Create</a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                counter++;
+                                <tr>
+                                    <th scope="row">@counter</th>
+                                    <td>@item.Title1</td>
+                                    <td>@item.Title2</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        <div style="max-width:200px;">      
+                                            <img style="width:100%;" src="~/uploads/sliders/@item.Img">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-outline-info" asp-action="update" asp-controller="slider" asp-route-id="@item.Id">Update</a>
+                                        <a class="btn btn-danger" asp-action="delete" asp-controller="slider" asp-route-id="@item.Id">Delete</a>
+                                        <a class="btn btn-warning" asp-action="softdelete" asp-controller="slider" asp-route-id="@item.Id">Soft delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

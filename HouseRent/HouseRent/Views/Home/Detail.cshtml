@@ -1,0 +1,458 @@
+﻿@model OrderViewModel
+@inject HouseRent.Services.GetUserInfo userService
+@{
+    AppUser user = await userService.GetAppUser();
+}
+<!-- ====== Breadcrumbs Area====== -->
+<div class="breadcrumbs-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <span class="first-item">
+                        <a href="index01.html">Home</a>
+                    </span>
+                    <span class="separator">&gt;</span>
+                    <span class="last-item">Apartment Single Page</span>
+                </div>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.breadcrumbs-area -->
+<!-- ====== Apartments-Single-Area ======= -->
+<div class="apartment-single-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="corousel-gallery-content">
+                    <div class="gallery">
+                        <div class="full-view owl-carousel">
+                            <a class="item image-pop-up" href="~/assets/images/apartment/apartment-single.jpg">
+                                <img src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster=true)?.Img" alt="corousel">
+                            </a>
+
+                        </div>
+
+                        <div class="list-view owl-carousel">
+                            @foreach (var item in Model.Apartment.ApartmentImages.Where(x => x.IsPoster == false))
+                            {
+                                <div class="item">
+                                    <img src="~/uploads/apartments/@item.Img" alt="corousel-image">
+                                </div>
+
+                            }
+
+                        </div>
+                    </div> <!-- /.gallery-two -->
+                </div> <!-- /.corousel-gallery-content -->
+
+                <div class="family-apartment-content mobile-extend">
+                    <div class="tb">
+                        <div class="tb-cell">
+                            <h3 class="apartment-title">@Model.Apartment.ApartmentCategory.AppartmentCategoryName</h3>
+                        </div><!-- /.tb-cell -->
+                        <div class="tb-cell">
+                            <p class="pull-right rent">Rent/Day: $@Model.Apartment.Rentprice</p>
+                        </div><!-- /.tb-cell -->
+                    </div><!-- /.tb -->
+                    <div class="clearfix"></div><!-- /.clearfix -->
+                    <p class="apartment-description default-gradient-before">@Model.Apartment.Total</p>
+                    <div class="price-details">
+                        <h3>Price Details-</h3>
+                        <ul>
+                            <li><span>Rent/Day: </span> $@Model.Apartment.Rentprice (negotiable)</li>
+                            <li><span>Security Deposit :</span> Till 1 month’s rent</li>
+                            <li><span>Flat Release Policy :</span> 1 days earlier notice required</li>
+                        </ul>
+                    </div><!-- /.price -->
+
+                    <div class="property-details">
+                        <h3>Property Details-</h3>
+                        <ul>
+                            <li><span>Address  &amp; Area :</span> @Model.Apartment.AdressAndArea</li>
+                            <li><span>Flat Size :</span> @Model.Apartment.FlatSize Sq Feet.</li>
+                            <li><span>Floor :</span>  @Model.Apartment.FloorCount Floors (@Model.Apartment.FloorCount th Floor) </li>
+                            <li><span>Room Category :</span> @Model.Apartment.RoomCategory</li>
+                            <li><span>Facilities :</span> @Model.Apartment.Facilities</li>
+                            <li><span>Additional Facilities :</span> @Model.Apartment.AdditionalFacilities </li>
+                        </ul>
+                    </div><!-- /.Property -->
+
+                    <div class="indoor-features">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="features-title">Indoor features:</h3>
+                                <ul class="features-list">
+                                   @* @if (Model.Apartment.CCTV is true)
+                                    {
+                                        <li> CCTV &#10004 </li>
+                                    }
+                                    else
+                                    {
+                                        <li>CCTV <i class="fa fa-close"></i></li>
+                                    }
+                                    @if (Model.Apartment.SafetyGrills is true)
+                                    {
+                                        <li>
+                                            Safety Grill &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            Safety Grill <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.ServantsRoom is true)
+                                    {
+                                        <li>
+                                            ServantsRoom  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            ServantsRoom <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.FireExit is true)
+                                    {
+                                        <li>
+                                            FireExit  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            FireExit <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.Alcony is true)
+                                    {
+                                        <li>
+                                            Alcony  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            Alcony <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.InterCom is true)
+                                    {
+                                        <li>
+                                            InterCom  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            InterCom <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.Southfacing is true)
+                                    {
+                                        <li>
+                                            Southfacing  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            Southfacing <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.Lift is true)
+                                    {
+                                        <li>
+                                            Lift  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            Lift <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.Generator is true)
+                                    {
+                                        <li>
+                                            Generator  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            Generator <i class="fa fa-close"></i>
+                                        </li>
+                                    }
+                                    @if (Model.Apartment.CommunityHall is true)
+                                    {
+                                        <li>
+                                            CommunityHall  &#10004
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            CommunityHall <i class="fa fa-close"></i>
+                                        </li>
+                                    }*@
+
+                                </ul>
+                            </div><!-- /.col-md-6 -->
+
+                        </div><!-- /.row -->
+                    </div><!-- /.indoor -->
+                </div><!-- /.family-apartment-content -->
+                <div class="hidden-md hidden-lg text-center extend-btn">
+                    <span class="extend-icon">
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </div>
+            </div> <!-- /.col-md-8 -->
+
+            <div class="col-md-4">
+                <div class="apartment-sidebar">
+                    <div class="widget_rental_search clerafix">
+                        <div class="form-border gradient-border">
+                           
+                            @if(User.Identity.IsAuthenticated is true)
+                            {
+                                <form method="post" asp-action="detail" asp-controller="home" class="advance_search_query booking-form">
+                                    <div class="form-bg seven">
+                                        <div class="form-content">
+                                            <h2 class="form-title">Book This Apartment</h2>
+                                            <div class="form-group">
+                                                <label asp-for="Fullname">Full Name</label>
+                                                <input asp-for="Fullname" value="@user.FullName" placeholder="Full name">
+                                                <span asp-validation-for="Fullname"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="eMail">Email</label>
+                                                <input asp-for="eMail" value="@user.Email" placeholder="Email">
+                                                <span asp-validation-for="eMail"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="PhoneNumber">Phone Number</label>
+                                                <input asp-for="PhoneNumber" value="@user.PhoneNumber" placeholder="Phone Number">
+                                                <span asp-validation-for="PhoneNumber"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="FamilyMember">Family Member</label>
+                                                <input asp-for="FamilyMember" type="number" step="1" size="4" placeholder="Enter Family Member count" class="input-text">
+                                                <span asp-validation-for="FamilyMember"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="ChildCount">Children</label>
+                                                <input asp-for="ChildCount" step="1" size="4" placeholder="Enter Child count" class="input-text">
+                                                <span asp-validation-for="ChildCount"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="Message">Your Message</label>
+                                                <textarea asp-for="Message" placeholder="Enter Additional Message" class="form-controller"></textarea>
+                                                <span asp-validation-for="Message"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="StartRentDate">Start Date</label>
+                                                <input asp-for="StartRentDate" value="@DateTime.Now">
+                                                <span asp-validation-for="StartRentDate"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="EndRentDate">End Date</label>
+                                                <input asp-for="EndRentDate" value="@DateTime.Now" class="form-controller">
+                                                <span asp-validation-for="EndRentDate"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label>Total Price</label>
+                                                @*<input value="">*@
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <button type="submit" asp-action="detail" asp-controller="home" class="button default-template-gradient button-radius">Request Booking</button>
+                                                @*<button type="submit" asp-action="detail" asp-controller="home">Reques</button>*@
+                                            </div>
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                            </div>
+                                            <input type="hidden" value="@user.Id" asp-for="@Model.AppUserId">
+                                            <input type="hidden" value="@Model.Apartment.Rentprice" asp-for="@Model.RentPrice">
+                                            <input type="hidden" value="@Model.Apartment.Id" asp-for="Apartment.Id">
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            }
+                            else
+                            {
+                                <form method="post" asp-action="detail" asp-controller="home" class="advance_search_query booking-form">
+                                    <div class="form-bg seven">
+                                        <div class="form-content">
+                                            <h2 class="form-title">Book This Apartment</h2>
+                                            <div class="form-group">
+                                                <label asp-for="Fullname">Full Name</label>
+                                                <input asp-for="Fullname" placeholder="Full name">
+                                                <span asp-validation-for="Fullname"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="eMail">Email</label>
+                                                <input asp-for="eMail"  placeholder="Email">
+                                                <span asp-validation-for="eMail"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="PhoneNumber">Phone Number</label>
+                                                <input asp-for="PhoneNumber" placeholder="Phone Number">
+                                                <span asp-validation-for="PhoneNumber"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="FamilyMember">Family Member</label>
+                                                <input asp-for="FamilyMember" type="number" step="1" size="4" placeholder="Enter Family Member count" class="input-text">
+                                                <span asp-validation-for="FamilyMember"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="ChildCount">Children</label>
+                                                <input asp-for="ChildCount" step="1" size="4" placeholder="Enter Child count" class="input-text">
+                                                <span asp-validation-for="ChildCount"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="Message">Your Message</label>
+                                                <textarea asp-for="Message" placeholder="Enter Additional Message" class="form-controller"></textarea>
+                                                <span asp-validation-for="Message"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="StartRentDate">Start Date</label>
+                                                <input asp-for="StartRentDate" value="@DateTime.Now" class="form-controller">
+                                                <span asp-validation-for="StartRentDate"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <label asp-for="EndRentDate">End Date</label>
+                                                <input asp-for="EndRentDate" value="@DateTime.Now" placeholder="EndRentDate" class="form-controller">
+                                                <span asp-validation-for="EndRentDate"></span>
+                                            </div><!-- /.form-group -->
+                                            <div class="form-group">
+                                                <button type="submit" asp-action="detail" asp-controller="home" class="button default-template-gradient button-radius">Request Booking</button>
+                                                @*<button type="submit" asp-action="detail" asp-controller="home">Reques</button>*@
+
+                                            </div>
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <div class="form-group">
+                                            </div>
+                                            <input type="hidden"  value="@Model.Apartment.Rentprice" asp-for="@Model.RentPrice">
+                                            <input type="hidden" value="@Model.Apartment.Id" asp-for="Apartment.Id">
+
+                                            <!-- /.form-group -->
+                                        </div><!-- /.form-content -->
+                                    </div><!-- /.form-bg -->
+                                </form>
+                            }
+                        </div><!-- /.form-border -->
+                    </div><!-- /.widget_rental_search -->
+
+                    <div class="apartments-content seven post clerafix">
+                        <div class="image-content">
+                            <a href="#"><img class="overlay-image" src="~/assets/images/apartment-ad.png" alt="about" /></a>
+                        </div><!-- /.image-content -->
+                    </div><!-- /.partments-content -->
+                </div><!-- /.apartment-sidebar -->
+            </div> <!-- .col-md-4 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</div> <!-- /.appartment-single-area -->
+<!-- ====== Apartments-Related-area ====== -->
+<div class="apartments-related-area bg-gray-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content-one">
+                    <h2 class="title default-text-gradient">Popular apartments</h2>
+                </div><!-- /.Apartments-heading-content -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+        <div class="row">
+            @await Component.InvokeAsync("Apartment");
+
+            <div class="clearfix hidden-md hidden-lg"></div>
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.Apartments-Related-area-->
+<!-- ====== Call To Action ======== -->
+<div class="call-to-action default-template-gradient">
+    <div class="container">
+        <div class="row tb">
+            <div class="col-md-6 col-sm-6 tb-cell">
+                <div class="contact-left-content">
+                    <h3>Do you want to Rent your House</h3>
+                    <h4>Call us and list your property here</h4>
+                </div><!-- /.contact-left-content -->
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6 col-sm-6 tb-cell">
+                <div class="contact-right-content">
+                    <h4><a href="#">+880123654987<span>company@gmail.com</span></a></h4>
+                    <a href="#" class="button">Contact us</a>
+                </div><!-- /.contact-right-content -->
+            </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.call-to-action -->
+<!-- ====== Contact Area ====== -->
+<div class="contact-area">
+    <div class="container-large-device">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading-content-two available">
+                        <h2 class="title">We Are Available<br /> For You 24/7</h2>
+                        <h5 class="sub-title">Our online support service is always 24 Hours</h5>
+                    </div><!-- /.testimonial-heading-content -->
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="map-left-content">
+                        <iframe width="600" height="350" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC871wKM6aoCLSV_pT3xBVsYzNGXaDh7Pw&amp;q=121King+St,Melbourne+VIC+3000,Australia" allowfullscreen="allowfullscreen"></iframe>
+                    </div><!-- /.mapl-left-content -->
+                </div><!-- /.col-md-7 -->
+                <div class="col-md-5">
+                    <div class="map-right-content">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="contact">
+                                    <h4><i class="fa fa-address-book"></i>Address</h4>
+                                    <p>112/B - Road 121, King/St Melbourne Australia</p>
+                                </div><!-- /.contact -->
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-6 col-sm-6">
+                                <div class="contact">
+                                    <h4><i class="fa fa-envelope"></i>Mail</h4>
+                                    <p>yourmail@domain.com houserent@domain.com</p>
+                                </div><!-- /.contact -->
+                            </div><!-- /.col-md-6 -->
+                        </div><!-- /.row -->
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="contact">
+                                    <h4><i class="fa fa-phone-square"></i>Call</h4>
+                                    <p>+99 0215469875 <br />666 35874692050</p>
+                                </div><!-- /.contact -->
+                            </div><!-- /.col-md-6 -->
+                            <div class="col-md-6 col-sm-6">
+                                <div class="contact">
+                                    <h4><i class="fa fa-user-circle"></i>Social account</h4>
+                                    <div class="social-icon">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div><!-- /.Social-icon -->
+                                </div><!-- /.contact -->
+                            </div><!-- /.col-md-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.map-right-content -->
+                </div><!-- /.col-md-5 -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+</div><!-- /.contact-area -->

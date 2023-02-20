@@ -1,0 +1,91 @@
+﻿@model AboutUS
+@{
+    ViewData["Title"] = "Update";
+}
+
+<form method="post" enctype="multipart/form-data">
+
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 @*col-xl-6*@">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Create Apartment</h6>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Title" class="form-control" id="floatingInput" placeholder="Title">
+                        <label for="floatingInput">Title</label>
+                        <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Position" class="form-control" id="floatingInput" placeholder="Position">
+                        <label for="floatingInput">Position</label>
+                        <span class="text-danger" asp-validation-for="Position"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="CeoName" class="form-control" id="floatingInput" placeholder="CeoName">
+                        <label for="floatingInput">Name</label>
+                        <span class="text-danger" asp-validation-for="CeoName"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="TwitterUrl" class="form-control" id="floatingInput" placeholder="TwitterUrl">
+                        <label for="floatingInput">TwitterUrl</label>
+                        <span class="text-danger" asp-validation-for="TwitterUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="FaceUrl" class="form-control" id="floatingInput" placeholder="FaceUrl">
+                        <label for="floatingInput">FaceUrl</label>
+                        <span class="text-danger" asp-validation-for="FaceUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="GplusUrl" class="form-control" id="floatingInput" placeholder="GplusUrl">
+                        <label for="floatingInput">Facilities</label>
+                        <span class="text-danger" asp-validation-for="GplusUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="PintereseUrl" class="form-control" id="floatingInput" placeholder="PintereseUrl">
+                        <label for="floatingInput">PintereseUrl</label>
+                        <span class="text-danger" asp-validation-for="PintereseUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="SmthUrl" class="form-control" id="floatingInput" placeholder="SmthUrl">
+                        <label for="floatingInput">SmthUrl</label>
+                        <span class="text-danger" asp-validation-for="SmthUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea asp-for="Description" class="form-control" id="floatingInput" placeholder="Description" style="height: 150px;"></textarea>
+                        <label for="floatingInput">AdditionalFacilities</label>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea asp-for="Quote" class="form-control" id="floatingInput" placeholder="Quote" style="height: 150px;"></textarea>
+                        <label for="floatingInput">AdditionalFacilities</label>
+                        <span class="text-danger" asp-validation-for="Quote"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SignImage" class="form-label">Sign Image</label>
+                        <input class="form-control bg-dark" asp-for="SignImage" id="formFile">
+                        <span class="text-danger" asp-validation-for="SignImage"></span>
+                    </div>
+                    <div>
+                        <h3 style="text-align:center;">Previous Photo</h3>
+                        <div class="container d-flex justify-content-center" style="max-width:200px;">
+                            <img style="max-width:100%;" src="~/uploads/about/@Model.SignImg">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="AvatarImage" class="form-label">Avatar Image</label>
+                        <input class="form-control bg-dark" asp-for="AvatarImage" id="formFile">
+                        <span class="text-danger" asp-validation-for="AvatarImage"></span>
+                    </div>
+                    <div>
+                        <h3 style="text-align:center;">Previous Photo</h3>
+                        <div class="container d-flex justify-content-center" style="max-width:200px;">
+                            <img style="max-width:100%;" src="~/uploads/about/@Model.AvatarImg">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

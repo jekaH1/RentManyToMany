@@ -1,0 +1,1209 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HouseRent.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HouseRent.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\css\\colors.css",
+      "PackagePath": "staticwebassets\\assets\\css\\colors.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\css\\jquery.countdown.html",
+      "PackagePath": "staticwebassets\\assets\\css\\jquery.countdown.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\css\\plugins.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\controls6e2e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\controls6e2e.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\controls6e2e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\controls6e2e.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\controls6e2e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\controls6e2e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\controls6e2e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\controls6e2e.woff"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\controlsd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\controlsd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfont3e6e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont3e6e.woff"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\fontawesome-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\fonts\\glyphicons-halflings-regulard41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\glyphicons-halflings-regulard41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\about-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\about-page-johan.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about-page-johan.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\angle.png",
+      "PackagePath": "staticwebassets\\assets\\images\\angle.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment-ad.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment-ad.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-five.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-single.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apartment\\apartment-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\apartment\\apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apple-touch-icon-114x114.html",
+      "PackagePath": "staticwebassets\\assets\\images\\apple-touch-icon-114x114.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apple-touch-icon-72x72.html",
+      "PackagePath": "staticwebassets\\assets\\images\\apple-touch-icon-72x72.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\apple-touch-icon.html",
+      "PackagePath": "staticwebassets\\assets\\images\\apple-touch-icon.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\blog-ad.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-ad.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\blog\\blog-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\blog\\blog-single.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\blog\\blog-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\blog\\blog-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\blog-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-eight.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-eight.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-five.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-nine.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-nine.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-seven.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-seven.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-ten.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-ten.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\category\\category-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\category\\category-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cd-icon-close.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cd-icon-close.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cd-icon-email.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cd-icon-email.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cd-icon-password.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cd-icon-password.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cd-icon-username.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\cd-icon-username.svg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\comment\\comment-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\comment\\comment-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\comment\\comment-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\comment\\comment-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\comment\\comment-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\comment\\comment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\comment\\comment-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\comment\\comment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\contact-bg-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\contact-bg-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\count-down-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\count-down-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cross-overlay.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cross-overlay.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\cross.png",
+      "PackagePath": "staticwebassets\\assets\\images\\cross.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\envelope.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\envelope.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\footer-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-five.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\gallery\\gallery-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\gallery\\gallery-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\house-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\house-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-five.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\instagram\\instagram-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\instagram-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-five.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-four.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-seven.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-seven.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-three.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\logo\\logo-two.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\post\\post-four.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\post-four.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\post\\post-one.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\post-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\post\\post-three.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\post-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\post\\post-two.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\post\\post-two.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\select-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\select-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\service\\service-five.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service\\service-five.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\service\\service-four.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service\\service-four.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\service\\service-one.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service\\service-one.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\service\\service-six.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service\\service-six.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\service\\service-three.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\service\\service-three.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\sine.png",
+      "PackagePath": "staticwebassets\\assets\\images\\sine.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\slider-eight.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-eight.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\slider-one.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\slider-show.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-show.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\slider-six.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\slider-three.html",
+      "PackagePath": "staticwebassets\\assets\\images\\slider-three.html"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\images\\testimonial-image.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testimonial-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\assets\\js\\vendor\\modernizr-2.8.3.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\manage\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\css\\style.css",
+      "PackagePath": "staticwebassets\\manage\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\manage\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\js\\main.js",
+      "PackagePath": "staticwebassets\\manage\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\manage\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\manage\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\manage\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\about\\4b32db33-ee64-4633-8eb9-92bdab28da0bsine.png",
+      "PackagePath": "staticwebassets\\uploads\\about\\4b32db33-ee64-4633-8eb9-92bdab28da0bsine.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\about\\5e6a3191-adc9-4a8c-ad3d-14bd456f4602testimonial-image.png",
+      "PackagePath": "staticwebassets\\uploads\\about\\5e6a3191-adc9-4a8c-ad3d-14bd456f4602testimonial-image.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\0dd32a58-4307-4c89-89f6-c06a1a79dea6apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\0dd32a58-4307-4c89-89f6-c06a1a79dea6apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\13130445-ae30-4719-bc0e-a88b10e6cf8aapartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\13130445-ae30-4719-bc0e-a88b10e6cf8aapartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1535fb88-8eb7-4376-a117-6696d1dc8050apartment-single-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\1535fb88-8eb7-4376-a117-6696d1dc8050apartment-single-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1cd4af7c-1639-46f3-9819-a0c76a844406apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\1cd4af7c-1639-46f3-9819-a0c76a844406apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\237fe451-7256-44de-a139-114325192b69apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\237fe451-7256-44de-a139-114325192b69apartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\295a4200-f944-4a7a-89ba-7226cd770ac9apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\295a4200-f944-4a7a-89ba-7226cd770ac9apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\29934c71-f88e-4ca2-85ac-34d0f4bfc566apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\29934c71-f88e-4ca2-85ac-34d0f4bfc566apartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\347c65ac-d35d-4704-bb95-793468bd3ac4apartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\347c65ac-d35d-4704-bb95-793468bd3ac4apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\35c3ab0b-3d77-4410-b446-cba6d2ddbe45apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\35c3ab0b-3d77-4410-b446-cba6d2ddbe45apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\39c23efc-94c8-469e-a798-31f0821fa7d7apartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\39c23efc-94c8-469e-a798-31f0821fa7d7apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\3de4bcf1-e8a5-40ee-9ed6-bf67fc8a2becapartment-six.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\3de4bcf1-e8a5-40ee-9ed6-bf67fc8a2becapartment-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\42f35d38-3881-4e7b-bec6-e59fc4295aacapartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\42f35d38-3881-4e7b-bec6-e59fc4295aacapartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4776cb34-8887-40ea-bdeb-30eec2bf1cfeapartment-five.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4776cb34-8887-40ea-bdeb-30eec2bf1cfeapartment-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4ab55ea5-e53a-4877-9601-a31fba5760d4apartment-single-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4ab55ea5-e53a-4877-9601-a31fba5760d4apartment-single-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\5c6dba86-2e94-4db4-8704-91ae83efe2b0apartment-five.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5c6dba86-2e94-4db4-8704-91ae83efe2b0apartment-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\789fd578-97ce-4978-97b5-350199fe4800apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\789fd578-97ce-4978-97b5-350199fe4800apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7fec757e-4c08-410e-8c8d-61da10826555apartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\7fec757e-4c08-410e-8c8d-61da10826555apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\82ff6bad-20f5-4ae2-945b-034160886213apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\82ff6bad-20f5-4ae2-945b-034160886213apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\847e134f-d5e4-4407-bf06-188c29ce4007apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\847e134f-d5e4-4407-bf06-188c29ce4007apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\84faf1ef-4283-40bb-85cc-78933985fcffapartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\84faf1ef-4283-40bb-85cc-78933985fcffapartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a0fd0231-7af9-486a-9ae2-5b6cbbd42c8bapartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a0fd0231-7af9-486a-9ae2-5b6cbbd42c8bapartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a3c8b46d-9af1-4815-ba89-81554d83a493apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a3c8b46d-9af1-4815-ba89-81554d83a493apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a4ed4866-7f1a-4bfb-ab5a-8544ea42e6f7apartment-single-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a4ed4866-7f1a-4bfb-ab5a-8544ea42e6f7apartment-single-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a6dbb811-9275-40a4-be0b-73c0c3642c41apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a6dbb811-9275-40a4-be0b-73c0c3642c41apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a75df7ff-3bdf-4fd3-b58c-10cb4dd5793dapartment-four.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a75df7ff-3bdf-4fd3-b58c-10cb4dd5793dapartment-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\afdf9199-1c1a-4909-9181-30a45d972fe9apartment-six.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\afdf9199-1c1a-4909-9181-30a45d972fe9apartment-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\b75dd949-62f5-4577-81ca-d3ed23507783apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\b75dd949-62f5-4577-81ca-d3ed23507783apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\ba2a40e9-6d00-420b-a522-54c9154cf7d9apartment-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\ba2a40e9-6d00-420b-a522-54c9154cf7d9apartment-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\ba4403aa-21a0-4316-a8e3-9f36b7d4483bapartment-single-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\ba4403aa-21a0-4316-a8e3-9f36b7d4483bapartment-single-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\bd38c456-677e-457f-8eae-25dc26a8ff4fapartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\bd38c456-677e-457f-8eae-25dc26a8ff4fapartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\beb7619b-253d-40d2-8bc5-928428e3407fapartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\beb7619b-253d-40d2-8bc5-928428e3407fapartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cb0c4730-2b1e-494f-a43a-0b9b235c434capartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\cb0c4730-2b1e-494f-a43a-0b9b235c434capartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cb80c650-54c7-4fe7-aaaa-b8bd7d00b676apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\cb80c650-54c7-4fe7-aaaa-b8bd7d00b676apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cd7ce1a3-1301-48d3-a5c4-5b5bb70a0365apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\cd7ce1a3-1301-48d3-a5c4-5b5bb70a0365apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\d8c7e0de-77cf-4b5e-81ff-19f4ce945c51apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\d8c7e0de-77cf-4b5e-81ff-19f4ce945c51apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\de6d21ba-7432-493c-bcac-33129a1feca8apartment-one.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\de6d21ba-7432-493c-bcac-33129a1feca8apartment-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\eabb8a44-5872-4b8b-a818-97dc3d13e07bapartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\eabb8a44-5872-4b8b-a818-97dc3d13e07bapartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\fd03efce-87d6-4e54-b6b2-90e511ae8b9dapartment-single-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\fd03efce-87d6-4e54-b6b2-90e511ae8b9dapartment-single-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\fed95ee0-52f4-4285-a6d1-7fc204598981apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\fed95ee0-52f4-4285-a6d1-7fc204598981apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\blogposts\\a5d8e2fc-67bf-4407-b775-cc8b9d4810a3blog-three.png",
+      "PackagePath": "staticwebassets\\uploads\\blogposts\\a5d8e2fc-67bf-4407-b775-cc8b9d4810a3blog-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\blogposts\\comment-one.png",
+      "PackagePath": "staticwebassets\\uploads\\blogposts\\comment-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\blogposts\\ee250e91-a755-4e1e-88b2-e112139320deblog-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blogposts\\ee250e91-a755-4e1e-88b2-e112139320deblog-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\blogposts\\f2dcd2de-6d58-45dd-8c0e-8871f864b69fblog-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\blogposts\\f2dcd2de-6d58-45dd-8c0e-8871f864b69fblog-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\59b6a0b4-7e8c-44e2-abed-76807164cb4ccategory-eight.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\59b6a0b4-7e8c-44e2-abed-76807164cb4ccategory-eight.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\87e80bf7-bbb4-4b36-86ca-ace59c409aeccategory-five.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\87e80bf7-bbb4-4b36-86ca-ace59c409aeccategory-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\97efa1b6-f61f-47c7-a251-894d234ec9facategory-five.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\97efa1b6-f61f-47c7-a251-894d234ec9facategory-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\99615ca7-c650-4bf7-812c-8b5763b0102dcategory-ten.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\99615ca7-c650-4bf7-812c-8b5763b0102dcategory-ten.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\a5fe49ec-3c19-473c-84f4-907e528f779fcategory-three.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\a5fe49ec-3c19-473c-84f4-907e528f779fcategory-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\cbf6eff0-0aae-4373-aeb4-03ae03fda20acategory-three.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\cbf6eff0-0aae-4373-aeb4-03ae03fda20acategory-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\d0ef5bc0-16b0-45ab-bdf1-6219664fd648category-nine.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\d0ef5bc0-16b0-45ab-bdf1-6219664fd648category-nine.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\dcdf8793-7cc8-4565-93a4-bb4fde87b478category-one.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\dcdf8793-7cc8-4565-93a4-bb4fde87b478category-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\e59c6ecb-a2e7-4a88-a170-d335a9658022category-nine.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\e59c6ecb-a2e7-4a88-a170-d335a9658022category-nine.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\categories\\ffba93d0-7933-46df-bcf5-45710974f4facategory-seven.png",
+      "PackagePath": "staticwebassets\\uploads\\categories\\ffba93d0-7933-46df-bcf5-45710974f4facategory-seven.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\settings\\fd178853-d228-48af-a953-45a000df17ebapartment-four.png",
+      "PackagePath": "staticwebassets\\uploads\\settings\\fd178853-d228-48af-a953-45a000df17ebapartment-four.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\25fe7e5e-6baf-45dc-8ab9-c4370080afeeslider-one.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\25fe7e5e-6baf-45dc-8ab9-c4370080afeeslider-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\38bfc005-e6a6-4c05-812c-1bd5bf99ca3fproduct-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\38bfc005-e6a6-4c05-812c-1bd5bf99ca3fproduct-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\3fa2861c-0e0a-4c40-8a78-1af863684abcslider-eight.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\3fa2861c-0e0a-4c40-8a78-1af863684abcslider-eight.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HouseRent.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HouseRent.props",
+      "PackagePath": "build\\HouseRent.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HouseRent.props",
+      "PackagePath": "buildMultiTargeting\\HouseRent.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HouseRent.props",
+      "PackagePath": "buildTransitive\\HouseRent.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

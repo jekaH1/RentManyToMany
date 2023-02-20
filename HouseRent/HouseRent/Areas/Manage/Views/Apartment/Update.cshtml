@@ -1,0 +1,162 @@
+﻿@model Apartment
+@{
+    ViewData["Title"] = "Update";
+}
+<form method="post" enctype="multipart/form-data">
+
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 @*col-xl-6*@">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Create Apartment</h6>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Total" class="form-control" id="floatingInput" placeholder="Total">
+                        <label for="floatingInput">Total</label>
+                        <span class="text-danger" asp-validation-for="Total"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Rentprice" class="form-control" id="floatingInput" placeholder="Rentprice">
+                        <label for="floatingInput">Rentprice</label>
+                        <span class="text-danger" asp-validation-for="Rentprice"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="FlatSize" class="form-control" id="floatingInput" placeholder="FlatSize">
+                        <label for="floatingInput">FlatSize</label>
+                        <span class="text-danger" asp-validation-for="FlatSize"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="FloorCount" class="form-control" id="floatingInput" placeholder="FloorCount">
+                        <label for="floatingInput">FloorCount</label>
+                        <span class="text-danger" asp-validation-for="FloorCount"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Facilities" class="form-control" id="floatingInput" placeholder="Facilities">
+                        <label for="floatingInput">Facilities</label>
+                        <span class="text-danger" asp-validation-for="Facilities"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Country" class="form-control" id="floatingInput" placeholder="Country">
+                        <label for="floatingInput">Country</label>
+                        <span class="text-danger" asp-validation-for="Country"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="City" class="form-control" id="floatingInput" placeholder="City">
+                        <label for="floatingInput">City</label>
+                        <span class="text-danger" asp-validation-for="City"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="CarSpace" class="form-control" id="floatingInput" placeholder="CarSpace">
+                        <label for="floatingInput">CarSpace</label>
+                        <span class="text-danger" asp-validation-for="CarSpace"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="BedRoomCount" class="form-control" id="floatingInput" placeholder="BedRoomCount">
+                        <label for="floatingInput">BedRoomCount</label>
+                        <span class="text-danger" asp-validation-for="BedRoomCount"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="BathCount" class="form-control" id="floatingInput" placeholder="BathCount">
+                        <label for="floatingInput">BathCount</label>
+                        <span class="text-danger" asp-validation-for="BathCount"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="AdressAndArea" class="form-control" id="floatingInput" placeholder="AdressAndArea">
+                        <label for="floatingInput">AdressAndArea</label>
+                        <span class="text-danger" asp-validation-for="AdressAndArea"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="RoomCategory" class="form-control" id="floatingInput" placeholder="RoomCategory">
+                        <label for="floatingInput">RoomCategory</label>
+                        <span class="text-danger" asp-validation-for="RoomCategory"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea asp-for="AdditionalFacilities" class="form-control" id="floatingInput" placeholder="AdditionalFacilities" style="height: 150px;"></textarea>
+                        <label for="floatingInput">AdditionalFacilities</label>
+                        <span class="text-danger" asp-validation-for="AdditionalFacilities"></span>
+                    </div>
+                    @*<div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>*@
+                    <div class="mb-3">
+                        <label asp-for="PosterImage" class="form-label">Poster Image</label>
+                        <input class="form-control bg-dark" asp-for="PosterImage" id="formFile">
+                        <span class="text-danger" asp-validation-for="PosterImage"></span>
+                    </div>
+                    <div>
+                        <h3 style="text-align:center;">Previous Photo</h3>
+                        <div class="container d-flex justify-content-center" style="max-width:200px;">
+                            <img style="max-width:100%;" src="~/uploads/apartments/@Model.ApartmentImages.FirstOrDefault(x=>x.IsPoster is true).Img">
+                        </div>
+                    </div>
+                    <div class=" mb-3">
+                        <label asp-for="Images" class="form-label">Images</label>
+                        <input class="form-control bg-dark" asp-for="Images" id="formFile">
+                        <span class="text-danger" asp-validation-for="Images"></span>
+                        <h3 style="text-align:center;" class="mb-5">Previous Photos</h3>
+                        <div class="container d-flex justify-content-around" style="flex-wrap:wrap;">
+                            @foreach (var item in Model.ApartmentImages.Where(x => x.IsPoster == false))
+                            {
+                                <div style="max-width:200px; " class="ml-3">
+                                    <img style="max-width:100%;" src="~/uploads/apartments/@item.Img">
+                                    <span class="text-danger delete-image-apartment" style="cursor:pointer; position:relative; bottom:173px; left:190px;">X</span>
+                                    <input type="hidden" name="ApartmentImagesIds" value="@item.Id" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" asp-for="ApartmentCategoryID" asp-items="@(new SelectList(ViewBag.Categories, "Id", "AppartmentCategoryName"))"></select>
+                        <label for="floatingSelect">Category</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" asp-for="ApartmentFeaturesIds" id="floatingSelect"  asp-items="@(new SelectList(ViewBag.Features, "Id", "FeatureName"))"></select>
+                    </div>
+                    @*<div class="mb-3 form-check">
+                        <input asp-for="CCTV" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">CCTV</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="SafetyGrills" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">SafetyGrills</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="ServantsRoom" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">ServantsRoom</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="FireExit" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">FireExit</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="Alcony" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Alcony</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="InterCom" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">InterCom</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="Lift" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lift</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="Generator" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Generator</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="CommunityHall" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">CommunityHall</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="Southfacing" type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Southfacing</label>
+                    </div>*@
+
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

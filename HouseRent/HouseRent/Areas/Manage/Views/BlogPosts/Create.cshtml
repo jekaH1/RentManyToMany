@@ -1,0 +1,72 @@
+﻿@model BlogPosts
+@{
+    ViewData["Title"] = "Create";
+}
+<form method="post" enctype="multipart/form-data">
+
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 @*col-xl-6*@">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Create Slider</h6>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Title" class="form-control" id="floatingInput"
+                               placeholder="Title">
+                        <label for="floatingInput">Title</label>
+                        <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                     <div class="form-floating mb-3">
+                        <input asp-for="Category" class="form-control" id="floatingInput"
+                               placeholder="Category">
+                        <label for="floatingInput">Category</label>
+                        <span class="text-danger" asp-validation-for="Category"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="IgUrl" class="form-control" id="floatingInput"
+                               placeholder="IgUrl">
+                        <label for="floatingInput">IgUrl</label>
+                        <span class="text-danger" asp-validation-for="IgUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="TwitterUrl" class="form-control" id="floatingInput"
+                               placeholder="TwitterUrl">
+                        <label for="floatingInput">TwitterUrl</label>
+                        <span class="text-danger" asp-validation-for="TwitterUrl"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="HeartUrl" class="form-control" id="floatingInput"
+                               placeholder="HeartUrl">
+                        <label for="floatingInput">HeartUrl</label>
+                        <span class="text-danger" asp-validation-for="HeartUrl"></span>
+                    </div>
+                      <div class="form-floating mb-3">
+                        <input asp-for="FaceUrl" class="form-control" id="floatingInput"
+                               placeholder="FaceUrl">
+                        <label for="floatingInput">FaceUrl</label>
+                        <span class="text-danger" asp-validation-for="FaceUrl"></span>
+                    </div>
+                     <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                                  asp-for="Quote"
+                                  id="floatingTextarea" style="height: 150px;"></textarea>
+                        <label for="floatingTextarea">Quote</label>
+                        <span class="text-danger" asp-validation-for="Quote"></span>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                                  asp-for="Quote2"
+                                  id="floatingTextarea" style="height: 150px;"></textarea>
+                        <label for="floatingTextarea">Quote</label>
+                        <span class="text-danger" asp-validation-for="Quote2"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Image" class="form-label">Default file input example</label>
+                        <input class="form-control bg-dark" asp-for="Image" id="formFile">
+                        <span class="text-danger" asp-validation-for="Image"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

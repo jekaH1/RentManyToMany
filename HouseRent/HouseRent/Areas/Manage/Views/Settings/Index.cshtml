@@ -1,0 +1,48 @@
+﻿@model List<SettingsRH>
+@{
+    ViewData["Title"] = "Index";
+    int counter = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Sliders</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Key</th>
+                                <th scope="col">Value</th>
+                                <th scope="col">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                counter++;
+                                <tr>
+                                    <th scope="row">@counter</th>
+                                    <td>@item.Key</td>
+                                    <td>@item.Value</td>
+                                    <td>
+                                        <div>
+                                            <img src="~/uploads/settings/@item.Img">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-outline-info" asp-action="update" asp-controller="settings" asp-route-id="@item.Id">Update</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

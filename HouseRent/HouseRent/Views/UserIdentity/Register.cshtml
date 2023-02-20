@@ -1,0 +1,59 @@
+﻿@model UserRegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div style="padding-top:50px; padding-bottom:100px;">
+    <div class="container d-flex justify-content-center">
+        <h1 style="text-align:center;">Register</h1>
+    </div>
+    <div class="container">
+        <!-- log in form -->
+        <form class="cd-form" method="post">
+            <p class="fieldset">
+                <label asp-for="Fullname" class="image-replace cd-email">Fullname</label>
+                <input asp-for="Fullname" class="full-width has-padding has-border" placeholder="Fullnamename">
+                <span asp-validation-for="Fullname" class="text-danger"></span>
+            </p>
+            <p class="fieldset">
+                <label asp-for="Username" class="image-replace cd-email">Username</label>
+                <input asp-for="Username" class="full-width has-padding has-border" placeholder="Username">
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </p>
+            <p class="fieldset">
+                <label asp-for="Email" class="image-replace cd-email">Email</label>
+                <input asp-for="Email" class="full-width has-padding has-border" placeholder="Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </p>
+            <p class="fieldset">
+                <label asp-for="Password" class="image-replace cd-email">Password</label>
+                <input asp-for="Password" class="full-width has-padding has-border" placeholder="Password">
+                <a href="#0" class="hide-password">Hide</a>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </p>
+            <p class="fieldset">
+                <label asp-for="CheckPass" class="image-replace cd-email">CheckPass</label>
+                <input asp-for="CheckPass" class="full-width has-padding has-border" placeholder="Repeat Password">
+                <a href="#0" class="hide-password">Hide</a>
+                <span asp-validation-for="CheckPass" class="text-danger"></span>
+            </p>
+            <p class="fieldset">
+                <label asp-for="PhoneNumber" class="image-replace cd-email">PhoneNumber</label>
+                <input asp-for="PhoneNumber" class="full-width has-padding has-border" placeholder="Phone Number">
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </p>
+
+           @* <p class="fieldset">
+                <input type="checkbox" id="remember-me" checked>
+                <label for="remember-me">Remember me</label>
+            </p>*@
+            <p class="fieldset">
+                <button type="submit" class="btn btn-success">Register!</button>
+                @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+            </p>
+        </form>
+        <p class="cd-form-bottom-message">
+            <a href="#0">Forgot your password?</a>
+        </p>
+        <a href="#0" class="cd-close-form">Close</a>
+    </div>
+</div>
