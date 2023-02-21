@@ -88,10 +88,12 @@ namespace HouseRent.Controllers
         [HttpGet]
         public IActionResult Detail(int id)
         {
-            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).FirstOrDefault(x => x.Id == id);
+            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
             OrderViewModel orderViewModel = new OrderViewModel
             {
+                apartmentFeatures=_appDbContext.ApartmentFeatures.ToList(),
                 Apartment = apartment,
+                Fetures=_appDbContext.Features.ToList(),
             };
             if (apartment is null) { return NotFound(); }
             apartment.TotalViewCount++;
@@ -103,8 +105,10 @@ namespace HouseRent.Controllers
         [HttpPost]
         public IActionResult Detail(int id, OrderViewModel orderVM)
         {
-            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).FirstOrDefault(x => x.Id == id);
+            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x=>x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
             orderVM.Apartment = apartment;
+            orderVM.Fetures= _appDbContext.Features.ToList();
+            orderVM.apartmentFeatures=_appDbContext.ApartmentFeatures.ToList();
             if (!ModelState.IsValid) { return View(orderVM); }
             int Startdate = orderVM.StartRentDate.DayOfYear;
             int Enddate = orderVM.EndRentDate.DayOfYear;

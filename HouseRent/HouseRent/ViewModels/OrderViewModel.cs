@@ -33,5 +33,8 @@ namespace HouseRent.ViewModels
         public AppUser? AppUser { get; set; }
         public int RentPrice { get; set; }
         public bool IsCancelled { get; set; }
+
+        public List<ApartmentFeature>? apartmentFeatures { get; set; }
+        public List<Feature>? Fetures { get; set; }
     }
 }

@@ -38,8 +38,9 @@
             <div class="card-body">
                 <div class="container d-flex">
                     <div class="container d-flex justify-content-around" style="align-content:flex-start;">
-                        <div class="d-flex col-md-2" style="justify-content:start;">
-                            <p>OrderStatus:@item.OrderStatus</p>
+                        <div class="d-flex" style="justify-content:center; align-content:center; flex-direction:column; text-align:center; margin-right:120px;">
+                            <h5>OrderStatus</h5>
+                            <p>@item.OrderStatus</p>
                         </div>
                         <div class="col-md-10" style="max-width:200px;">
                             <a asp-action="detail" asp-controller="home" asp-route-id="@item.ApartmentId"><img src="~/uploads/apartments/@item.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true)?.Img" style="max-width:100%;"></a>

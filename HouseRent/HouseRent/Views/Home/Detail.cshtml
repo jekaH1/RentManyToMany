@@ -83,122 +83,13 @@
                             <div class="col-md-6">
                                 <h3 class="features-title">Indoor features:</h3>
                                 <ul class="features-list">
-                                   @* @if (Model.Apartment.CCTV is true)
-                                    {
-                                        <li> CCTV &#10004 </li>
-                                    }
-                                    else
-                                    {
-                                        <li>CCTV <i class="fa fa-close"></i></li>
-                                    }
-                                    @if (Model.Apartment.SafetyGrills is true)
+                                    @foreach (var item in Model.apartmentFeatures.Where(x => x.ApartmentId == Model.Apartment.Id))
                                     {
                                         <li>
-                                            Safety Grill &#10004
+                                            @item.Feature.FeatureName
                                         </li>
+                                        
                                     }
-                                    else
-                                    {
-                                        <li>
-                                            Safety Grill <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.ServantsRoom is true)
-                                    {
-                                        <li>
-                                            ServantsRoom  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            ServantsRoom <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.FireExit is true)
-                                    {
-                                        <li>
-                                            FireExit  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            FireExit <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.Alcony is true)
-                                    {
-                                        <li>
-                                            Alcony  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            Alcony <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.InterCom is true)
-                                    {
-                                        <li>
-                                            InterCom  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            InterCom <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.Southfacing is true)
-                                    {
-                                        <li>
-                                            Southfacing  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            Southfacing <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.Lift is true)
-                                    {
-                                        <li>
-                                            Lift  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            Lift <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.Generator is true)
-                                    {
-                                        <li>
-                                            Generator  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            Generator <i class="fa fa-close"></i>
-                                        </li>
-                                    }
-                                    @if (Model.Apartment.CommunityHall is true)
-                                    {
-                                        <li>
-                                            CommunityHall  &#10004
-                                        </li>
-                                    }
-                                    else
-                                    {
-                                        <li>
-                                            CommunityHall <i class="fa fa-close"></i>
-                                        </li>
-                                    }*@
 
                                 </ul>
                             </div><!-- /.col-md-6 -->
@@ -217,8 +108,8 @@
                 <div class="apartment-sidebar">
                     <div class="widget_rental_search clerafix">
                         <div class="form-border gradient-border">
-                           
-                            @if(User.Identity.IsAuthenticated is true)
+
+                            @if (User.Identity.IsAuthenticated is true)
                             {
                                 <form method="post" asp-action="detail" asp-controller="home" class="advance_search_query booking-form">
                                     <div class="form-bg seven">
@@ -298,7 +189,7 @@
                                             </div><!-- /.form-group -->
                                             <div class="form-group">
                                                 <label asp-for="eMail">Email</label>
-                                                <input asp-for="eMail"  placeholder="Email">
+                                                <input asp-for="eMail" placeholder="Email">
                                                 <span asp-validation-for="eMail"></span>
                                             </div><!-- /.form-group -->
                                             <div class="form-group">
@@ -339,7 +230,7 @@
                                             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                                             <div class="form-group">
                                             </div>
-                                            <input type="hidden"  value="@Model.Apartment.Rentprice" asp-for="@Model.RentPrice">
+                                            <input type="hidden" value="@Model.Apartment.Rentprice" asp-for="@Model.RentPrice">
                                             <input type="hidden" value="@Model.Apartment.Id" asp-for="Apartment.Id">
 
                                             <!-- /.form-group -->

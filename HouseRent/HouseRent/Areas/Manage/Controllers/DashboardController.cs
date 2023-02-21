@@ -1,8 +1,10 @@
 ﻿using HouseRent.Context;
 using HouseRent.Models;
+using HouseRent.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 
 namespace HouseRent.Areas.Manage.Controllers
@@ -24,7 +26,12 @@ namespace HouseRent.Areas.Manage.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            DashboardViewModel dashboardViewModel = new DashboardViewModel
+            {
+                Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).Where(x=>x.OrderStatus ==0).ToList(),
+            };
+
+            return View(dashboardViewModel);
         }
 
         public async Task<IActionResult> CreateUser()
