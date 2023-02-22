@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fUhphMi8ljlcOFY4TEXnuarNdhkpSyNDTneXHeKJQ/8=",
+  "Hash": "bltfuJtrggMY+i8a9LdTBx1/oJx73bkHQ0kmsk44SSY=",
   "Source": "HouseRent",
   "BasePath": "_content/HouseRent",
   "Mode": "Default",
@@ -2157,6 +2157,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\checkout\\style.css",
+      "SourceId": "HouseRent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\",
+      "BasePath": "_content/HouseRent",
+      "RelativePath": "checkout/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\checkout\\style.css"
     },
     {
       "Identity": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\css\\bootstrap.min.css",

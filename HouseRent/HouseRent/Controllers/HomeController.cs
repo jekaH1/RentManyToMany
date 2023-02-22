@@ -117,7 +117,7 @@ namespace HouseRent.Controllers
             int Enddate = orderVM.EndRentDate.DayOfYear;
             int DayCount = Enddate - Startdate;
             int? TotalPrice = DayCount * apartment.Rentprice;
-            foreach (var item in _appDbContext.Orders.Where(x=>x.IsCancelled == false).Where(x=>x.IsOver==false).Where(x => x.Id == apartment.Id).ToList()) 
+            foreach (var item in _appDbContext.Orders.Where(x=>x.IsCancelled==false).Where(x=>x.IsOver==false).Where(x => x.ApartmentId==apartment.Id).ToList()) 
             {
                 
                 int date = item.StartRentDate.DayOfYear;
@@ -186,7 +186,8 @@ namespace HouseRent.Controllers
                 ApartmentId = orderVM.Apartment.Id,
                 Apartment = orderVM.Apartment,
                 OneDayPrice = orderVM.RentPrice,
-                IsCancelled = orderVM.IsCancelled 
+                IsCancelled = orderVM.IsCancelled ,
+                
             };
             _appDbContext.Orders.Add(order);
 
@@ -209,14 +210,21 @@ namespace HouseRent.Controllers
         {
             Apartment apartment = _appDbContext.Apartments.Include(x=>x.ApartmentFeatures).Include(x=>x.ApartmentImages).Include(x=>x.ApartmentCategory).FirstOrDefault(x => x.Id == order.ApartmentId);
             order.Apartment = apartment;
-            order.Apartment.ApartmentFeatures = apartment.ApartmentFeatures;
-            order.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
-            apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
+            order.Apartment.ApartmentFeaturesIds = apartment.ApartmentFeaturesIds;
+            //order.Apartment.ApartmentFeatures = ;
+            order.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x=>x.ApartmentId==order.ApartmentId).ToList();
+            apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == order.ApartmentId).ToList();
 
 
             return View(order);
         }
-        
+        [HttpPost]
+        public IActionResult CheckOut()
+        {
+            return View();
+        }
+
+
 
         public IActionResult AllBlogs()
         {

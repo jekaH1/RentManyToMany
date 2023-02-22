@@ -501,6 +501,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-2.8.3.min.js"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\checkout\\style.css",
+      "PackagePath": "staticwebassets\\checkout\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\wwwroot\\manage\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\manage\\css\\bootstrap.min.css"
     },
