@@ -204,24 +204,65 @@ namespace HouseRent.Controllers
             //ViewBag.Order = order;
             TempData.Put<Order>("order", order);
             //_appDbContext.SaveChanges();
-            return RedirectToAction("Checkout", TempData.Get<Order>("order"));
+            return RedirectToAction("CheckOut", TempData.Get<Order>("order"));
         }
-        public IActionResult CheckOut(Order order)
+        [HttpGet]
+        public async Task<IActionResult> CheckOut(Order order)
         {
+            CheckOutViewModel checkOutViewModel = null;
             Apartment apartment = _appDbContext.Apartments.Include(x=>x.ApartmentFeatures).Include(x=>x.ApartmentImages).Include(x=>x.ApartmentCategory).FirstOrDefault(x => x.Id == order.ApartmentId);
             order.Apartment = apartment;
-            order.Apartment.ApartmentFeaturesIds = apartment.ApartmentFeaturesIds;
+            //order.Apartment.ApartmentFeaturesIds = apartment.ApartmentFeaturesIds;
             //order.Apartment.ApartmentFeatures = ;
             order.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x=>x.ApartmentId==order.ApartmentId).ToList();
             apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == order.ApartmentId).ToList();
+            order.Apartment.ApartmentImages=_appDbContext.ApartmentImages.Where(x=>x.ApartmentId==order.ApartmentId).ToList();
+            checkOutViewModel = new CheckOutViewModel
+            {
+                Apartment = apartment,
+                ApartmentId=order.ApartmentId,
+                Order= order,
+                OrderId=order.Id,
 
 
-            return View(order);
+            };
+            
+            //TempData.Put<Order>("order1", order);
+
+            return View(checkOutViewModel);
         }
         [HttpPost]
-        public IActionResult CheckOut()
+        public async Task<IActionResult> CheckOut(CheckOutViewModel checkOutViewModel)
         {
-            return View();
+            //if(!ModelState.IsValid) { return View(checkOutViewModel); }
+            Order order = null;
+            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentFeatures).Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).FirstOrDefault(x => x.Id == checkOutViewModel.ApartmentId);
+            checkOutViewModel.Apartment = apartment;
+            
+            //checkOutViewModel.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == checkOutViewModel.ApartmentId).ToList();
+            //apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == checkOutViewModel.ApartmentId).ToList();
+            //checkOutViewModel.Apartment = apartment;
+            order = new Order
+            {
+                EndRentDate = checkOutViewModel.Order.EndRentDate,
+                ChildCount = checkOutViewModel.Order.ChildCount,
+                FamilyMemberCount = checkOutViewModel.Order.FamilyMemberCount,
+                StartRentDate = checkOutViewModel.Order.StartRentDate,
+                eMail = checkOutViewModel.Order.eMail,
+                Message = checkOutViewModel.Order.Message,
+                Fullname = checkOutViewModel.Order.Fullname,
+                PhoneNumber = checkOutViewModel.Order.PhoneNumber,
+                TotalPrice = checkOutViewModel.Order.TotalPrice,
+                AppUserId = checkOutViewModel.Order.AppUserId,
+                ApartmentId = checkOutViewModel.Apartment.Id,
+                Apartment = checkOutViewModel.Apartment,
+                OneDayPrice = checkOutViewModel.Apartment.Rentprice,
+                IsCancelled = checkOutViewModel.Order.IsCancelled,
+
+            };
+            _appDbContext.Add(order);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("home","allapartments");
         }
 
 
