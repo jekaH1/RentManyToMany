@@ -346,6 +346,18 @@ namespace HouseRent.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<byte?>("CVV")
+                        .HasColumnType("tinyint");
+
+                    b.Property<byte?>("CardMonth")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("CardNum")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte?>("CardYear")
+                        .HasColumnType("tinyint");
+
                     b.Property<byte>("ChildCount")
                         .HasColumnType("tinyint");
 
@@ -373,7 +385,10 @@ namespace HouseRent.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<int>("OneDayPrice")
+                    b.Property<string>("NameOncard")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OneDayPrice")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("OrderDay")

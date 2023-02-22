@@ -45,10 +45,10 @@ namespace HouseRent.Models
         public bool IsOver { get; set; }    
         public bool? IsCancelled { get; set; }
         public string? DeleteMessage { get; set; }
-        //public string? CardNum { get; set; }
-        //public byte? CardMonth { get; set; }
-        //public byte? CardYear { get; set; }
-        //public byte? CVV { get; set; }
-        //public string? NameOncard { get; set; }
+        public string? CardNum { get; set; }
+        public byte? CardMonth { get; set; }
+        public byte? CardYear { get; set; }
+        public byte? CVV { get; set; }
+        public string? NameOncard { get; set; }
     }
 }

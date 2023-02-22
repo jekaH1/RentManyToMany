@@ -187,6 +187,7 @@ namespace HouseRent.Controllers
                 Apartment = orderVM.Apartment,
                 OneDayPrice = orderVM.RentPrice,
                 IsCancelled = orderVM.IsCancelled ,
+             
                 
             };
             _appDbContext.Orders.Add(order);
@@ -238,7 +239,7 @@ namespace HouseRent.Controllers
             Order order = null;
             Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentFeatures).Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).FirstOrDefault(x => x.Id == checkOutViewModel.ApartmentId);
             checkOutViewModel.Apartment = apartment;
-            
+            checkOutViewModel.Order = checkOutViewModel.Order;
             //checkOutViewModel.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == checkOutViewModel.ApartmentId).ToList();
             //apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.Where(x => x.ApartmentId == checkOutViewModel.ApartmentId).ToList();
             //checkOutViewModel.Apartment = apartment;
@@ -258,11 +259,15 @@ namespace HouseRent.Controllers
                 Apartment = checkOutViewModel.Apartment,
                 OneDayPrice = checkOutViewModel.Apartment.Rentprice,
                 IsCancelled = checkOutViewModel.Order.IsCancelled,
+                CardMonth= checkOutViewModel.Order.CardMonth,
+                CardNum= checkOutViewModel.Order.CardNum,
+                CardYear= checkOutViewModel.Order.CardYear,
+                CVV=checkOutViewModel.Order.CVV,
 
             };
             _appDbContext.Add(order);
             _appDbContext.SaveChanges();
-            return RedirectToAction("home","allapartments");
+            return RedirectToAction("home","index");
         }
 
 

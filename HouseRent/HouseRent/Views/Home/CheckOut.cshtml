@@ -42,73 +42,73 @@
     <section class="content">
         <form method="post" asp-action="CheckOut" asp-controller="home">
 
-        <div class="container">
-        </div>
-        <div class="details shadow">
-            <div class="details__item">
+            <div class="container">
+            </div>
+            <div class="details shadow">
+                <div class="details__item">
 
-                <div class="item__image">
-                    @foreach (var item in @Model.Apartment.ApartmentImages.Where(x => x.IsPoster == true))
-                    {
-                        <img class="iphone" src="~/uploads/apartments/@item.Img" alt="">
+                    <div class="item__image">
+                        @foreach (var item in @Model.Apartment.ApartmentImages.Where(x => x.IsPoster == true))
+                        {
+                            <img class="iphone" src="~/uploads/apartments/@item.Img" alt="">
 
-                    }
-                </div>
-                <div class="item__details">
-                    <div class="item__title">
-                        @Model.Apartment.ApartmentCategory.AppartmentCategoryName
+                        }
                     </div>
-                    <div class="item__price">
-                        @Model.Order.TotalPrice $
-                    </div>
-                    <div class="item__quantity">
-                        Quantity: 1
-                    </div>
-                    <div class="item__description">
-                        <ul style="">
-                            <li>Country: @Model.Apartment.Country</li>
-                            <li>City: @Model.Apartment.City</li>
-                            <li>Carspace: @Model.Apartment.CarSpace</li>
-                            <li>Bathroom count: @Model.Apartment.BathCount</li>
-                            <li>Bedroom count: @Model.Apartment.BedRoomCount</li>
-                        </ul>
+                    <div class="item__details">
+                        <div class="item__title">
+                            @Model.Apartment.ApartmentCategory.AppartmentCategoryName
+                        </div>
+                        <div class="item__price">
+                            @Model.Order.TotalPrice $
+                        </div>
+                        <div class="item__quantity">
+                            Quantity: 1
+                        </div>
+                        <div class="item__description">
+                            <ul style="">
+                                <li>Country: @Model.Apartment.Country</li>
+                                <li>City: @Model.Apartment.City</li>
+                                <li>Carspace: @Model.Apartment.CarSpace</li>
+                                <li>Bathroom count: @Model.Apartment.BathCount</li>
+                                <li>Bedroom count: @Model.Apartment.BedRoomCount</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="discount"></div>
-        <div class="container">
-            <div class="payment">
-                <div class="payment__title">
-                    Payment Method
-                </div>
-                <div class="payment__types">
-                    <div class="payment__type payment__type--cc active">
-                        <i class="icon icon-credit-card"></i>Credit Card
+            <div class="discount"></div>
+            <div class="container">
+                <div class="payment">
+                    <div class="payment__title">
+                        Payment Method
                     </div>
-                    <div class="payment__type payment__type--paypal">
-                        <i class="icon icon-paypal"></i>Paypal
-                    </div>
-                    <div class="payment__type payment__type--paypal">
-                        <i class="icon icon-wallet"></i>SEPA
-                    </div>
-                    <div class="payment__type payment__type--paypal">
-                        <i class="icon icon-note"></i>Invoice
-                    </div>
-                </div>
-                <div class="payment__info">
-                    <div class="payment__cc">
-                        <div class="payment__title">
-                            <i class="icon icon-user"></i>Personal Information
+                    <div class="payment__types">
+                        <div class="payment__type payment__type--cc active">
+                            <i class="icon icon-credit-card"></i>Credit Card
                         </div>
-                        
+                        <div class="payment__type payment__type--paypal">
+                            <i class="icon icon-paypal"></i>Paypal
+                        </div>
+                        <div class="payment__type payment__type--paypal">
+                            <i class="icon icon-wallet"></i>SEPA
+                        </div>
+                        <div class="payment__type payment__type--paypal">
+                            <i class="icon icon-note"></i>Invoice
+                        </div>
+                    </div>
+                    <div class="payment__info">
+                        <div class="payment__cc">
+                            <div class="payment__title">
+                                <i class="icon icon-user"></i>Personal Information
+                            </div>
+
                             <div class="form__cc">
                                 <div class="row">
                                     <div class="field">
                                         <div class="title">
                                             Credit Card Number
                                         </div>
-                                        <input type="text" class="input txt text-validated" placeholder="**** **** **** ****" />
+                                        <input asp-for="@Model.CardNum" class="input txt text-validated" placeholder="**** **** **** ****" />
                                     </div>
                                 </div>
                                 <div class="row">
@@ -116,7 +116,7 @@
                                         <div class="title">
                                             Expiry Date
                                         </div>
-                                        <select class="input ddl">
+                                        <select asp-for="@Model.CardYear" class="input ddl">
                                             <option selected>01</option>
                                             <option>02</option>
                                             <option>03</option>
@@ -130,7 +130,7 @@
                                             <option>11</option>
                                             <option>12</option>
                                         </select>
-                                        <select class="input ddl">
+                                        <select  class="input ddl">
                                             <option>01</option>
                                             <option>02</option>
                                             <option>03</option>
@@ -169,7 +169,7 @@
                                             CVV Code
                                             <span class="numberCircle">?</span>
                                         </div>
-                                        <input type="text" class="input txt" />
+                                        <input asp-for="@Model.CVV"  class="input txt" />
                                     </div>
                                 </div>
                                 <div class="row">
@@ -177,46 +177,59 @@
                                         <div class="title">
                                             Name on Card
                                         </div>
-                                        <input type="text" class="input txt" />
+                                        <input asp-for="NameOncard" class="input txt" />
                                     </div>
                                 </div>
 
                             </div>
-                        
-                    </div>
-                    <div class="payment__shipping">
-                        <div class="payment__title">
-                            <i class="icon icon-plane"></i> Shiping Information
-                        </div>
-                        <div class="details__user">
-                            <div class="user__name">
-                                @Model.Order.Fullname
-                                
-                                <br> @Model.Order.StartRentDate.ToString("d")-@Model.Order.EndRentDate.ToString("d")
-                            </div>
-                            <div class="user__address">
-                                @Model.Order.PhoneNumber
-                                <br>@Model.Order.eMail
-                            </div>
-                        </div>
 
+                        </div>
+                        <div class="payment__shipping">
+                            <div class="payment__title">
+                                <i class="icon icon-plane"></i> Shiping Information
+                            </div>
+                            <div class="details__user">
+                                <div class="user__name">
+                                    @Model.Order.Fullname
+
+                                    <br> @Model.Order.StartRentDate.ToString("d")-@Model.Order.EndRentDate.ToString("d")
+                                </div>
+                                <div class="user__address">
+                                    @Model.Order.PhoneNumber
+                                    <input type="hidden" asp-for="@Model.Order.PhoneNumber">
+                                    <br>@Model.Order.eMail
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="actions">
+            <div class="container">
+                <div class="actions">
 
-                <a href="#" class="btn action__submit">
-                    Place your Order
-                    <i class="icon icon-arrow-right-circle"></i>
-                </a>
-                <a asp-action="index" asp-controller="home" class="backBtn">Go Back to Shop</a>
+                    <a href="#" class="btn action__submit">
+                        Place your Order
+                        <i class="icon icon-arrow-right-circle"></i>
+                    </a>
+                    <a asp-action="index" asp-controller="home" class="backBtn">Go Back to Shop</a>
 
-            </div>
-            <input type="hidden" asp-for="@Model.ApartmentId" value="@Model.ApartmentId">
-                            <button type="submit">Order</button>
-    </form>
+                </div>
+                <input type="hidden" asp-for="@Model.ApartmentId" value="@Model.ApartmentId">
+                <input type="hidden" asp-for="@Model.Order.Fullname" value="@Model.Order.Fullname">
+                <input type="hidden" asp-for="@Model.Order.eMail" value="@Model.Order.eMail">
+                <input type="hidden" asp-for="@Model.Order.EndRentDate" value="@Model.Order.EndRentDate">
+                <input type="hidden" asp-for="@Model.Order.StartRentDate" value="@Model.Order.StartRentDate">
+                <input type="hidden" asp-for="@Model.Order.FamilyMemberCount" value="@Model.Order.FamilyMemberCount">
+                <input type="hidden" asp-for="@Model.Order.TotalPrice" value="@Model.Order.TotalPrice">
+                <input type="hidden" asp-for="@Model.Order.IsCancelled" value="@Model.Order.IsCancelled">
+                <input type="hidden" asp-for="@Model.Order.OrderStatus" value="@Model.Order.OrderStatus">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <input type="hidden" asp-for="@Model.Order.AppUserId" value="@Model.Order.AppUserId">
+                }
+                <button type="submit">Order</button>
+        </form>
     </section>
     </div>
     <!-- partial -->
