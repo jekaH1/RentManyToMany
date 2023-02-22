@@ -1,9 +1,12 @@
-﻿using HouseRent.Context;
+﻿//using AspNetCore;
+using HouseRent.Context;
+using HouseRent.Helper;
 using HouseRent.Models;
 using HouseRent.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Plugins;
 using System.Diagnostics;
 using System.Net;
 
@@ -187,20 +190,33 @@ namespace HouseRent.Controllers
             };
             _appDbContext.Orders.Add(order);
 
-            OrderItem orderItem = null;
-            orderItem = new OrderItem
-            {
-                DayCount= DayCount,
-                OndDayPrice=orderVM.RentPrice,
-                Order= order,
-                ApartmentId=orderVM.Apartment.Id,
-                TotalPrice=TotalPrice
-            };
-            _appDbContext.OrderItems.Add(orderItem);
-            _appDbContext.SaveChanges();
-            return RedirectToAction("AllApartments");
+            //OrderItem orderItem = null;
+            //orderItem = new OrderItem
+            //{
+            //    DayCount = DayCount,
+            //    OndDayPrice = orderVM.RentPrice,
+            //    Order = order,
+            //    ApartmentId = orderVM.Apartment.Id,
+            //    TotalPrice = TotalPrice
+            //};
+            //_appDbContext.OrderItems.Add(orderItem);
+            //ViewBag.Order = order;
+            TempData.Put<Order>("order", order);
+            //_appDbContext.SaveChanges();
+            return RedirectToAction("Checkout", TempData.Get<Order>("order"));
         }
+        public IActionResult CheckOut(Order order)
+        {
+            Apartment apartment = _appDbContext.Apartments.Include(x=>x.ApartmentFeatures).Include(x=>x.ApartmentImages).Include(x=>x.ApartmentCategory).FirstOrDefault(x => x.Id == order.ApartmentId);
+            order.Apartment = apartment;
+            order.Apartment.ApartmentFeatures = apartment.ApartmentFeatures;
+            order.Apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
+            apartment.ApartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
 
+
+            return View(order);
+        }
+        
 
         public IActionResult AllBlogs()
         {

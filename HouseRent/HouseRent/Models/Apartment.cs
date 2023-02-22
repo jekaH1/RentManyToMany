@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace HouseRent.Models
 {
@@ -21,20 +23,17 @@ namespace HouseRent.Models
         public int? TotalViewCount { get; set; }
         public int? ApartmentCategoryID { get; set; }
         public DateTime? ApartmentCreationDate { get; set; } = DateTime.Now;
+        [JsonIgnore]
+        [IgnoreDataMember]
         public List<ApartmentImages>? ApartmentImages { get; set; }
+        [JsonIgnore]
+        [IgnoreDataMember]
         public ApartmentCategory? ApartmentCategory { get; set; }
+        [JsonIgnore]
+        [IgnoreDataMember]
         public List<ApartmentFeature>? ApartmentFeatures { get; set; }
         public bool IsReserved { get; set; }
-        //public bool CCTV { get; set; }
-        //public bool SafetyGrills { get; set; }
-        //public bool ServantsRoom { get; set; }
-        //public bool FireExit { get; set; }
-        //public bool Alcony { get; set; }
-        //public bool InterCom { get; set; }
-        //public bool Southfacing { get; set; }
-        //public bool Lift { get; set; }
-        //public bool Generator { get; set; }
-        //public bool CommunityHall { get; set; }
+        
         [NotMapped]
         public IFormFile? PosterImage { get; set; }
         [NotMapped]
