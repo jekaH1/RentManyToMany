@@ -29,9 +29,31 @@ namespace HouseRent.Areas.Manage.Controllers
             DashboardViewModel dashboardViewModel = new DashboardViewModel
             {
                 Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).Where(x=>x.OrderStatus ==0).ToList(),
+                ToDoLists=_appDbContext.ToDoListOrders.ToList(),
             };
 
             return View(dashboardViewModel);
+        }
+        [HttpPost]
+        public IActionResult Index(DashboardViewModel dashboardViewModel,toDoList toDoList) 
+        {
+            dashboardViewModel.Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).Where(x => x.OrderStatus == 0).ToList();
+            dashboardViewModel.ToDoLists = _appDbContext.ToDoListOrders.ToList();
+            //dashboardViewModel.ToDoList = toDoList;
+            toDoList.Work = dashboardViewModel.ToDoList.Work;
+            //if (!ModelState.IsValid) { return View(dashboardViewModel); }
+            _appDbContext.Add(toDoList);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("index"); 
+        } 
+
+        public IActionResult Delete(int id)
+        {
+            toDoList toDoList=_appDbContext.ToDoListOrders.FirstOrDefault(x => x.Id == id);
+            if(toDoList == null) { return NotFound(); }
+            _appDbContext.Remove(toDoList);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> CreateUser()

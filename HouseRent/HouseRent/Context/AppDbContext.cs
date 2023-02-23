@@ -24,5 +24,7 @@ namespace HouseRent.Context
         public DbSet<AboutUS> AboutUs { get; set; }
         public DbSet<ApartmentFeature> ApartmentFeatures { get; set; }
         public DbSet<Feature> Features { get; set; }   
+
+        public DbSet<toDoList> ToDoListOrders { get; set; } 
     }
 }
