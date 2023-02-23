@@ -16,5 +16,6 @@ namespace HouseRent.ViewModels
         public List<Order> Orders { get; set; }
 
         public List<AppUser> appUsers { get; set; } 
+        public List<ApartmentCategory> Categories { get; set; } 
     }
 }

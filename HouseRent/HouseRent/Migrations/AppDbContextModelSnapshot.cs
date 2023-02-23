@@ -352,8 +352,8 @@ namespace HouseRent.Migrations
                     b.Property<byte?>("CardMonth")
                         .HasColumnType("tinyint");
 
-                    b.Property<string>("CardNum")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal?>("CardNum")
+                        .HasColumnType("decimal(20,0)");
 
                     b.Property<byte?>("CardYear")
                         .HasColumnType("tinyint");
