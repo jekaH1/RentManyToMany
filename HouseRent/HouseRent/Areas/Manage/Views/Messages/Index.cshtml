@@ -1,0 +1,47 @@
+﻿@model List<AdminMessage>
+@{
+    ViewData["Title"] = "Message";
+    int counter = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Messages</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Fullname</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                counter++;
+                                    <tr>
+                                        <th scope="row">@counter</th>
+                                        <td>@item.FullName</td>
+                                        <td>@item.eMail</td>
+                                        <td>@item.Message</td>
+                                        <td>
+                                        <a class="btn btn-outline-info" href="https://www.gmail.com">Reply</a>
+                                        </td>
+                                    </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

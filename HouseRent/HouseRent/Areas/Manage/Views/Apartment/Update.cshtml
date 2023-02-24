@@ -109,8 +109,8 @@
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example" asp-for="ApartmentCategoryID" asp-items="@(new SelectList(ViewBag.Categories, "Id", "AppartmentCategoryName"))"></select>
                         <label for="floatingSelect">Category</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" asp-for="ApartmentFeaturesIds" id="floatingSelect"  asp-items="@(new SelectList(ViewBag.Features, "Id", "FeatureName"))"></select>
+                    <div>
+                        <select class="form-select" asp-for="ApartmentFeaturesIds" id="floatingSelect" aria-label="Floating label select example" asp-items="@(new SelectList(ViewBag.Features, "Id", "FeatureName"))"></select>
                     </div>
                     <div class="form-floating mb-3">
                         <h5>Previous Features</h5>

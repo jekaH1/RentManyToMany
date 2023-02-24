@@ -46,6 +46,11 @@ namespace HouseRent.Areas.Manage.Controllers
                 ModelState.AddModelError("PosterImage", "Required");
                 return View(apartment);
             }
+            if(apartment.Images is null)
+            {
+                ModelState.AddModelError("Images", "Required");
+                return View(apartment);
+            }
             if (apartment.PosterImage.ContentType != "image/jpeg" && apartment.PosterImage.ContentType != "image/png")
             {
                 ModelState.AddModelError("PosterImage", "Only PNG and JPEG files allowed");
@@ -97,6 +102,7 @@ namespace HouseRent.Areas.Manage.Controllers
                 _appDbContext.ApartmentFeatures.Add(apartmentFeature);
             }
             apartment.TotalViewCount = 0;
+            apartment.IsReserved= false;
             _appDbContext.Apartments.Add(apartment);
             _appDbContext.SaveChanges();
             return RedirectToAction("index");

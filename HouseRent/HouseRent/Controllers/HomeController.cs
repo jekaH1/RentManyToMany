@@ -187,8 +187,6 @@ namespace HouseRent.Controllers
                 Apartment = orderVM.Apartment,
                 OneDayPrice = orderVM.RentPrice,
                 IsCancelled = orderVM.IsCancelled,
-
-
             };
             _appDbContext.Orders.Add(order);
             TempData.Put<Order>("order", order);
@@ -221,8 +219,6 @@ namespace HouseRent.Controllers
                 ApartmentId = order.ApartmentId,
                 Order = order,
                 OrderId = order.Id,
-
-
             };
 
             return View(checkOutViewModel);
