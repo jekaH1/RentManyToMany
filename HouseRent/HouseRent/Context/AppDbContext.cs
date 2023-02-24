@@ -26,5 +26,6 @@ namespace HouseRent.Context
         public DbSet<Feature> Features { get; set; }   
 
         public DbSet<toDoList> ToDoListOrders { get; set; } 
+        public DbSet<AdminMessage> AdminMessages { get; set; }
     }
 }

@@ -28,8 +28,9 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             DashboardViewModel dashboardViewModel = new DashboardViewModel
             {
-                Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).Where(x=>x.OrderStatus ==0).ToList(),
-                ToDoLists=_appDbContext.ToDoListOrders.ToList(),
+                Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).OrderByDescending(x=>x.OrderDay).Where(x=>x.OrderStatus ==0).ToList(),
+                ToDoLists=_appDbContext.ToDoListOrders.OrderByDescending(x=>x.todiListDate).Take(4).ToList(),
+                AdminMessages=_appDbContext.AdminMessages.OrderByDescending(x=>x.MessageDate).Take(4).ToList(), 
             };
 
             return View(dashboardViewModel);
@@ -39,9 +40,15 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             dashboardViewModel.Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).Where(x => x.OrderStatus == 0).ToList();
             dashboardViewModel.ToDoLists = _appDbContext.ToDoListOrders.ToList();
-            //dashboardViewModel.ToDoList = toDoList;
+            dashboardViewModel.AdminMessages = _appDbContext.AdminMessages.Take(4).ToList();
+            dashboardViewModel.ToDoList = toDoList;
             toDoList.Work = dashboardViewModel.ToDoList.Work;
-            //if (!ModelState.IsValid) { return View(dashboardViewModel); }
+            toDoList.todiListDate=DateTime.Now;
+            if (toDoList.Work is null)
+            {
+                ModelState.AddModelError("Work", "Cant be null");
+                return View(dashboardViewModel);    
+            }
             _appDbContext.Add(toDoList);
             _appDbContext.SaveChanges();
             return RedirectToAction("index"); 

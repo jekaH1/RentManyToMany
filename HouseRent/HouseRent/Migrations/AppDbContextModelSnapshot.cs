@@ -81,6 +81,37 @@ namespace HouseRent.Migrations
                     b.ToTable("AboutUs");
                 });
 
+            modelBuilder.Entity("HouseRent.Models.AdminMessage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("MessageDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("eMail")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AdminMessages");
+                });
+
             modelBuilder.Entity("HouseRent.Models.Apartment", b =>
                 {
                     b.Property<int?>("Id")
@@ -523,6 +554,9 @@ namespace HouseRent.Migrations
                     b.Property<string>("Work")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("todiListDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

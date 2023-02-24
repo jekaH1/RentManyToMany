@@ -1,4 +1,5 @@
 ﻿using HouseRent.Context;
+using HouseRent.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HouseRent.Controllers
@@ -14,6 +15,16 @@ namespace HouseRent.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(AdminMessage adminMessage)
+        {
+            if (!ModelState.IsValid) { return View(adminMessage); }
+            
+            _appDbContext.AdminMessages.Add(adminMessage);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("index");
         }
     }
 }
