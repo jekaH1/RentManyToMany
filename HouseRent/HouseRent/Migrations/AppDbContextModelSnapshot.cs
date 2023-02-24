@@ -124,6 +124,7 @@ namespace HouseRent.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AdressAndArea")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("ApartmentCategoryID")
@@ -132,40 +133,46 @@ namespace HouseRent.Migrations
                     b.Property<DateTime?>("ApartmentCreationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<byte?>("BathCount")
+                    b.Property<byte>("BathCount")
                         .HasColumnType("tinyint");
 
-                    b.Property<byte?>("BedRoomCount")
+                    b.Property<byte>("BedRoomCount")
                         .HasColumnType("tinyint");
 
-                    b.Property<byte?>("CarSpace")
+                    b.Property<byte>("CarSpace")
                         .HasColumnType("tinyint");
 
                     b.Property<string>("City")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Facilities")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("FlatSize")
+                    b.Property<int>("FlatSize")
                         .HasColumnType("int");
 
                     b.Property<string>("FloorCount")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsReserved")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("Rentprice")
+                    b.Property<int>("Rentprice")
                         .HasColumnType("int");
 
                     b.Property<string>("RoomCategory")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Total")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("TotalViewCount")
@@ -492,9 +499,6 @@ namespace HouseRent.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Img")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Key")
                         .HasColumnType("nvarchar(max)");

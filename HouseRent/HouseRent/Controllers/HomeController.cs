@@ -110,8 +110,17 @@ namespace HouseRent.Controllers
         {
             Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
             orderVM.Apartment = apartment;
+            orderVM.Apartment.City= apartment.City;
+            orderVM.Apartment.Total=apartment.Total;
+            orderVM.Apartment.Country = apartment.Country;
+            orderVM.Apartment.Facilities= apartment.Facilities;
+            orderVM.Apartment.RoomCategory= apartment.RoomCategory;
+            orderVM.Apartment.FloorCount= apartment.FloorCount;
+            orderVM.Apartment.AdressAndArea= apartment.AdressAndArea;
             orderVM.Fetures = _appDbContext.Features.ToList();
             orderVM.apartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
+            orderVM.IsCancelled = false;
+            orderVM.Apartment.Id=apartment.Id;
             if (!ModelState.IsValid) { return View(orderVM); }
             int Startdate = orderVM.StartRentDate.DayOfYear;
             int Enddate = orderVM.EndRentDate.DayOfYear;
@@ -164,7 +173,6 @@ namespace HouseRent.Controllers
                 ModelState.AddModelError("StartRentDate", "Reservation allowed from 1 up to 30 days");
                 return View(orderVM);
             }
-            orderVM.IsCancelled = false;
             //if (orderVM.StartRentDate.DayOfYear < (DateTime.Now.DayOfYear+90))
             //{
             //    ModelState.AddModelError("StartRentDate", "Sorry,You can not rent house more than 3 months before");
@@ -289,7 +297,7 @@ namespace HouseRent.Controllers
         [HttpGet]
         public async Task<IActionResult> AllApartments(AllApartmentsViewModel model, string filter, DateTime? dateTimeAsent = null, DateTime? dateTimeDesent = null,
                                                         int? AsentPrice = 0, int? desent = 0, int? popularity = 0,
-                                                        string? Warehouse = null, string? family = null, string? office = null, string? FemaleMess = null)
+                                                        string? Warehouse = null, string? family = null, string? office = null, string? FemaleMess = null,int page=1)
         {
             var apartments = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).OrderByDescending(x => x.TotalViewCount).AsQueryable();
             var query = apartments;
@@ -331,7 +339,7 @@ namespace HouseRent.Controllers
             ViewBag.filters = filter;
             model = new AllApartmentsViewModel
             {
-                Apartments = await query.ToListAsync(),
+                Apartments = PaginatedList<Apartment>.Create(query,6,page),
             };
             return View(model);
         }

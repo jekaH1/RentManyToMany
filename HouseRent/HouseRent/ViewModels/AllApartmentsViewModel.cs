@@ -1,12 +1,10 @@
-﻿using HouseRent.Models;
+﻿using HouseRent.Helper;
+using HouseRent.Models;
 
 namespace HouseRent.ViewModels
 {
     public class AllApartmentsViewModel
     {
-        public List<Apartment> Apartments { get; set; }
-
-
-
+        public PaginatedList<Apartment> Apartments { get; set; }
     }
 }

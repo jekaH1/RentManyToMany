@@ -19,7 +19,6 @@
                                 <th scope="col">Mail</th>
                                 <th scope="col">Message</th>
                                 <th scope="col">Message Time</th>
-                                <th scope="col">Image</th>
                                 <th scope="col">
                                     Actions
                                 </th>
@@ -36,11 +35,7 @@
                                         <td>@item.UserCommetMail</td>
                                         <td>@item.UserCommentMessage</td>
                                         <td>@item.UserMessageTime</td>
-                                        <td>
-                                            <div style="max-width:200px;">
-                                                <img style="width:100%;" src="~/uploads/blogposts/@item.UserImg">
-                                            </div>
-                                        </td>
+                                        
                                         <td>
                                             <a class="btn btn-danger" asp-action="deleteComment" asp-controller="blogposts" asp-route-id="@item.Id">Delete</a>
                                         </td>

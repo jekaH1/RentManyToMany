@@ -7,8 +7,6 @@ namespace HouseRent.Models
         public int Id { get; set; }
         public string? Key { get; set; }
         public string Value { get; set; }
-        [NotMapped]
-        public IFormFile? Image { get; set; }
-        public string? Img { get; set; } 
+       
     }
 }
