@@ -108,7 +108,6 @@
                 <div class="apartment-sidebar">
                     <div class="widget_rental_search clerafix">
                         <div class="form-border gradient-border">
-
                             @if (User.Identity.IsAuthenticated is true)
                             {
                                 <form method="post" asp-action="detail" asp-controller="home" class="advance_search_query booking-form">
@@ -156,11 +155,6 @@
                                                 <span asp-validation-for="EndRentDate"></span>
                                             </div><!-- /.form-group -->
                                             <div class="form-group">
-                                                <label>Total Price</label>
-                                                @*<input value="">*@
-                                            </div><!-- /.form-group -->
-
-                                            <div class="form-group">
                                                 <button type="submit" asp-action="detail" asp-controller="home" class="button default-template-gradient button-radius">Request Booking</button>
                                                 @*<button type="submit" asp-action="detail" asp-controller="home">Reques</button>*@
                                             </div>
@@ -170,8 +164,6 @@
                                             <input type="hidden" value="@user.Id" asp-for="@Model.AppUserId">
                                             <input type="hidden" value="@Model.Apartment.Rentprice" asp-for="@Model.RentPrice">
                                             <input type="hidden" value="@Model.Apartment.Id" asp-for="Apartment.Id">
-
-
                                         </div>
                                     </div>
                                 </form>

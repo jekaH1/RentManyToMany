@@ -1,7 +1,9 @@
-﻿@model BlogViewModel
+﻿@using HouseRent.Helper;
+@model BlogViewModel
 @{
     ViewData["Title"] = "Index";
     string filter = ViewBag.filters;
+
 }
 
 
@@ -30,13 +32,13 @@
                     <div class="post-filter-area clearfix">
                         <ul class="nav nav-tabs hidden-sm hidden-xs" role="tablist">
                             <li role="presentation" class="active">
-                                <a asp-action="index" asp-controller="blog" asp-route-filter="recent" ><span>Recent</span>/<span>News</span></a>
+                                <a asp-action="index" asp-controller="blog" asp-route-filter="recent"><span>Recent</span>/<span>News</span></a>
                             </li>
                             <li role="presentation">
-                                <a asp-action="index" asp-controller="blog" asp-route-filter="popular" >Popular</a>
+                                <a asp-action="index" asp-controller="blog" asp-route-filter="popular">Popular</a>
                             </li>
                             <li role="presentation">
-                                <a asp-action="index" asp-controller="blog" asp-route-fitler="recent" >Trending</a>
+                                <a asp-action="index" asp-controller="blog" asp-route-fitler="recent">Trending</a>
                             </li>
                         </ul>
 
@@ -135,72 +137,32 @@
 
                             </div><!-- /.row -->
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="pagination-link">
-                                        <ul class="pagination">
-                                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                            <li class="active"><a href="#">01</a></li>
-                                            <li><a href="#">02</a></li>
-                                            <li><a href="#">03</a></li>
-                                            <li><a href="#">04</a></li>
-                                            <li><a href="#">05</a></li>
-                                            <li class="dot"><a href="#">...</a></li>
-                                            <li><a href="#">12</a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                                        </ul>
-                                    </div><!-- /.pagination -->
-                                </div><!-- /.col-md-12 -->
-                            </div><!-- /.row -->
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="pagination-link">
+                                            <ul class="pagination">
+                                                @if (Model.BlogPosts.HasPrevious)
+                                                {
+                                                    <li><a asp-route-page="@(Model.BlogPosts.ActivePage-1)"><i class="fa fa-angle-left"></i></a></li>
+
+                                                }
+                                                @for (int i = 1; i <= Model.BlogPosts.TotalPageCount; i++)
+                                                {
+                                                    <li class="@((Model.BlogPosts.ActivePage==i)? "active" : "")"><a asp-route-page="@i">@i</a></li>
+                                                }
+                                                @if (Model.BlogPosts.HasNext)
+                                                {
+                                                    <li><a asp-route-page="@(Model.BlogPosts.ActivePage+1)"><i class="fa fa-angle-right"></i></a></li>
+                                                }
+                                            </ul>
+                                        </div><!-- /.pagination -->
+                                    </div><!-- /.col-md-12 -->
+                                </div><!-- /.row -->
+                            </form>
                         </div> <!-- /.home -->
 
-                        <div role="tabpanel" class="tab-pane fade" id="profile">
-                            <div class="row">
-                                
-                            </div><!-- /.row -->
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="pagination-link">
-                                        <ul class="pagination">
-                                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                            <li class="active"><a href="#">01</a></li>
-                                            <li><a href="#">02</a></li>
-                                            <li><a href="#">03</a></li>
-                                            <li><a href="#">04</a></li>
-                                            <li><a href="#">05</a></li>
-                                            <li class="dot"><a href="#">...</a></li>
-                                            <li><a href="#">12</a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                                        </ul>
-                                    </div><!-- /.pagination -->
-                                </div><!-- /.col-md-12 -->
-                            </div><!-- /.row -->
-                        </div> <!-- /.profile -->
-
-                        <div role="tabpanel" class="tab-pane fade" id="messages">
-                            <div class="row">
-                                
-                            </div><!-- /.row -->
-
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="pagination-link">
-                                        <ul class="pagination">
-                                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                                            <li class="active"><a href="#">01</a></li>
-                                            <li><a href="#">02</a></li>
-                                            <li><a href="#">03</a></li>
-                                            <li><a href="#">04</a></li>
-                                            <li><a href="#">05</a></li>
-                                            <li class="dot"><a href="#">...</a></li>
-                                            <li><a href="#">12</a></li>
-                                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                                        </ul>
-                                    </div><!-- /.pagination -->
-                                </div><!-- /.col-md-12 -->
-                            </div><!-- /.row -->
-                        </div> <!-- /.messages -->
                     </div> <!-- /.tab-content -->
                 </div><!-- /.blog-content-left -->
             </div><!-- /.col-md-8 -->
@@ -231,21 +193,18 @@
                             }
 
                         </div><!-- /.widget widget_popular_post -->
-
-
-
                         @*<div class="widget widget_adds clearfix">
-                            <div class="widget-title-area">
-                                <h4 class="widget-title">Ad Unit</h4>
-                            </div><!-- /.widget-title-area -->
-                            <div class="add-image">
-                                <a href="#"><img src="assets/images/blog-ad.png" alt="blog-add" /></a>
-                            </div><!-- /.unit -->
+                        <div class="widget-title-area">
+                        <h4 class="widget-title">Ad Unit</h4>
+                        </div><!-- /.widget-title-area -->
+                        <div class="add-image">
+                        <a href="#"><img src="assets/images/blog-ad.png" alt="blog-add" /></a>
+                        </div><!-- /.unit -->
                         </div><!-- /.widget_ads -->*@
-                     </div>
+                    </div>
 
-                    </div><!-- /.blog-content-right -->
-                </div><!-- /.col-md-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.blog-area -->
+                </div><!-- /.blog-content-right -->
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.blog-area -->
