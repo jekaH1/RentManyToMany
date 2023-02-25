@@ -61,14 +61,16 @@ namespace HouseRent.Controllers
             if (blogPosts == null) { return NotFound(); }
             blogPostVM.BlogPostComment.BlogPostId = blogPosts.Id;
             blogPostVM.BlogPost = blogPosts;
+            blogPostVM.BlogPost.Id = blogPosts.Id;
+            
             BlogPostViewModel blogPostViewModel = new BlogPostViewModel
             {
-                //BlogPost = blogPosts,
-                BlogPostComment = blogPostVM.BlogPostComment
+                BlogPostComment = blogPostVM.BlogPostComment,
+                BlogPost= blogPostVM.BlogPost,
             };
 
             BlogPostComment needed = blogPostVM.BlogPostComment;
-            //if (!ModelState.IsValid) { return View(blogPostVM); }
+            if (!ModelState.IsValid) { return View(blogPostVM); }
             if (blogPostVM.BlogPostComment.UserCommetMail is null)
             {
                 ModelState.AddModelError("UserCommetMail", "Required");

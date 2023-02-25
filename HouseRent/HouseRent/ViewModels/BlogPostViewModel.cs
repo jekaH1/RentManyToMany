@@ -5,7 +5,7 @@ namespace HouseRent.ViewModels
 {
     public class BlogPostViewModel
     {
-        public BlogPosts BlogPost { get; set; } 
-        public BlogPostComment BlogPostComment { get; set; }
+        public BlogPosts? BlogPost { get; set; } 
+        public BlogPostComment? BlogPostComment { get; set; }
     }
 }
