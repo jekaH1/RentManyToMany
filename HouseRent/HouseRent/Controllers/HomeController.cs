@@ -176,11 +176,7 @@ namespace HouseRent.Controllers
                 ModelState.AddModelError("StartRentDate", "Reservation allowed from 1 up to 30 days");
                 return View(orderVM);
             }
-            //if (orderVM.StartRentDate.DayOfYear < (DateTime.Now.DayOfYear+90))
-            //{
-            //    ModelState.AddModelError("StartRentDate", "Sorry,You can not rent house more than 3 months before");
-            //    return View(orderVM);
-            //}
+           
             Order order = null;
             order = new Order
             {
@@ -254,17 +250,29 @@ namespace HouseRent.Controllers
             ViewBag.Days = days;
             ViewBag.Month = month;
             if (!ModelState.IsValid) { return View(checkOutViewModel); }
-            
+
             //if (checkOutViewModel.CardNum.Value != 14)
             //{
             //    ModelState.AddModelError("CardNum", "14 digits required");
             //    return View(checkOutViewModel);
             //}
-            //if(checkOutViewModel.CVV.Value != 3)
-            //{
-            //    ModelState.AddModelError("CVV", "3 digits required");
-            //    return View(checkOutViewModel);
-            //}
+            for (int i = 0; i < checkOutViewModel.CVV; i++)
+            {
+                if (i != 3)
+                {
+                    ModelState.AddModelError("CVV", "3 digits required");
+                    return View(checkOutViewModel);
+                }
+            }
+            for (ulong i = 0; i < checkOutViewModel.CardNum; i++)
+            {
+                if(i!= 14)
+                {
+                    ModelState.AddModelError("CardNum", "14 digits required");
+                    return View(checkOutViewModel);
+                }
+            }
+            
             order = new Order
             {
                 EndRentDate = checkOutViewModel.Order.EndRentDate,
