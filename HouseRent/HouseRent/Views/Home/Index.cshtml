@@ -56,7 +56,7 @@
 
                             <!-- /.item -->
                         }
-                  
+
                     </div><!-- /.category-slider -->
                 </div><!-- /.category-menu-content -->
             </div> <!-- category-menu -->
@@ -184,40 +184,40 @@
             </div><!-- /.col-md-12 -->
         </div><!-- /.row -->
         <div class="row">
-           @* @foreach (var item in Model.Apartments)
+            @* @foreach (var item in Model.Apartments)
             {
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="apartments-content">
-                        <div class="image-content">
-                            <a asp-action="detail" asp-controller="home" asp-route-id="@item.Id"><img src="~/uploads/apartments/@item.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" /></a>
-                        </div><!-- /.image-content -->
+            <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="apartments-content">
+            <div class="image-content">
+            <a asp-action="detail" asp-controller="home" asp-route-id="@item.Id"><img src="~/uploads/apartments/@item.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" /></a>
+            </div><!-- /.image-content -->
 
-                        <div class="text-content">
-                            <div class="top-content">
-                                <h3><a href="apartment-single.html">@item.ApartmentCategory.AppartmentCategoryName</a></h3>
-                                <span>
-                                    <i class="fa fa-map-marker"></i>
-                                    @item.Country, @item.City
-                                </span>
-                            </div><!-- /.top-content -->
-                            <div class="bottom-content clearfix">
-                                <div class="meta-bed-room">
-                                    <i class="fa fa-bed"></i> @item.BedRoomCount Bedrooms
-                                </div>
-                                <div class="meta-bath-room">
-                                    <i class="fa fa-bath"></i>@item.BathCount Bathroom
-                                </div>
-                                <span class="clearfix"></span>
-                                <div class="d-flex justify-content-between rent-price" >
-                                    $@item.Rentprice
-                                    <span class="view" style="margin-left:200px;"><i class="fa fa-eye"></i>@item.TotalViewCount</span>
-                                </div>
-                            </div><!-- /.bottom-content -->
-                        </div><!-- /.text-content -->
-                    </div><!-- /.partments-content -->
-                </div>
+            <div class="text-content">
+            <div class="top-content">
+            <h3><a href="apartment-single.html">@item.ApartmentCategory.AppartmentCategoryName</a></h3>
+            <span>
+            <i class="fa fa-map-marker"></i>
+            @item.Country, @item.City
+            </span>
+            </div><!-- /.top-content -->
+            <div class="bottom-content clearfix">
+            <div class="meta-bed-room">
+            <i class="fa fa-bed"></i> @item.BedRoomCount Bedrooms
+            </div>
+            <div class="meta-bath-room">
+            <i class="fa fa-bath"></i>@item.BathCount Bathroom
+            </div>
+            <span class="clearfix"></span>
+            <div class="d-flex justify-content-between rent-price" >
+            $@item.Rentprice
+            <span class="view" style="margin-left:200px;"><i class="fa fa-eye"></i>@item.TotalViewCount</span>
+            </div>
+            </div><!-- /.bottom-content -->
+            </div><!-- /.text-content -->
+            </div><!-- /.partments-content -->
+            </div>
 
-                <!-- /.col-md-4 -->
+            <!-- /.col-md-4 -->
             }*@
             @await Component.InvokeAsync("Apartment")
 
@@ -264,38 +264,44 @@
                 <div class="col-md-7">
                     <div class="gallery-left-content">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="~/assets/images/gallery/gallery-one.png">
-                                    <img src="~/assets/images/gallery/gallery-one.png" alt="gallery" />
-                                </a>
-                            </div><!-- /.col-md-4 -->
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="~/assets/images/gallery/gallery-two.png">
-                                    <img src="~/assets/images/gallery/gallery-two.png" alt="gallery" />
-                                </a>
-                            </div><!-- /.col-md-4 -->
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="~/assets/images/gallery/gallery-three.png">
-                                    <img src="~/assets/images/gallery/gallery-three.png" alt="gallery" />
-                                </a>
-                            </div><!-- /.col-md-4 -->
-                            <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="~/assets/images/gallery/gallery-four.png">
-                                    <img src="~/assets/images/gallery/gallery-four.png" alt="gallery" />
-                                </a>
+                            @foreach (var item in Model.GalleryImages)
+                            {
+
+                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                    <a class="image-pop-up" href="~/uploads/gallery/@item.Img">
+                                        <img src="~/uploads/gallery/@item.Img" alt="gallery" />
+                                    </a>
+                                </div>
+
+                                
+                            }
+                            @*<div class="col-md-4 col-sm-6 col-xs-6">
+                            <a class="image-pop-up" href="~/assets/images/gallery/gallery-two.png">
+                            <img src="~/assets/images/gallery/gallery-two.png" alt="gallery" />
+                            </a>
                             </div><!-- /.col-md-4 -->
                             <div class="clearfix visible-xs-block"></div>
                             <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="~/assets/images/gallery/gallery-five.png">
-                                    <img src="~/assets/images/gallery/gallery-five.png" alt="gallery" />
-                                </a>
+                            <a class="image-pop-up" href="~/assets/images/gallery/gallery-three.png">
+                            <img src="~/assets/images/gallery/gallery-three.png" alt="gallery" />
+                            </a>
                             </div><!-- /.col-md-4 -->
                             <div class="col-md-4 col-sm-6 col-xs-6">
-                                <a class="image-pop-up" href="#">
-                                    <img src="~/assets/images/gallery/gallery-six.png" alt="gallery" />
-                                </a>
+                            <a class="image-pop-up" href="~/assets/images/gallery/gallery-four.png">
+                            <img src="~/assets/images/gallery/gallery-four.png" alt="gallery" />
+                            </a>
                             </div><!-- /.col-md-4 -->
+                            <div class="clearfix visible-xs-block"></div>
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                            <a class="image-pop-up" href="~/assets/images/gallery/gallery-five.png">
+                            <img src="~/assets/images/gallery/gallery-five.png" alt="gallery" />
+                            </a>
+                            </div><!-- /.col-md-4 -->
+                            <div class="col-md-4 col-sm-6 col-xs-6">
+                            <a class="image-pop-up" href="#">
+                            <img src="~/assets/images/gallery/gallery-six.png" alt="gallery" />
+                            </a>
+                            </div><!-- /.col-md-4 -->*@
                         </div><!-- /.row -->
                     </div><!-- /.left-content -->
                 </div><!-- /.col-md-7 -->
@@ -304,7 +310,7 @@
                         <h2>Our<br /> Photo Gallery</h2>
                         <h3>Best of our <br />Event portfolio Photos</h3>
                         <p>Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam. Morbi mollis pellen tesque offs aiug ueia nec rhoncus. Nam ute ultricies.</p>
-                        <a href="gallery.html" class="button nevy-button">All Photos &amp; Video</a>
+                        <a asp-action="index" asp-controller="gallery" class="button nevy-button">All Photos </a>
                     </div><!-- /.right-content -->
                 </div><!-- /.col-md-5 -->
             </div><!-- /.row -->
@@ -559,38 +565,40 @@
         <div class="row">
             @foreach (var item in Model.BlogPosts)
             {
-                
-            <div class="col-md-4 col-sm-6 col-xs-6">
-                <article class="post">
-                    <figure class="post-thumb">
-                        <a asp-action="blogpostdetail" asp-controller="home" asp-route-id="@item.Id">
-                            <img src="~/uploads/blogposts/@item.Img" alt="blog" />
-                        </a>
-                    </figure><!-- /.post-thumb -->
-                    <div class="post-content">
-                        <div class="entry-meta">
-                            <span class="entry-date">
-                                @item.BlogPostDate.ToString("dd,MMMM yyyy")
-                            </span>
-                            <span class="devied"></span>
-                            <span class="entry-category">
+
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <article class="post">
+                        <figure class="post-thumb">
+                            <a asp-action="blogpostdetail" asp-controller="home" asp-route-id="@item.Id">
+                                <img src="~/uploads/blogposts/@item.Img" alt="blog" />
+                            </a>
+                        </figure><!-- /.post-thumb -->
+                        <div class="post-content">
+                            <div class="entry-meta">
+                                <span class="entry-date">
+                                    @item.BlogPostDate.ToString("dd,MMMM yyyy")
+                                </span>
+                                <span class="devied"></span>
+                                <span class="entry-category">
                                     <a asp-action="blogpostdetail" asp-controller="home" asp-route-id="@item.Id">@item.Category</a>
-                            </span> 
-                        </div><!-- /.entry-header -->
-                        <div class="entry-header">
+                                </span>
+                            </div><!-- /.entry-header -->
+                            <div class="entry-header">
                                 <h3><a asp-action="blogpostdetail" asp-controller="home" asp-route-id="@item.Id">@item.Title</a></h3>
-                        </div><!-- /.entry-header -->
-                        <div class="entry-footer">
-                            <div class="entry-footer-meta">
-                                <span class="view"><i class="fa fa-eye"></i>@item.TotalViewCount</span>
+                            </div><!-- /.entry-header -->
+                            <div class="entry-footer">
+                                <div class="entry-footer-meta">
+                                    <span class="view"><i class="fa fa-eye"></i>@item.TotalViewCount</span>
                                     <span class="comments"><a href="#"><i class="fa fa-comments"></i>@(item.BlogPostComments.Count())</a></span>
-                            </div><!-- /.entry-footer-meta -->
-                        </div><!-- /.entry-footer -->
-                    </div><!-- /.post-content -->
-                </article><!-- /.post -->
-            </div><!-- /.col-md-4 -->
+                                </div><!-- /.entry-footer-meta -->
+                            </div><!-- /.entry-footer -->
+                        </div><!-- /.post-content -->
+                    </article><!-- /.post -->
+                </div>
+
+                <!-- /.col-md-4 -->
             }
-         
+
         </div><!-- /.row -->
         <a asp-action="index" asp-controller="blog" class="button">show all</a>
     </div><!-- /.container -->

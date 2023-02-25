@@ -1,0 +1,87 @@
+﻿@using HouseRent.Helper;
+@model PaginatedList<GalleryImages>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+
+
+<!-- ====== Breadcrumbs Area======= -->
+<div class="breadcrumbs-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <span class="first-item">
+                        <a asp-action="index" asp-controller="home">Home</a>
+                    </span>
+                    <span class="separator">&gt;</span>
+                    <span class="last-item">Gallery</span>
+                </div>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.breadcrumbs-area -->
+<!-- ====== Photo Gallery Area ====== -->
+<div class="photo-gallery-area">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="heading-content-two text-center">
+                <h2 class="title default-text-gradient">Photo Gallery</h2>
+            </div><!-- /.photo-heading-content -->
+        </div><!-- /.col-md-12 -->
+        <div class="row" >
+          
+            @foreach (var item in Model)
+            {
+
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <div class="gallery-image-content">
+                        <img src="~/uploads/gallery/@item.Img" alt="blog" />
+                        <div class="overlay-background gradient-transparent">
+                            <a href="~/uploads/gallery/@item.Img" class="image-pop-up">
+                                <span><i class="fa fa-picture-o"></i>Apartment</span>
+                            </a><!-- /.hover-content -->
+                        </div><!-- /.hover-content -->
+                    </div><!-- /.image-content -->
+                </div>
+
+                <!-- /.col-md-3 -->
+            }
+            @*<div class="clearfix"></div>*@
+
+
+
+
+        </div><!-- /.row -->
+        <div class="d-flex justify-content-center">
+
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pagination-link">
+                            <ul class="pagination">
+                                @if (Model.HasPrevious)
+                                {
+                                    <li><a asp-route-page="@(Model.ActivePage-1)"><i class="fa fa-angle-left"></i></a></li>
+
+                                }
+                                @for (int i = 1; i <= Model.TotalPageCount; i++)
+                                {
+                                    <li class="@((Model.ActivePage==i)? "active" : "")"><a asp-route-page="@i">@i</a></li>
+                                }
+                                @if (Model.HasNext)
+                                {
+                                    <li><a asp-route-page="@(Model.ActivePage+1)"><i class="fa fa-angle-right"></i></a></li>
+                                }
+                            </ul>
+                        </div><!-- /.pagination -->
+                    </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+            </form>
+        </div>
+    </div><!-- /.container -->
+</div><!-- /.photo-gallery-area-->

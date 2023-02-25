@@ -27,5 +27,6 @@ namespace HouseRent.Context
 
         public DbSet<toDoList> ToDoListOrders { get; set; } 
         public DbSet<AdminMessage> AdminMessages { get; set; }
+        public DbSet<GalleryImages> GalleryImages { get; set; } 
     }
 }

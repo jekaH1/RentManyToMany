@@ -1,0 +1,38 @@
+﻿@model GalleryImages
+@{
+    ViewData["Title"] = "Update";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-sm-12 @*col-xl-6*@">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Create Gallary Image</h6>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Href" class="form-control" id="floatingInput" placeholder="Href">
+                        <label for="floatingInput">Url</label>
+                        <span class="text-danger" asp-validation-for="Href"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Image" class="form-label">Images</label>
+                        <input class="form-control bg-dark" asp-for="Image" id="formFile">
+                        <span class="text-danger" asp-validation-for="Image"></span>
+                    </div>
+                     <div class="d-flex justify-content-center">
+                        <h1> Previous Photo</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div style="max-width:200px;">
+                            <img src="~/uploads/gallery/@Model.Img" style="max-width:100%;">
+                        </div>
+                    </div>
+                    <div class="py-5 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

@@ -32,7 +32,8 @@ namespace HouseRent.Controllers
                 BlogPosts = _appDbContext.BlogPosts.Include(x => x.BlogPostComments).Take(3).ToList(),
                 Orders = _appDbContext.Orders.ToList(),
                 appUsers = _appDbContext.Users.ToList(),
-                Categories = _appDbContext.ApartmentCategories.ToList()
+                Categories = _appDbContext.ApartmentCategories.ToList(),
+                GalleryImages=_appDbContext.GalleryImages.Take(6).ToList()
             };
             return View(homeVM);
         }

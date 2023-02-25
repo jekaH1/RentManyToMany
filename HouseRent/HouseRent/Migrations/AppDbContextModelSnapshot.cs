@@ -370,6 +370,26 @@ namespace HouseRent.Migrations
                     b.ToTable("Features");
                 });
 
+            modelBuilder.Entity("HouseRent.Models.GalleryImages", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Href")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Img")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("GalleryImages");
+                });
+
             modelBuilder.Entity("HouseRent.Models.Order", b =>
                 {
                     b.Property<int>("Id")
