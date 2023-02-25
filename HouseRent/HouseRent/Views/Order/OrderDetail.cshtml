@@ -1,0 +1,53 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "OrderDetail";
+}
+
+<div class="container d-flex" style="align-content:center; justify-content:center;">
+    <h1> Your Reservations</h1>
+</div>
+
+    <div class="container d-flex justify-content-around" style="">
+        <div class="card text-secondary bg-white-smoke mb-3 border-2" style="border:solid; border-color:gray;">
+            <div class="card-header d-flex justify-content-between">
+                <div class="container d-flex">
+                    <div style="width:25%;">
+                        <p1>Order Date</p1><br>
+                        <p1>@Model.OrderDay.Value.ToString("yyyy,MMMM dd")</p1>
+                    </div>
+                    <div style="width:25%;">
+                        <p1>Fullname</p1><br>
+                        <p1>@Model.Fullname</p1>
+                    </div>
+                    <div style="width:25%;">
+                        <p1 style="text-decoration-style:wavy;">Price</p1><br>
+                        <p1>
+                            @Model.TotalPrice$ (@Model.OneDayPrice$ x
+                        @(@Model.EndRentDate.Day - @Model.StartRentDate.Day) Days)
+                        </p1>
+                    </div>
+                    <div style="width:25%;">
+                    <a asp-action="orderdetail" asp-controller="order" asp-route-id="@Model.Id" class="btn btn-success" style="border-radius:8px;">Order Details</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body">
+                <div class="container d-flex">
+                    <div class="container d-flex justify-content-around" style="align-content:flex-start;">
+                        <div class="d-flex" style="justify-content:center; align-content:center; flex-direction:column; text-align:center; margin-right:120px;">
+                            <h5>OrderStatus</h5>
+                        <p>@Model.OrderStatus</p>
+                        </div>
+                        <div class="col-md-10" style="max-width:200px;">
+                        <a asp-action="detail" asp-controller="home" asp-route-id="@Model.ApartmentId"><img src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true)?.Img" style="max-width:100%;"></a>
+                        </div>
+                    </div>
+                </div>
+                @*<h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>*@
+            </div>
+        </div>
+    </div>
+
+

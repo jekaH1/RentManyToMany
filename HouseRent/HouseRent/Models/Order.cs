@@ -49,7 +49,7 @@ namespace HouseRent.Models
         public ulong? CardNum { get; set; }
         public byte? CardMonth { get; set; }
         public byte? CardYear { get; set; }
-        public byte? CVV { get; set; }
+        public int? CVV { get; set; }
         public string? NameOncard { get; set; }
     }
 }

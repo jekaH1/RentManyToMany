@@ -1,0 +1,74 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Detail";
+    
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Orders</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col" style="max-width:100px;">User Fullname</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone </th>
+                                <th scope="col">Family Members</th>
+                                <th scope="col">Child Count</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">@Model.AppUserId?</th>
+                                <td style="max-width:100px;">@Model.Fullname</td>
+                                <td>@Model.eMail</td>
+                                <td>@Model.PhoneNumber</td>
+                                <td>@Model.FamilyMemberCount</td>
+                                <td>@Model.ChildCount</td>
+                            </tr>
+                        </thead>
+                       
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order Day</th>
+                                <th scope="col">Start</th>
+                                <th scope="col" style="max-width:100px;">End</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">One day price</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">@Model.OrderDay.Value.ToString("d")</th>
+                                <td>@Model.StartRentDate.ToString("d")</td>
+                                <td style="max-width:100px;">@Model.EndRentDate.ToString("d")</td>
+                                <td>@Model.Apartment.ApartmentCategory.AppartmentCategoryName</td>
+                                <td>@Model.OneDayPrice$</td>
+                                <td>@Model.TotalPrice$</td>
+                                <td>
+                                    <div style="max-width:200px;">
+                                        <img style="max-width:100%;" src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" />
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="btn btn-outline-info" asp-action="Accept" asp-controller="AdminOrder" asp-route-id="@Model.Id">Acceept</a>
+                                    <a class="btn btn-outline-danger" asp-action="Reject" asp-controller="AdminOrder" asp-route-id="@Model.Id">Reject</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

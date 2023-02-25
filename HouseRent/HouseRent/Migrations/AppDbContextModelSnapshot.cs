@@ -268,17 +268,14 @@ namespace HouseRent.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UserCommentMessage")
-                        .IsRequired()
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");
 
                     b.Property<string>("UserCommetMail")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("UserFullName")
-                        .IsRequired()
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
@@ -404,8 +401,8 @@ namespace HouseRent.Migrations
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<byte?>("CVV")
-                        .HasColumnType("tinyint");
+                    b.Property<int?>("CVV")
+                        .HasColumnType("int");
 
                     b.Property<byte?>("CardMonth")
                         .HasColumnType("tinyint");

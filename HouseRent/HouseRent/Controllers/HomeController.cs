@@ -33,7 +33,7 @@ namespace HouseRent.Controllers
                 Orders = _appDbContext.Orders.ToList(),
                 appUsers = _appDbContext.Users.ToList(),
                 Categories = _appDbContext.ApartmentCategories.ToList(),
-                GalleryImages=_appDbContext.GalleryImages.Take(6).ToList()
+                GalleryImages = _appDbContext.GalleryImages.Take(6).ToList()
             };
             return View(homeVM);
         }
@@ -62,11 +62,11 @@ namespace HouseRent.Controllers
             blogPostVM.BlogPostComment.BlogPostId = blogPosts.Id;
             blogPostVM.BlogPost = blogPosts;
             blogPostVM.BlogPost.Id = blogPosts.Id;
-            
+
             BlogPostViewModel blogPostViewModel = new BlogPostViewModel
             {
                 BlogPostComment = blogPostVM.BlogPostComment,
-                BlogPost= blogPostVM.BlogPost,
+                BlogPost = blogPostVM.BlogPost,
             };
 
             BlogPostComment needed = blogPostVM.BlogPostComment;
@@ -113,17 +113,17 @@ namespace HouseRent.Controllers
         {
             Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
             orderVM.Apartment = apartment;
-            orderVM.Apartment.City= apartment.City;
-            orderVM.Apartment.Total=apartment.Total;
+            orderVM.Apartment.City = apartment.City;
+            orderVM.Apartment.Total = apartment.Total;
             orderVM.Apartment.Country = apartment.Country;
-            orderVM.Apartment.Facilities= apartment.Facilities;
-            orderVM.Apartment.RoomCategory= apartment.RoomCategory;
-            orderVM.Apartment.FloorCount= apartment.FloorCount;
-            orderVM.Apartment.AdressAndArea= apartment.AdressAndArea;
+            orderVM.Apartment.Facilities = apartment.Facilities;
+            orderVM.Apartment.RoomCategory = apartment.RoomCategory;
+            orderVM.Apartment.FloorCount = apartment.FloorCount;
+            orderVM.Apartment.AdressAndArea = apartment.AdressAndArea;
             orderVM.Fetures = _appDbContext.Features.ToList();
             orderVM.apartmentFeatures = _appDbContext.ApartmentFeatures.ToList();
             orderVM.IsCancelled = false;
-            orderVM.Apartment.Id=apartment.Id;
+            orderVM.Apartment.Id = apartment.Id;
             if (!ModelState.IsValid) { return View(orderVM); }
             int Startdate = orderVM.StartRentDate.DayOfYear;
             int Enddate = orderVM.EndRentDate.DayOfYear;
@@ -176,7 +176,7 @@ namespace HouseRent.Controllers
                 ModelState.AddModelError("StartRentDate", "Reservation allowed from 1 up to 30 days");
                 return View(orderVM);
             }
-           
+
             Order order = null;
             order = new Order
             {
@@ -249,30 +249,19 @@ namespace HouseRent.Controllers
             }
             ViewBag.Days = days;
             ViewBag.Month = month;
+            if (checkOutViewModel.CVV.Value < 100 || checkOutViewModel.CVV.Value > 999)
+            {
+                ModelState.AddModelError("CVV", "3 digits required");
+                return View(checkOutViewModel);
+            }
+            if (checkOutViewModel.CardNum.Value < 10000000000000 || checkOutViewModel.CVV.Value > 99999999999999)
+            {
+                ModelState.AddModelError("CardNum", "14 digits required");
+                return View(checkOutViewModel);
+            }
+
             if (!ModelState.IsValid) { return View(checkOutViewModel); }
 
-            //if (checkOutViewModel.CardNum.Value != 14)
-            //{
-            //    ModelState.AddModelError("CardNum", "14 digits required");
-            //    return View(checkOutViewModel);
-            //}
-            for (int i = 0; i < checkOutViewModel.CVV; i++)
-            {
-                if (i != 3)
-                {
-                    ModelState.AddModelError("CVV", "3 digits required");
-                    return View(checkOutViewModel);
-                }
-            }
-            for (ulong i = 0; i < checkOutViewModel.CardNum; i++)
-            {
-                if(i!= 14)
-                {
-                    ModelState.AddModelError("CardNum", "14 digits required");
-                    return View(checkOutViewModel);
-                }
-            }
-            
             order = new Order
             {
                 EndRentDate = checkOutViewModel.Order.EndRentDate,
@@ -297,7 +286,7 @@ namespace HouseRent.Controllers
             };
             _appDbContext.Add(order);
             _appDbContext.SaveChanges();
-            return RedirectToAction("home", "index");
+            return RedirectToAction("Detail");
         }
 
         public IActionResult AllBlogs()
@@ -308,7 +297,7 @@ namespace HouseRent.Controllers
         [HttpGet]
         public async Task<IActionResult> AllApartments(AllApartmentsViewModel model, string filter, DateTime? dateTimeAsent = null, DateTime? dateTimeDesent = null,
                                                         int? AsentPrice = 0, int? desent = 0, int? popularity = 0,
-                                                        string? Warehouse = null, string? family = null, string? office = null, string? FemaleMess = null,int page=1)
+                                                        string? Warehouse = null, string? family = null, string? office = null, string? FemaleMess = null, int page = 1)
         {
             var apartments = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).OrderByDescending(x => x.TotalViewCount).AsQueryable();
             var query = apartments;
@@ -350,7 +339,7 @@ namespace HouseRent.Controllers
             ViewBag.filters = filter;
             model = new AllApartmentsViewModel
             {
-                Apartments = PaginatedList<Apartment>.Create(query,6,page),
+                Apartments = PaginatedList<Apartment>.Create(query, 6, page),
             };
             return View(model);
         }

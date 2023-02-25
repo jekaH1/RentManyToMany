@@ -1,0 +1,86 @@
+﻿@model PaginatedList<Order>
+@{
+    ViewData["Title"] = "Index";
+    int counter = 0;
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Orders</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Id</th>
+                                <th scope="col" style="max-width:100px;">User Fullname</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">One day price</th>
+                                <th scope="col">Order Date</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Image</th>
+                                <th scope="col">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                counter++;
+                                <tr>
+                                    <th scope="row">@counter</th>
+                                    <td>@item.Id</td>
+                                    <td style="max-width:100px;">@item.Fullname</td>
+                                    <td>@item.Apartment.ApartmentCategory.AppartmentCategoryName</td>
+                                    <td>@item.OneDayPrice$</td>
+                                    <td>@item.OrderDay</td>
+                                    <td>@item.TotalPrice$</td>
+                                    <td>
+                                        <div style="max-width:200px;">
+                                            <img style="max-width:100%;" src="~/uploads/apartments/@item.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-outline-info" asp-action="detail" asp-controller="AdminOrder" asp-route-id="@item.Id">Detail</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center my-3">
+    <form>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                @if (Model.HasPrevious)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-route-page="@(Model.ActivePage-1)" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                }
+                @for (int i = 1; i <= Model.TotalPageCount; i++)
+                {
+                    <li class="page-item @((Model.ActivePage==i)? "active" : "")"><a class="page-link  " asp-route-page="@i">@i</a></li>
+                }
+                @if (Model.HasNext)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-route-page="@((Model.ActivePage+1))" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </form>
+</div>
+

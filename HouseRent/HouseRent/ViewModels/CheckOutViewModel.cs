@@ -13,7 +13,7 @@ namespace HouseRent.ViewModels
         public ulong? CardNum { get; set; }
         public byte? CardMonth { get; set; }
         public byte? CardYear { get; set;}
-        public byte? CVV { get; set;}
+        public int? CVV { get; set;}
         //[DataType(DataType.Text)]k
         public string? NameOncard { get; set; }
     }

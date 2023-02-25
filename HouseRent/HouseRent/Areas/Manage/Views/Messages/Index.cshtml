@@ -33,6 +33,7 @@
                                         <td>@item.Message</td>
                                         <td>
                                         <a class="btn btn-outline-info" href="https://www.gmail.com">Reply</a>
+                                        <a class="btn btn-outline-danger" asp-action="Delete" asp-controller="Messages" asp-route-id="@item.Id">Delete</a>
                                         </td>
                                     </tr>
                             }

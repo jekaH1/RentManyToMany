@@ -15,7 +15,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Key</th>
-                                <th scope="col">Value</th>
+                                <th scope="col" style="max-width:10%;">Value</th>
                                 <th scope="col">
                                     Actions
                                 </th>
@@ -28,7 +28,7 @@
                                 <tr>
                                     <th scope="row">@counter</th>
                                     <td>@item.Key</td>
-                                    <td>@item.Value</td>
+                                    <td style="max-width:10%;">@item.Value</td>
                                     <td>
                                         <a class="btn btn-outline-info" asp-action="update" asp-controller="settings" asp-route-id="@item.Id">Update</a>
                                     </td>

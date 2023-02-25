@@ -21,6 +21,14 @@ namespace HouseRent.Areas.Manage.Controllers
             PaginatedList<AdminMessage> messages = PaginatedList<AdminMessage>.Create(query, 10, page);
             return View(messages);
         }
+        public IActionResult Delete(int id)
+        {
+            AdminMessage message=_appDbContext.AdminMessages.FirstOrDefault(x => x.Id == id);
+            if (message == null) { return NotFound(); }
+            _appDbContext.Remove(message);
+            _appDbContext.SaveChanges();
+            return RedirectToAction("index");
+        }
     }
 }
  

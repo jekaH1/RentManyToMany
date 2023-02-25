@@ -10,7 +10,6 @@
 @foreach (var item in Model)
 {
     <div class="container d-flex justify-content-around" style="">
-
         <div class="card text-secondary bg-white-smoke mb-3 border-2" style="border:solid; border-color:gray;">
             <div class="card-header d-flex justify-content-between">
                 <div class="container d-flex">
@@ -30,7 +29,7 @@
                         </p1>
                     </div>
                     <div style="width:25%;">
-                        <a asp-action="orderdetail" asp-controller="order" asp-route-id="@item.Id" class="btn btn-success" style="border-radius:8px;">Order Details</a>
+                        <a asp-action="OrderDetail" asp-controller="order" asp-route-id="@item.Id"  class="btn btn-success" style="border-radius:8px;">Order Details</a>
                     </div>
                 </div>
 
@@ -51,8 +50,6 @@
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>*@
             </div>
         </div>
-
-
     </div>
 }
 
