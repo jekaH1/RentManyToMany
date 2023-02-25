@@ -17,9 +17,10 @@ namespace HouseRent.Areas.Manage.Controllers
             _appDbContext = appDbContext;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            List<GalleryImages> images = _appDbContext.GalleryImages.ToList();
+            var query = _appDbContext.GalleryImages.AsQueryable();
+            List<GalleryImages> images=PaginatedList<GalleryImages>.Create(query, 4, page);
             return View(images);
         }
         public IActionResult Create()

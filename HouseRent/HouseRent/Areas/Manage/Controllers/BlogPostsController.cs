@@ -24,9 +24,10 @@ namespace HouseRent.Areas.Manage.Controllers
             _appDbContext = appDbContext;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            List<BlogPosts> posts = _appDbContext.BlogPosts.ToList(); 
+            var query= _appDbContext.BlogPosts.AsQueryable();
+            PaginatedList<BlogPosts> posts = PaginatedList<BlogPosts>.Create(query, 5, page);
             return View(posts);
         }
         public IActionResult CommentIndex(int id)

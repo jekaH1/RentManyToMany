@@ -31,6 +31,7 @@ namespace HouseRent.Areas.Manage.Controllers
                 Orders = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).OrderByDescending(x=>x.OrderDay).Where(x=>x.OrderStatus ==0).ToList(),
                 ToDoLists=_appDbContext.ToDoListOrders.OrderByDescending(x=>x.todiListDate).Take(4).ToList(),
                 AdminMessages=_appDbContext.AdminMessages.OrderByDescending(x=>x.MessageDate).Take(4).ToList(), 
+                Orders5= _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).OrderByDescending(x => x.OrderDay).Where(x => x.OrderStatus == 0).Take(5).ToList()
             };
 
             return View(dashboardViewModel);

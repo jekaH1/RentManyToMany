@@ -5,7 +5,7 @@
     List<Order> thisMonth = Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).ToList();
     int price = 0;
     int priceNotExp = 0;
-    if (Model.Orders.Count >1 )
+    if (Model.Orders.Count >=1 )
     {
         Order mostExp = Model.Orders.OrderByDescending(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).First();
         Order mostNotexp = Model.Orders.OrderBy(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).First();
@@ -88,7 +88,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.Orders)
+                    @foreach (var item in Model.Orders5)
                     {
                         <tr>
                             <td><input class="form-check-input" type="checkbox"></td>
@@ -115,7 +115,7 @@
             <div class="h-100 bg-secondary rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-2">
                     <h6 class="mb-0">Messages</h6>
-                    <a href="">Show All</a>
+                    <a asp-action="index" asp-controller="messages">Show All</a>
                 </div>
                 @foreach (var item in Model.AdminMessages)
                 {
@@ -173,28 +173,13 @@
                                 }
                                 else
                                 {
-                                    @(item.Message
-                                        )
-                                    ;
+                                    @(item.Message);
                                 }
                             </span>
                         </div>
                     </div>
 
                 }
-
-
-
-                @*  <div class="d-flex align-items-center pt-3">
-                <img class="rounded-circle flex-shrink-0" src="~/manage/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                <div class="w-100 ms-3">
-                <div class="d-flex w-100 justify-content-between">
-                <h6 class="mb-0">Jhon Doe</h6>
-                <small>15 minutes ago</small>
-                </div>
-                <span>Short message goes here...</span>
-                </div>
-                </div>*@
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-xl-4">

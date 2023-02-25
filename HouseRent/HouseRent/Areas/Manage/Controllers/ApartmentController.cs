@@ -19,9 +19,10 @@ namespace HouseRent.Areas.Manage.Controllers
             _appDbContext = appDbContext;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            List<Apartment> apartments = _appDbContext.Apartments.Include(x => x.ApartmentCategory).Include(x => x.ApartmentImages).ToList();
+            var query= _appDbContext.Apartments.Include(x => x.ApartmentCategory).Include(x => x.ApartmentImages).AsQueryable();
+            PaginatedList<Apartment> apartments=PaginatedList<Apartment>.Create(query, 4, page);
             return View(apartments);
         }
 

@@ -1,4 +1,5 @@
 ﻿using HouseRent.Context;
+using HouseRent.Helper;
 using HouseRent.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +14,10 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             _appDbContext = appDbContext;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            List<Feature> features = _appDbContext.Features.ToList();
+            var query= _appDbContext.Features.AsQueryable();
+            PaginatedList<Feature> features = PaginatedList<Feature>.Create(query, 10, page);
             return View(features);
         }
         [HttpGet]

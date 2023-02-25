@@ -8,5 +8,7 @@ namespace HouseRent.ViewModels
         public toDoList ToDoList { get; set; }
         public List<toDoList> ToDoLists { get; set; }
         public List<AdminMessage> AdminMessages { get; set; }
+
+        public List<Order> Orders5 { get; set; }    
     }
 }
