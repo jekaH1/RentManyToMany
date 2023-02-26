@@ -19,7 +19,7 @@
                                 <th scope="col">Category</th>
                                 <th scope="col">Quote</th>
                                 <th scope="col">Image</th>
-                                <th scope="col">
+                                <th scope="col" style="width:130px;">
                                     Actions
                                     <a class="btn btn-info" asp-action="create" asp-controller="blogposts">Create</a>
                                 </th>
@@ -40,9 +40,9 @@
                                             <img style="width:100%;" src="~/uploads/blogposts/@item.Img">
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="d-flex flex-column justify-content-center" style="width:130px;">
                                         <a class="btn btn-outline-info" asp-action="update" asp-controller="blogposts" asp-route-id="@item.Id">Update</a>
-                                        <a class="btn btn-danger" asp-action="delete" asp-controller="blogposts" asp-route-id="@item.Id">Delete</a>
+                                        <a class="btn btn-danger my-2" asp-action="delete" asp-controller="blogposts" asp-route-id="@item.Id">Delete</a>
                                         <a class="btn btn-outline-warning" asp-action="CommentIndex" asp-controller="blogposts" asp-route-id="@item.Id">Comments</a>
                                     </td>
                                 </tr>

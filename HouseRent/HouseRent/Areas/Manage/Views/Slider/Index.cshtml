@@ -16,9 +16,10 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Title-1</th>
                                 <th scope="col">Title-2</th>
-                                <th scope="col">Despcription</th>
+                                <th scope="col" style="width:500px;">Despcription</th>
                                 <th scope="col">Image</th>
-                                <th scope="col">Actions
+                                <th scope="col" style="width:125px;">
+                                    Actions
                                     <a class="btn btn-info" asp-action="create" asp-controller="slider">Create</a>
                                 </th>
                             </tr>
@@ -31,15 +32,15 @@
                                     <th scope="row">@counter</th>
                                     <td>@item.Title1</td>
                                     <td>@item.Title2</td>
-                                    <td>@item.Description</td>
+                                    <td style="width:500px;">@item.Description</td>
                                     <td>
                                         <div style="max-width:200px;">      
                                             <img style="width:100%;" src="~/uploads/sliders/@item.Img">
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="d-flex flex-column justify-content-center" style="width:125px;">
                                         <a class="btn btn-outline-info" asp-action="update" asp-controller="slider" asp-route-id="@item.Id">Update</a>
-                                        <a class="btn btn-danger" asp-action="delete" asp-controller="slider" asp-route-id="@item.Id">Delete</a>
+                                        <a class="btn btn-danger my-2" asp-action="delete" asp-controller="slider" asp-route-id="@item.Id">Delete</a>
                                         <a class="btn btn-warning" asp-action="softdelete" asp-controller="slider" asp-route-id="@item.Id">Soft delete</a>
                                     </td>
                                 </tr>

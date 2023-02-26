@@ -1,7 +1,9 @@
 ﻿@model OrderViewModel
 @inject HouseRent.Services.GetUserInfo userService
+@inject HouseRent.Services.GetSettings service;
 @{
     AppUser user = await userService.GetAppUser();
+    List<SettingsRH> settingsRHs = await service.GetSettingsAsnyc();
 }
 <!-- ====== Breadcrumbs Area====== -->
 <div class="breadcrumbs-area">
@@ -291,7 +293,7 @@
             </div><!-- /.col-md-6 -->
             <div class="col-md-6 col-sm-6 tb-cell">
                 <div class="contact-right-content">
-                    <h4><a href="#">+880123654987<span>company@gmail.com</span></a></h4>
+                    <h4><a href="#">@settingsRHs.FirstOrDefault(x=>x.Key=="Number2")?.Value<span>@settingsRHs.FirstOrDefault(x=>x.Key=="Mail2")?.Value</span></a></h4>
                     <a href="#" class="button">Contact us</a>
                 </div><!-- /.contact-right-content -->
             </div><!-- /.col-md-6 -->
@@ -313,7 +315,8 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="map-left-content">
-                        <iframe width="600" height="350" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC871wKM6aoCLSV_pT3xBVsYzNGXaDh7Pw&amp;q=121King+St,Melbourne+VIC+3000,Australia" allowfullscreen="allowfullscreen"></iframe>
+                        @Html.Raw(settingsRHs.FirstOrDefault(x=>x.Key=="MapLine")?.Value)"
+
                     </div><!-- /.mapl-left-content -->
                 </div><!-- /.col-md-7 -->
                 <div class="col-md-5">
@@ -322,13 +325,13 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact">
                                     <h4><i class="fa fa-address-book"></i>Address</h4>
-                                    <p>112/B - Road 121, King/St Melbourne Australia</p>
+                                    <p>@(settingsRHs.FirstOrDefault(x => x.Key == "AdrLine1")?.Value)<br/>@(settingsRHs.FirstOrDefault(x => x.Key == "AdrLine2")?.Value)</p>
                                 </div><!-- /.contact -->
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact">
                                     <h4><i class="fa fa-envelope"></i>Mail</h4>
-                                    <p>yourmail@domain.com houserent@domain.com</p>
+                                    <p>@(settingsRHs.FirstOrDefault(x => x.Key == "Mail1")?.Value) @(settingsRHs.FirstOrDefault(x => x.Key == "Mail2")?.Value)</p>
                                 </div><!-- /.contact -->
                             </div><!-- /.col-md-6 -->
                         </div><!-- /.row -->
@@ -336,17 +339,17 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact">
                                     <h4><i class="fa fa-phone-square"></i>Call</h4>
-                                    <p>+99 0215469875 <br />666 35874692050</p>
+                                    <p>@(settingsRHs.FirstOrDefault(x => x.Key == "Number1")?.Value) <br />@(settingsRHs.FirstOrDefault(x => x.Key == "Number2")?.Value)</p>
                                 </div><!-- /.contact -->
                             </div><!-- /.col-md-6 -->
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact">
                                     <h4><i class="fa fa-user-circle"></i>Social account</h4>
                                     <div class="social-icon">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="@settingsRHs.FirstOrDefault(x=>x.Key=="FaceUrl")?.Value"><i class="fa fa-facebook"></i></a>
+                                        <a href="@settingsRHs.FirstOrDefault(x=>x.Key=="TwitterUrl")?.Value"><i class="fa fa-twitter"></i></a>
+                                        <a href="@settingsRHs.FirstOrDefault(x=>x.Key=="InsUrl")?.Value"><i class="fa fa-instagram"></i></a>
+                                        <a href="@settingsRHs.FirstOrDefault(x=>x.Key=="GUrl")?.Value"><i class="fa fa-google-plus"></i></a>
                                     </div><!-- /.Social-icon -->
                                 </div><!-- /.contact -->
                             </div><!-- /.col-md-6 -->
