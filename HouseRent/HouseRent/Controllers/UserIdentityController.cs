@@ -58,7 +58,7 @@ namespace HouseRent.Controllers
             user = await _userManager.FindByEmailAsync(userRegisterVM.Email);
             if (user != null)
             {
-                ModelState.AddModelError("Username", "Email already exsists");
+                ModelState.AddModelError("Email", "Email already exsists");
                 return View(userRegisterVM);
             }
 

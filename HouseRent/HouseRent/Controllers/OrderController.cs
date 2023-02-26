@@ -32,7 +32,7 @@ namespace HouseRent.Controllers
 
         public IActionResult OrderDetail(int id)
         {
-            Order order = _appDbContext.Orders.FirstOrDefault(x => x.Id == id);
+            Order order = _appDbContext.Orders.Include(x => x.Apartment).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentImages).FirstOrDefault(x => x.Id == id);
             if(order == null) { return NotFound(); }
             return View(order);
         }

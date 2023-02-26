@@ -1,0 +1,96 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "Reject";
+}
+
+<form method="post"asp-action="Reject" asp-controller="AdminOrder" asp-route-id="@Model.Id">
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4"> Orders</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col" style="max-width:100px;">User Fullname</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone </th>
+                                <th scope="col">Family Members</th>
+                                <th scope="col">Child Count</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">@(Model.AppUserId)?</th>
+                                <td style="max-width:100px;">@Model.Fullname</td>
+                                <td>@Model.eMail</td>
+                                <td>@Model.PhoneNumber</td>
+                                <td>@Model.FamilyMemberCount</td>
+                                <td>@Model.ChildCount</td>
+                            </tr>
+                        </thead>
+
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order Day</th>
+                                <th scope="col">Start</th>
+                                <th scope="col" style="max-width:100px;">End</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">One day price</th>
+                                <th scope="col">Total Price</th>
+                                <th scope="col">Image</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">@Model.OrderDay.Value.ToString("d")</th>
+                                <td>@Model.StartRentDate.ToString("d")</td>
+                                <td style="max-width:100px;">@Model.EndRentDate.ToString("d")</td>
+                                <td>@Model.Apartment.ApartmentCategory.AppartmentCategoryName</td>
+                                <td>@Model.OneDayPrice$</td>
+                                <td>@Model.TotalPrice$</td>
+                                <td>
+                                    <div style="max-width:200px;">
+                                        <img style="max-width:100%;" src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true).Img" alt="apartment" />
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid pt-4 px-4">
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4"> Message for Cancelling</h6>
+                    <div class="form-floating mb-3">
+                        <textarea asp-for="DeleteMessage" class="form-control" id="floatingInput" placeholder="Cancell Message" style="height: 150px;"></textarea>
+                        <label for="floatingInput">Cancell Message</label>
+                        <span class="text-danger" asp-validation-for="DeleteMessage"></span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-outline-danger" type="submit" >Reject</button>
+                    </div>
+                    <input type="hidden" value="@Model.eMail" asp-for="@Model.eMail">
+                    <input type="hidden" value="@Model.PhoneNumber" asp-for="@Model.PhoneNumber">
+                    <input type="hidden" value="@Model.Fullname" asp-for="@Model.Fullname">
+                    <input type="hidden" value="@Model.Apartment" asp-for="@Model.Apartment">
+                    <input type="hidden" value="@Model.ApartmentId">
+                    <input type="hidden" value="@Model.Id">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

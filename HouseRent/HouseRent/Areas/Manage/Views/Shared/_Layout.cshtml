@@ -87,7 +87,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-keyboard me-2"></i>Apartments </a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a asp-action="index" asp-controller="Apartment" class="nav-item nav-link">Apatments</a>
-                            <a asp-action="CommentIndex" asp-controller="apartment" class="dropdown-item">Non-Active Apartments</a>
+                            <a asp-action="diactiveindex" asp-controller="apartment" class="dropdown-item">Non-Active Apartments</a>
                         </div>
                     </div>
                      <div class="nav-item dropdown">
@@ -95,6 +95,7 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a asp-action="index" asp-controller="adminorder" class="nav-item nav-link">Orders</a>
                             <a asp-action="acceptedindex" asp-controller="adminorder" class="dropdown-item">Accepted Orders</a>
+                            <a asp-action="rejectedorderindex" asp-controller="adminorder" class="dropdown-item">Rejected Orders</a>
                         </div>
                     </div>
                     <a asp-action="index" asp-controller="blogposts" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Blog Posts</a>

@@ -3,6 +3,8 @@ using HouseRent.Helper;
 using HouseRent.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 
 namespace HouseRent.Areas.Manage.Controllers
@@ -21,7 +23,7 @@ namespace HouseRent.Areas.Manage.Controllers
         }
         public IActionResult Index(int page=1)
         {
-            var query= _appDbContext.Apartments.Include(x => x.ApartmentCategory).Include(x => x.ApartmentImages).AsQueryable();
+            var query= _appDbContext.Apartments.Include(x => x.ApartmentCategory).Include(x => x.ApartmentImages).Where(x => x.IsReserved == false).AsQueryable();
             PaginatedList<Apartment> apartments=PaginatedList<Apartment>.Create(query, 4, page);
             return View(apartments);
         }
@@ -199,16 +201,13 @@ namespace HouseRent.Areas.Manage.Controllers
                         _appDbContext.Remove(item);
                     }
                 }
-
                 ApartmentImages Images = new ApartmentImages
                 {
                     Img = newApartment.PosterImage.SaveFile(_env.WebRootPath, "uploads/apartments"),
                     IsPoster = true,
                     ApartmentId = newApartment.Id
                 };
-
                 _appDbContext.ApartmentImages.Add(Images);
-
             }
             if (newApartment.ApartmentFeaturesIds is null)
             {
@@ -242,6 +241,34 @@ namespace HouseRent.Areas.Manage.Controllers
             exApartment.Total = newApartment.Total;
             exApartment.Facilities = newApartment.Facilities;
             exApartment.FloorCount = newApartment.FloorCount;
+            _appDbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Diactive(int id)
+        {
+            ViewBag.Features = _appDbContext.Features.ToList();
+            ViewBag.Categories = _appDbContext.ApartmentCategories.ToList();
+            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
+            if (apartment is null) { return NotFound(); }
+            apartment.IsReserved = true;
+            _appDbContext.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult DiactiveIndex(int page=1)
+        {
+            var query = _appDbContext.Apartments.Include(x => x.ApartmentCategory).Include(x => x.ApartmentImages).Where(x=>x.IsReserved==true).AsQueryable();
+            PaginatedList<Apartment> apartments = PaginatedList<Apartment>.Create(query, 4, page);
+            return View(apartments);
+        }
+
+        public IActionResult ReActive(int id)
+        {
+            ViewBag.Features = _appDbContext.Features.ToList();
+            ViewBag.Categories = _appDbContext.ApartmentCategories.ToList();
+            Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
+            if (apartment is null) { return NotFound(); }
+            apartment.IsReserved = false;
             _appDbContext.SaveChanges();
             return RedirectToAction("Index");
         }

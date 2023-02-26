@@ -40,8 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Reject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcUmVqZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/RejectedOrderIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcUmVqZWN0ZWRPcmRlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/DiactiveIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxEaWFjdGl2ZUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Index.cshtml]

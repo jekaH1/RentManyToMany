@@ -3,10 +3,13 @@ using HouseRent.Models;
 using Microsoft.AspNetCore.Mvc;
 using HouseRent.Helper;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HouseRent.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
+
     public class AboutController : Controller
     {
         private readonly AppDbContext _appDbContext;

@@ -37,10 +37,10 @@
                                             <img style="width:100%;" src="~/uploads/apartments/@item.ApartmentImages.FirstOrDefault(x=>x.IsPoster is true).Img">
                                         </div>
                                     </td>
-                                    <td>
+                                    <td class="" style="width:25%;">
                                         <a class="btn btn-outline-info" asp-action="update" asp-controller="apartment" asp-route-id="@item.Id">Update</a>
                                         <a class="btn btn-danger" asp-action="delete" asp-controller="apartment" asp-route-id="@item.Id">Delete</a>
-                                        <a class="btn btn-warning" asp-action="softdelete" asp-controller="apartment" asp-route-id="@item.Id">Soft delete</a>
+                                        <a class="btn btn-warning" asp-action="Diactive" asp-controller="apartment" asp-route-id="@item.Id">Deactive</a>
                                     </td>
                                 </tr>
                             }

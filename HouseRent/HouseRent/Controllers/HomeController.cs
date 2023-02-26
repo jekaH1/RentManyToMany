@@ -129,7 +129,7 @@ namespace HouseRent.Controllers
             int Enddate = orderVM.EndRentDate.DayOfYear;
             int DayCount = Enddate - Startdate;
             int? TotalPrice = DayCount * apartment.Rentprice;
-            foreach (var item in _appDbContext.Orders.Where(x => x.IsCancelled == false).Where(x => x.IsOver == false).Where(x => x.ApartmentId == apartment.Id).ToList())
+            foreach (var item in _appDbContext.Orders.Where(x => x.IsCancelled == false).Where(x => x.IsOver == false).Where(x=>x.OrderStatus != Enum.OrderStatus.Rejected).Where(x => x.ApartmentId == apartment.Id).ToList())
             {
 
                 int date = item.StartRentDate.DayOfYear;
@@ -286,7 +286,7 @@ namespace HouseRent.Controllers
             };
             _appDbContext.Add(order);
             _appDbContext.SaveChanges();
-            return RedirectToAction("Detail");
+            return RedirectToAction("index","order");
         }
 
         public IActionResult AllBlogs()
