@@ -3,51 +3,68 @@
     ViewData["Title"] = "OrderDetail";
 }
 
-<div class="container d-flex" style="align-content:center; justify-content:center;">
-    <h1> Your Reservations</h1>
-</div>
-
-    <div class="container d-flex justify-content-around" style="">
-        <div class="card text-secondary bg-white-smoke mb-3 border-2" style="border:solid; border-color:gray;">
-            <div class="card-header d-flex justify-content-between">
-                <div class="container d-flex">
-                    <div style="width:25%;">
-                        <p1>Order Date</p1><br>
-                        <p1>@Model.OrderDay.Value.ToString("yyyy,MMMM dd")</p1>
-                    </div>
-                    <div style="width:25%;">
-                        <p1>Fullname</p1><br>
-                        <p1>@Model.Fullname</p1>
-                    </div>
-                    <div style="width:25%;">
-                        <p1 style="text-decoration-style:wavy;">Price</p1><br>
-                        <p1>
-                            @Model.TotalPrice$ (@Model.OneDayPrice$ x
-                        @(@Model.EndRentDate.Day - @Model.StartRentDate.Day) Days)
-                        </p1>
-                    </div>
-                    <div style="width:25%;">
-                    <a asp-action="orderdetail" asp-controller="order" asp-route-id="@Model.Id" class="btn btn-success" style="border-radius:8px;">Order Details</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="card-body">
-                <div class="container d-flex">
-                    <div class="container d-flex justify-content-around" style="align-content:flex-start;">
-                        <div class="d-flex" style="justify-content:center; align-content:center; flex-direction:column; text-align:center; margin-right:120px;">
-                            <h5>OrderStatus</h5>
-                        <p>@Model.OrderStatus</p>
-                        </div>
-                        <div class="col-md-10" style="max-width:200px;">
-                        <a asp-action="detail" asp-controller="home" asp-route-id="@Model.ApartmentId"><img src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true)?.Img" style="max-width:100%;"></a>
+<link rel="stylesheet" href="~/orderDetail/style.css">
+<section class="vh-100 gradient-custom-2">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+                <div class="card card-stepper" style="border-radius: 16px;">
+                    <div class="card-header p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="text-muted mb-2"> Apartment ID <span class="fw-bold text-body">@Model.ApartmentId</span></p>
+                                <p class="text-muted mb-0"> Days <span class="fw-bold text-body">@Model.StartRentDate.ToString("d") - @Model.EndRentDate.ToString("d") </span> </p>
+                            </div>
+                            <div>
+                                <h4 class="mb-0"> <a href="#">@Model.OrderDay.Value.ToString("d")</a> </h4>
+                            </div>
                         </div>
                     </div>
+                    <div class="card-body p-4">
+                        <div class="d-flex flex-row mb-4 pb-2">
+                            <div class="flex-fill">
+                                <h3 class="bold">@Model.Apartment.ApartmentCategory.AppartmentCategoryName</h3>
+                                <p class="text-muted"> Contact Email: @Model.eMail</p>
+                                <p class="text-muted"> Contact Number: @Model.PhoneNumber</p>
+                                <p class="text-muted"> Family Members Count: @Model.FamilyMemberCount</p>
+                                <p class="text-muted"> Child Count: @Model.ChildCount</p>
+                                @*<p class="text-muted">Tracking Status on: <span class="text-body">11:30pm, Today</span></p>*@
+                                <h4 class="mb-3"> $ @Model.TotalPrice - Total <span class="small text-muted"> @*...*@ </span></h4>
+                            </div>
+                            <div>
+                                <img class="align-self-center img-fluid"
+                                     src="~/uploads/apartments/@Model.Apartment.ApartmentImages.FirstOrDefault(x=>x.IsPoster==true)?.Img" width="250">
+                            </div>
+                        </div>
+                        @* <ul id="progressbar-1" class="mx-0 mt-0 mb-5 px-0 pt-0 pb-4">
+                        <li class="step0 active" id="step1">
+                        <span style="margin-left: 22px; margin-top: 12px;">PLACED</span>
+                        </li>
+
+                        <li class="step0 active text-center" id="step2"><span>@Model.OrderStatus</span></li>
+                        <li class="step0 text-muted text-end" id="step3">
+                        <span style="margin-right: 22px;">DELIVERED</span>
+                        </li>
+                        </ul>*@
+                        <div class="d-flex justify-content-center">
+                            <p class="@((Model.OrderStatus==0  ? "text-secondary":(Model.OrderStatus==HouseRent.Enum.OrderStatus.Accepted ? "text-success" :(Model.OrderStatus==HouseRent.Enum.OrderStatus.Rejected ? "text-danger" : ""))))" style="font-weight:700;">@Model.OrderStatus</p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4">
+                        <div class="d-flex justify-content-between">
+                            
+                            
+                            <h4 class="fw-normal mb-0 text-danger" style="font-weight:900"><a href="#!">Cancel</a></h4>
+                            <div class="border-start h-100"></div>
+                           
+                           
+                           
+                        </div>
+                    </div>
                 </div>
-                @*<h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>*@
             </div>
         </div>
     </div>
 
+</section>
 

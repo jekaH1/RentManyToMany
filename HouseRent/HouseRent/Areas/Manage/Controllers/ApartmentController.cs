@@ -115,7 +115,15 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             Apartment apartment = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Include(x => x.ApartmentFeatures).FirstOrDefault(x => x.Id == id);
             if (apartment is null) { return NotFound(); }
-
+            List<Order> orders = new List<Order>();
+            foreach (var item in _appDbContext.Orders.Include(x => x.Apartment).Include(x => x.Apartment.ApartmentImages).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Where(x => x.ApartmentId == id))
+            {
+                orders.Add(item);
+            }
+            if(orders.Count > 0)
+            {
+                _appDbContext.Orders.RemoveRange(orders);
+            }
             foreach (var item in apartment.ApartmentImages)
             {
                 string path = Path.Combine(_env.WebRootPath, "uploads/apartments", item.Img);
