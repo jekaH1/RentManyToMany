@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\HouseRent.csproj": {}
+    "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\HouseRent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\HouseRent.csproj": {
+    "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\HouseRent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\HouseRent.csproj",
+        "projectUniqueName": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\HouseRent.csproj",
         "projectName": "HouseRent",
-        "projectPath": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\HouseRent.csproj",
+        "projectPath": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\HouseRent.csproj",
         "packagesPath": "C:\\Users\\Jake\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jake\\Desktop\\Rent-master\\HouseRent\\HouseRent\\obj\\",
+        "outputPath": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jake\\AppData\\Roaming\\NuGet\\NuGet.Config",

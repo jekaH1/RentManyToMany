@@ -3,6 +3,9 @@
     ViewData["Title"] = "OrderDetail";
 }
 
+
+
+
 <link rel="stylesheet" href="~/orderDetail/style.css">
 <section class="vh-100 gradient-custom-2">
     <div class="container py-5 h-100">
@@ -47,24 +50,33 @@
                         </li>
                         </ul>*@
                         <div class="d-flex justify-content-center">
-                            <p class="@((Model.OrderStatus==0  ? "text-secondary":(Model.OrderStatus==HouseRent.Enum.OrderStatus.Accepted ? "text-success" :(Model.OrderStatus==HouseRent.Enum.OrderStatus.Rejected ? "text-danger" : ""))))" style="font-weight:700;">@Model.OrderStatus</p>
+                            @if (Model.IsOver == false)
+                            {
+                                <p class="@((Model.OrderStatus==0  ? "text-secondary":(Model.OrderStatus==HouseRent.Enum.OrderStatus.Accepted ? "text-success" :(Model.OrderStatus==HouseRent.Enum.OrderStatus.Rejected ? "text-danger" : ""))))" style="font-weight:700;">@Model.OrderStatus</p>
+                            }
+                            <p class="text-secondary" style="font-weight:700;">Overed...</p>
                         </div>
                     </div>
                     <div class="card-footer p-4">
-                        <div class="d-flex justify-content-between">
-                            
-                            
-                            <h4 class="fw-normal mb-0 text-danger" style="font-weight:900"><a href="#!">Cancel</a></h4>
-                            <div class="border-start h-100"></div>
-                           
-                           
-                           
-                        </div>
+                        @if (Model.OrderStatus == HouseRent.Enum.OrderStatus.Rejected)
+                        {
+                            <div>
+                                <h3 class="d-flex justify-content-center mt-0 text-danger">Rejection Letter</h3>
+                                <h4>@Model.DeleteMessage</h4>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="d-flex justify-content-between">
+                                <h4 class="fw-normal mb-0 text-danger" style="font-weight:900"><a href="#!">Cancel</a></h4>
+                                <div class="border-start h-100"></div>
+                            </div>
+
+                        }
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 

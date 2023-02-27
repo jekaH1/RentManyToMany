@@ -9,245 +9,249 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HouseRent
 build_property.RootNamespace = HouseRent
-build_property.ProjectDir = C:\Users\Jake\Desktop\Rent-master\HouseRent\HouseRent\
+build_property.ProjectDir = C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Jake\Desktop\Rent-master\HouseRent\HouseRent
+build_property.MSBuildProjectDirectory = C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/About/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFib3V0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/About/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/About/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFib3V0XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminLogin/Login.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminLogin/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/AcceptedIndex.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/AcceptedIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcQWNjZXB0ZWRJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Detail.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Reject.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/Reject.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcUmVqZWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/RejectedOrderIndex.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/AdminOrder/RejectedOrderIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFkbWluT3JkZXJcUmVqZWN0ZWRPcmRlckluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/DiactiveIndex.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Apartment/DiactiveIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxEaWFjdGl2ZUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Apartment/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFwYXJ0bWVudFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlogComments/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlogComments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dDb21tZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/CommentIndex.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/CommentIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dQb3N0c1xDb21tZW50SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dQb3N0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dQb3N0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlogPosts/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb2dQb3N0c1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/BlopPosts/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/BlopPosts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEJsb3BQb3N0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Categories/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Categories/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3JpZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Categories/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Categories/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3JpZXNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Dashboard/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Dashboard/Test.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Dashboard/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxUZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Features/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Features/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Features/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Features/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Features/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Features/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZlYXR1cmVzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEdhbGxlcnlBUFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEdhbGxlcnlBUFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/GalleryAP/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEdhbGxlcnlBUFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Messages/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Messages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE1lc3NhZ2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Settings/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Settings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Settings/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Settings/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdzXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Shared/_Layout.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Slider/Create.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Slider/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Slider/SoftDeletedIndex.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Slider/SoftDeletedIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxTb2Z0RGVsZXRlZEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/Slider/Update.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/Slider/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/_ViewImports.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Areas/Manage/Views/_ViewStart.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Areas/Manage/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/AboutUs/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/AboutUs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Blog/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Contact/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Gallery/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Gallery/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FsbGVyeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Home/AllApartments.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Home/AllApartments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxBcGFydG1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Home/Blogpostdetail.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Home/Blogpostdetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9ncG9zdGRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Home/CheckOut.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Home/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Home/Detail.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Home/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Home/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Order/CancellOrder.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Order/CancellOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ2FuY2VsbE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Order/Index.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Order/OrderDetail.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Order/IsOverIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSXNPdmVySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Order/OrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Shared/Components/Apartment/Default.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Shared/Components/Apartment/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQXBhcnRtZW50XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Shared/Components/Category/Default.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Shared/Components/Category/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/UserIdentity/Login.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/UserIdentity/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcklkZW50aXR5XExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/UserIdentity/Register.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/UserIdentity/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcklkZW50aXR5XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/_ViewImports.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/_ViewStart.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jake/Desktop/Rent-master/HouseRent/HouseRent/Views/Shared/_Layout.cshtml]
+[C:/Users/Jake/Desktop/New folder/RentManyToMany/HouseRent/HouseRent/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2qshn4xaim
