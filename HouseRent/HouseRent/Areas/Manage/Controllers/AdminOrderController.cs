@@ -1,6 +1,7 @@
 ﻿using HouseRent.Context;
 using HouseRent.Helper;
 using HouseRent.Models;
+using HouseRent.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +12,12 @@ namespace HouseRent.Areas.Manage.Controllers
     public class AdminOrderController : Controller
     {
         private readonly AppDbContext _appDbContext;
+        private readonly IEmailService _emailService;
 
-        public AdminOrderController(AppDbContext appDbContext)
+        public AdminOrderController(AppDbContext appDbContext,IEmailService emailService)
         {
             _appDbContext = appDbContext;
+            _emailService = emailService;
         }
         public IActionResult Index(int page=1)
         {
@@ -33,6 +36,7 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             Order order = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).FirstOrDefault(x => x.Id == id);
             if (order == null) { return NotFound(); }
+            _emailService.Send(order.eMail, "Your Appointment accepted", "Thank you ");
             order.OrderStatus = Enum.OrderStatus.Accepted;
             _appDbContext.SaveChanges();
             return RedirectToAction("index");           

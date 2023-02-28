@@ -1,16 +1,16 @@
 ﻿@model DashboardViewModel
 @{
     ViewData["Title"] = "Index";
-    List<Order> todayOrd = Model.Orders.Where(x => x.OrderDay.Value.Day == DateTime.Now.Day).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected).ToList();
-    List<Order> thisMonth = Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected).ToList();
+    List<Order> todayOrd = Model.Orders.Where(x => x.OrderDay.Value.Day == DateTime.Now.Day).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
+    List<Order> thisMonth = Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
     int price = 0;
     int priceNotExp = 0;
     int id = 0;
     int notexpId = 0;
-    if (Model.Orders.Count > 0 )
+    if (Model.Orders.Where(x=>x.OrderDay.Value.Month == DateTime.Now.Month).Count() > 0 )
     {
-        Order mostExp = Model.Orders.OrderByDescending(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).First();
-        Order mostNotexp = Model.Orders.OrderBy(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).First();
+        Order mostExp = Model.Orders.OrderByDescending(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month)?.First();
+        Order mostNotexp = Model.Orders.OrderBy(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month)?.First();
         price = mostExp.TotalPrice.Value;
         id = mostExp.Id;
         notexpId = mostNotexp.Id;

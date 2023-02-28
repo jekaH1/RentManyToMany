@@ -823,3 +823,6 @@ C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\obj\Debug\ne
 C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\obj\Debug\net6.0\HouseRent.pdb
 C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\obj\Debug\net6.0\HouseRent.genruntimeconfig.cache
 C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\obj\Debug\net6.0\ref\HouseRent.dll
+C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\bin\Debug\net6.0\MailKit.dll
+C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Jake\Desktop\New folder\RentManyToMany\HouseRent\HouseRent\bin\Debug\net6.0\BouncyCastle.Crypto.dll

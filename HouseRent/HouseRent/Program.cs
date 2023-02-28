@@ -1,6 +1,7 @@
 using HouseRent.Context;
 using HouseRent.Models;
 using HouseRent.Services;
+using Medicoz.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<GetSettings>();
 builder.Services.AddScoped<GetUserInfo>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer("Server=DESKTOP-JD7M70J\\SQLEXPRESS;Database=RentDB1;Trusted_Connection=True");
