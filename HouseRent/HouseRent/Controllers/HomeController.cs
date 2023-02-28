@@ -33,7 +33,9 @@ namespace HouseRent.Controllers
                 Orders = _appDbContext.Orders.ToList(),
                 appUsers = _appDbContext.Users.ToList(),
                 Categories = _appDbContext.ApartmentCategories.ToList(),
-                GalleryImages = _appDbContext.GalleryImages.Take(6).ToList()
+                GalleryImages = _appDbContext.GalleryImages.Take(6).ToList(),
+                aboutUs=_appDbContext.AboutUs.ToList(), 
+                
             };
             return View(homeVM);
         }
