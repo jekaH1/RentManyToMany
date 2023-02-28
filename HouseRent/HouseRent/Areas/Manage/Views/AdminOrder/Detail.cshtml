@@ -1,7 +1,7 @@
 ﻿@model Order
 @{
     ViewData["Title"] = "Detail";
-    
+
 }
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
@@ -28,7 +28,7 @@
                                 <td>@Model.ChildCount</td>
                             </tr>
                         </thead>
-                       
+
                     </table>
                 </div>
                 <div class="table-responsive">
@@ -61,8 +61,20 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <a class="btn btn-outline-info" asp-action="Accept" asp-controller="AdminOrder" asp-route-id="@Model.Id">Acceept</a>
-                                    <a class="btn btn-outline-danger" asp-action="Reject" asp-controller="AdminOrder" asp-route-id="@Model.Id">Reject</a>
+                                    @if (Model.OrderStatus == 0)
+                                    {
+                                        <a class="btn btn-outline-info" asp-action="Accept" asp-controller="AdminOrder" asp-route-id="@Model.Id">Acceept</a>
+                                        <a class="btn btn-outline-danger" asp-action="Reject" asp-controller="AdminOrder" asp-route-id="@Model.Id">Reject</a>
+                                    }
+                                    @if (Model.OrderStatus == HouseRent.Enum.OrderStatus.Accepted)
+                                    {
+                                        <a class="btn btn-outline-success" asp-action="End" asp-controller="AdminOrder" asp-route-id="@Model.Id">End</a>
+
+                                    }
+                                    @if (Model.OrderStatus == HouseRent.Enum.OrderStatus.Rejected)
+                                    {
+                                        
+                                    }
                                 </td>
                             </tr>
                         </tbody>

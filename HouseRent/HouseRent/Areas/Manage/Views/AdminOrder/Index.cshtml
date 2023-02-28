@@ -15,6 +15,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Id</th>
+                                <th scope="col">Status</th>
                                 <th scope="col" style="max-width:100px;">User Fullname</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">One day price</th>
@@ -33,6 +34,7 @@
                                 <tr>
                                     <th scope="row">@counter</th>
                                     <td>@item.Id</td>
+                                    <td class="text-warning">@item.OrderStatus</td>
                                     <td style="max-width:100px;">@item.Fullname</td>
                                     <td>@item.Apartment.ApartmentCategory.AppartmentCategoryName</td>
                                     <td>@item.OneDayPrice$</td>

@@ -1,13 +1,13 @@
 ﻿@model DashboardViewModel
 @{
     ViewData["Title"] = "Index";
-    List<Order> todayOrd = Model.Orders.Where(x => x.OrderDay.Value.Day == DateTime.Now.Day).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
-    List<Order> thisMonth = Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).Where(x=>x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
+    List<Order> todayOrd = Model.Orders.Where(x => x.OrderDay.Value.Day == DateTime.Now.Day).Where(x => x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
+    List<Order> thisMonth = Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).Where(x => x.OrderStatus != HouseRent.Enum.OrderStatus.Rejected)?.ToList();
     int price = 0;
     int priceNotExp = 0;
     int id = 0;
     int notexpId = 0;
-    if (Model.Orders.Where(x=>x.OrderDay.Value.Month == DateTime.Now.Month).Count() > 0 )
+    if (Model.Orders.Where(x => x.OrderDay.Value.Month == DateTime.Now.Month).Count() > 0)
     {
         Order mostExp = Model.Orders.OrderByDescending(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month)?.First();
         Order mostNotexp = Model.Orders.OrderBy(x => x.TotalPrice).Where(x => x.OrderDay.Value.Month == DateTime.Now.Month)?.First();
@@ -53,7 +53,14 @@
             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                 <i class="fa fa-chart-area fa-3x text-primary"></i>
                 <div class="ms-3">
-                    <a class="mb-2 " asp-controller="adminorder" asp-action="Detail" asp-route-id="@id">Rent of Month</a>
+                    @if (id != 0)
+                    {
+                        <a class="mb-2 " asp-controller="adminorder" asp-action="Detail" asp-route-id="@(id)">Rent of Month</a>
+                    }
+                    @if (id == 0)
+                    {
+                        <a class="mb-2 " href="#">Rent of Month</a>
+                    }
                     <h6 class="mb-0">$@price</h6>
                 </div>
             </div>
@@ -62,7 +69,15 @@
             <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                 <i class="fa fa-chart-pie fa-3x text-primary"></i>
                 <div class="ms-3">
+                    @if(notexpId != 0)
+                    {
                     <a class="mb-2" asp-controller="adminorder" asp-action="Detail" asp-route-id="@notexpId">The Cheapest</a>
+                        
+                    }
+                    @if(notexpId == 0)
+                    {
+                        <a class="mb-2" href="#">The Cheapest</a>
+                    }
                     <h6 class="mb-0">$@priceNotExp</h6>
                 </div>
             </div>
@@ -173,7 +188,8 @@
                                 }
                                 else
                                 {
-                                    @(item.Message);
+                                    @(item.Message)
+                                    ;
                                 }
                             </span>
                         </div>
