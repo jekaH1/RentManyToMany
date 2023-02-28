@@ -291,11 +291,6 @@ namespace HouseRent.Controllers
             return RedirectToAction("index","order");
         }
 
-        public IActionResult AllBlogs()
-        {
-            return View();
-        }
-
         [HttpGet]
         public async Task<IActionResult> AllApartments(AllApartmentsViewModel model, string filter, DateTime? dateTimeAsent = null, DateTime? dateTimeDesent = null,
                                                         int? AsentPrice = 0, int? desent = 0, int? popularity = 0,

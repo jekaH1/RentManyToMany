@@ -106,7 +106,7 @@
                 </div><!--/.col-md-12-->
             </div><!--/.row-->
             <div class="row">
-                @foreach (var item in Model.BlogPost.BlogPostComments)
+                @foreach (var item in Model.BlogPost.BlogPostComments.Take(5).OrderByDescending(x=>x.UserMessageTime))
                 {
                     <div class="col-md-12">
                         <ol class="comment-list">
@@ -186,7 +186,7 @@
                                 </div><!--/.col-md-12-->
                                 <div class="col-md-12">
                                     <p class="form-submit text-center">
-                                        <button type="submit" class="btn">Post Comment</button>
+                                        <button type="submit" class="btn btn-success" style="border-radius:5%;">Post Comment</button>
                                     </p>
                                 </div><!--/.col-md-12-->
                             </div><!--/.row-->

@@ -1,12 +1,16 @@
 ﻿using HouseRent.Context;
 using HouseRent.Helper;
 using HouseRent.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Razor.Language.Extensions;
+using System.Data;
 
 namespace HouseRent.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
+
     public class GalleryAPController : Controller
     {
         private readonly AppDbContext _appDbContext;

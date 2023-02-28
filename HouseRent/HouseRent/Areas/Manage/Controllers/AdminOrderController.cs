@@ -2,13 +2,17 @@
 using HouseRent.Helper;
 using HouseRent.Models;
 using HouseRent.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace HouseRent.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "Admin")]
+
     public class AdminOrderController : Controller
     {
         private readonly AppDbContext _appDbContext;
