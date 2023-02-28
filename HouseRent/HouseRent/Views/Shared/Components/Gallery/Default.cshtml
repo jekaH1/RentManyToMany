@@ -1,0 +1,13 @@
+﻿@model List<GalleryImages>
+<div class="widget widget_instagram yellow-color">
+    <div class="widget-title-area">
+        <h3 class="widget-title">Instagram Image</h3><!-- /.widget-title -->
+    </div><!-- /.widget-title-area -->
+    <div class="instagram-image-content">
+        @foreach (var item in Model)
+        {
+            <a href="#"><img src="~/uploads/gallery/@item.Img" alt="" /></a>
+        }
+
+    </div><!-- /.instagram-image-content -->
+</div><!-- /.widget -->
