@@ -66,7 +66,7 @@
 
                                                 <div class="text-content">
                                                     <div class="top-content">
-                                                        <h3><a href="apartment-single.html">@item.ApartmentCategory.AppartmentCategoryName</a></h3>
+                                                        <h3><a asp-action="detail" asp-controller="home" asp-route-id="@item.Id">@item.ApartmentCategory.AppartmentCategoryName</a></h3>
                                                         <span>
                                                             <i class="fa fa-map-marker"></i>
                                                             @item.Country, @item.City

@@ -94,6 +94,11 @@ namespace HouseRent.Areas.Manage.Controllers
                 };
                 _appDbContext.ApartmentImages.Add(apartmentImages);
             }
+            if(apartment.ApartmentFeaturesIds is null)
+            {
+                ModelState.AddModelError("ApartmentCategoryID", "Required");
+                return View(apartment);
+            }
             foreach (var item in apartment.ApartmentFeaturesIds)
             {
                 ApartmentFeature apartmentFeature = new ApartmentFeature

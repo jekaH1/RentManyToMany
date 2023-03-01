@@ -529,6 +529,10 @@
       "PackagePath": "staticwebassets\\manage\\js\\main.js"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\manage\\js\\main3.js",
+      "PackagePath": "staticwebassets\\manage\\js\\main3.js"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\manage\\lib\\chart\\chart.min.js",
       "PackagePath": "staticwebassets\\manage\\lib\\chart\\chart.min.js"
     },
@@ -985,12 +989,24 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\16f4cf3d-52f6-4ab5-82b2-efcd5409b337apartment-three.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\19490722-2a6f-4649-8c59-6b29b840ee8dapartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\19490722-2a6f-4649-8c59-6b29b840ee8dapartment-two.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1a62fab7-7b2b-478d-a1e0-2d3a84626888apartment-six.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\1a62fab7-7b2b-478d-a1e0-2d3a84626888apartment-six.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1a736923-88b3-4948-8968-99042a4c9c8dapartment-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\1a736923-88b3-4948-8968-99042a4c9c8dapartment-single.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1cd4af7c-1639-46f3-9819-a0c76a844406apartment-three.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\1cd4af7c-1639-46f3-9819-a0c76a844406apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\1ec0078c-ff55-4a1e-ace3-51499f95bb7fapartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\1ec0078c-ff55-4a1e-ace3-51499f95bb7fapartment-three.png"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\237fe451-7256-44de-a139-114325192b69apartment-single-2.jpg",
@@ -1005,16 +1021,40 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\29934c71-f88e-4ca2-85ac-34d0f4bfc566apartment-single-2.jpg"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\2c5a8bcc-11e7-4213-91be-813f6bf1a3c3apartment-five.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\2c5a8bcc-11e7-4213-91be-813f6bf1a3c3apartment-five.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\347c65ac-d35d-4704-bb95-793468bd3ac4apartment-two.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\347c65ac-d35d-4704-bb95-793468bd3ac4apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\34dce88d-933c-4ebe-9b55-a6d321a3bf5dapartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\34dce88d-933c-4ebe-9b55-a6d321a3bf5dapartment-single-2.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\35c3ab0b-3d77-4410-b446-cba6d2ddbe45apartment-three.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\35c3ab0b-3d77-4410-b446-cba6d2ddbe45apartment-three.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\36029f52-63fc-4429-b4b5-47d5ef5654c1apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\36029f52-63fc-4429-b4b5-47d5ef5654c1apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\364bf616-466b-491f-9610-88c9ccde1ccfapartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\364bf616-466b-491f-9610-88c9ccde1ccfapartment-single-4.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\39c23efc-94c8-469e-a798-31f0821fa7d7apartment-two.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\39c23efc-94c8-469e-a798-31f0821fa7d7apartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\39d9c363-54d3-4042-a2ed-96e2da73edb5apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\39d9c363-54d3-4042-a2ed-96e2da73edb5apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\3bfb2443-d3da-416a-8a6c-341144b08dc0apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\3bfb2443-d3da-416a-8a6c-341144b08dc0apartment-three.png"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\3de4bcf1-e8a5-40ee-9ed6-bf67fc8a2becapartment-six.png",
@@ -1025,8 +1065,16 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\42f35d38-3881-4e7b-bec6-e59fc4295aacapartment-two.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4734347e-65dc-47c0-8ea7-419866edbe25apartment-five.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4734347e-65dc-47c0-8ea7-419866edbe25apartment-five.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4776cb34-8887-40ea-bdeb-30eec2bf1cfeapartment-five.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\4776cb34-8887-40ea-bdeb-30eec2bf1cfeapartment-five.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4ab517e7-8358-4e34-9eaa-b1f4d8d76711apartment-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4ab517e7-8358-4e34-9eaa-b1f4d8d76711apartment-single.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4ab55ea5-e53a-4877-9601-a31fba5760d4apartment-single-3.jpg",
@@ -1037,6 +1085,14 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\4b9c12cb-6094-4471-b065-9a9cd6166e9bapartment-two.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\4cb84563-ae51-4e4f-895c-2f0f782b3f50apartment-one.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4cb84563-ae51-4e4f-895c-2f0f782b3f50apartment-one.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\53162fc7-2a53-4e3c-88d1-4eacad096b4eapartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\53162fc7-2a53-4e3c-88d1-4eacad096b4eapartment-single-4.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg"
     },
@@ -1045,12 +1101,32 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\5c6dba86-2e94-4db4-8704-91ae83efe2b0apartment-five.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\5e9e75a8-871d-4f4f-a794-5966330baab5apartment-single.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5e9e75a8-871d-4f4f-a794-5966330baab5apartment-single.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7461697c-937b-408e-8872-e5a3a481b610apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\7461697c-937b-408e-8872-e5a3a481b610apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\762e0544-8295-411c-9dfc-1b4f3506b0cbapartment-six.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\762e0544-8295-411c-9dfc-1b4f3506b0cbapartment-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7810c1dd-8777-41de-a80f-db0a7d40ba9eapartment-six.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\7810c1dd-8777-41de-a80f-db0a7d40ba9eapartment-six.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\789fd578-97ce-4978-97b5-350199fe4800apartment-single-5.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\789fd578-97ce-4978-97b5-350199fe4800apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7fa705b6-8c51-41e9-84e4-6b7eb394da98apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\7fa705b6-8c51-41e9-84e4-6b7eb394da98apartment-single-5.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7fec757e-4c08-410e-8c8d-61da10826555apartment-two.png",
@@ -1077,8 +1153,40 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\86d00852-9ba6-4569-9de2-b4f69499c5d2apartment-one.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\8cf2c532-c835-4499-a172-41b99bbbd1dfapartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\8cf2c532-c835-4499-a172-41b99bbbd1dfapartment-two.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9403396d-9a58-47c3-a046-161e9bf3dad5apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\9403396d-9a58-47c3-a046-161e9bf3dad5apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9643c57d-5a81-4deb-af95-5b45464f5e24apartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\9643c57d-5a81-4deb-af95-5b45464f5e24apartment-single-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\99c53c4f-f997-495c-a245-6788f9b25295apartment-single-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\99c53c4f-f997-495c-a245-6788f9b25295apartment-single-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9a47a19a-ecc3-48aa-8cf1-b787e6d8c9e3apartment-single-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\9a47a19a-ecc3-48aa-8cf1-b787e6d8c9e3apartment-single-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9b5c3735-7a99-49eb-a44a-39c7f212edf2apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\9b5c3735-7a99-49eb-a44a-39c7f212edf2apartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9fc09007-954b-4ec9-9599-49f379b84b6bapartment-two.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\9fc09007-954b-4ec9-9599-49f379b84b6bapartment-two.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a0fd0231-7af9-486a-9ae2-5b6cbbd42c8bapartment-single-2.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\a0fd0231-7af9-486a-9ae2-5b6cbbd42c8bapartment-single-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a37f5770-f141-4951-8c71-4f9172e97b8eapartment-single-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\a37f5770-f141-4951-8c71-4f9172e97b8eapartment-single-5.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\a3c8b46d-9af1-4815-ba89-81554d83a493apartment-single-5.jpg",
@@ -1125,6 +1233,18 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\ba4403aa-21a0-4316-a8e3-9f36b7d4483bapartment-single-3.jpg"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\bb2b0883-2ca4-4ed9-a23a-09599a5b23a9apartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\bb2b0883-2ca4-4ed9-a23a-09599a5b23a9apartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\bbeedd89-c42d-4274-9b5f-67d851003eeaapartment-six.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\bbeedd89-c42d-4274-9b5f-67d851003eeaapartment-six.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\bd2c67c8-6f8b-4613-b7f6-1bb72072b920apartment-one.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\bd2c67c8-6f8b-4613-b7f6-1bb72072b920apartment-one.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\bd38c456-677e-457f-8eae-25dc26a8ff4fapartment-single-5.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\bd38c456-677e-457f-8eae-25dc26a8ff4fapartment-single-5.jpg"
     },
@@ -1145,12 +1265,20 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\cb80c650-54c7-4fe7-aaaa-b8bd7d00b676apartment-single-4.jpg"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cc74b85c-63c9-40e2-a61b-eda1b5a80a16apartment-single-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\cc74b85c-63c9-40e2-a61b-eda1b5a80a16apartment-single-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cd7ce1a3-1301-48d3-a5c4-5b5bb70a0365apartment-single-4.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\cd7ce1a3-1301-48d3-a5c4-5b5bb70a0365apartment-single-4.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\cd7e0020-c9fa-4110-9624-fd90fbf7df5fapartment-single.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\cd7e0020-c9fa-4110-9624-fd90fbf7df5fapartment-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\d3b51b9c-c014-4309-bfef-4f8f3a535058apartment-four.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\d3b51b9c-c014-4309-bfef-4f8f3a535058apartment-four.png"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\d8c7e0de-77cf-4b5e-81ff-19f4ce945c51apartment-three.png",
@@ -1169,12 +1297,28 @@
       "PackagePath": "staticwebassets\\uploads\\apartments\\de6d21ba-7432-493c-bcac-33129a1feca8apartment-one.png"
     },
     {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\e09a0f7b-64c2-4c1d-a980-71cd2ae1d456apartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\e09a0f7b-64c2-4c1d-a980-71cd2ae1d456apartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\e4175cf8-8ba8-40c3-a8e1-4f17b686bce7apartment-single-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\e4175cf8-8ba8-40c3-a8e1-4f17b686bce7apartment-single-2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\eaa483f4-b76a-437f-a11f-b036ab0b1abfapartment-single-4.jpg",
       "PackagePath": "staticwebassets\\uploads\\apartments\\eaa483f4-b76a-437f-a11f-b036ab0b1abfapartment-single-4.jpg"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\eabb8a44-5872-4b8b-a818-97dc3d13e07bapartment-three.png",
       "PackagePath": "staticwebassets\\uploads\\apartments\\eabb8a44-5872-4b8b-a818-97dc3d13e07bapartment-three.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\ecf0b586-489d-4ab3-8eec-ba82c106db7bapartment-single-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\ecf0b586-489d-4ab3-8eec-ba82c106db7bapartment-single-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\edf6cd92-ac37-44a2-9e17-ee15feb88d9fapartment-three.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\edf6cd92-ac37-44a2-9e17-ee15feb88d9fapartment-three.png"
     },
     {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\ee0aa12a-7266-4012-9871-475254e92b57apartment-six.png",
@@ -1305,16 +1449,16 @@
       "PackagePath": "staticwebassets\\uploads\\settings\\fd178853-d228-48af-a953-45a000df17ebapartment-four.png"
     },
     {
-      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\25fe7e5e-6baf-45dc-8ab9-c4370080afeeslider-one.png",
-      "PackagePath": "staticwebassets\\uploads\\sliders\\25fe7e5e-6baf-45dc-8ab9-c4370080afeeslider-one.png"
-    },
-    {
       "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\38bfc005-e6a6-4c05-812c-1bd5bf99ca3fproduct-3.jpg",
       "PackagePath": "staticwebassets\\uploads\\sliders\\38bfc005-e6a6-4c05-812c-1bd5bf99ca3fproduct-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\3fa2861c-0e0a-4c40-8a78-1af863684abcslider-eight.png",
-      "PackagePath": "staticwebassets\\uploads\\sliders\\3fa2861c-0e0a-4c40-8a78-1af863684abcslider-eight.png"
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\9297847d-165f-4f14-9cb8-aab4676e7ef1slider-eight.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\9297847d-165f-4f14-9cb8-aab4676e7ef1slider-eight.png"
+    },
+    {
+      "Id": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\sliders\\ca073805-042e-48b7-8348-1143dd8f6fd6slider-one.png",
+      "PackagePath": "staticwebassets\\uploads\\sliders\\ca073805-042e-48b7-8348-1143dd8f6fd6slider-one.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HouseRent.Microsoft.AspNetCore.StaticWebAssets.props",

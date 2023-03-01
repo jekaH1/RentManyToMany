@@ -31,6 +31,7 @@
 
     <!-- Template Stylesheet -->
     <link href="~/manage/css/style.css" rel="stylesheet">
+    @RenderSection("css",required:false)
 </head>
 
 <body>
@@ -241,6 +242,8 @@
     <!-- Template Javascript -->
     <script src="~/manage/js/main.js"></script>
     <script src="~/manage/js/main2.js"></script>
+    <script src="~/manage/js/main3.js"></script>
+    @RenderSection("js",required:false)
 </body>
 
 </html>

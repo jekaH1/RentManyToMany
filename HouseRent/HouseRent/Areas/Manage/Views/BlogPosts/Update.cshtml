@@ -8,7 +8,7 @@
         <div class="row g-4">
             <div class="col-sm-12 @*col-xl-6*@">
                 <div class="bg-secondary rounded h-100 p-4">
-                    <h6 class="mb-4">Create Slider</h6>
+                    <h6 class="mb-4">Update Blog Post</h6>
                     <div class="form-floating mb-3">
                         <input asp-for="Title" class="form-control" id="floatingInput"
                                placeholder="Title">
@@ -52,7 +52,7 @@
                         <label for="floatingTextarea">Quote</label>
                         <span class="text-danger" asp-validation-for="Quote"></span>
                     </div>
-                    <div class="form-floating">
+                    <div class="form-floating my-2">
                         <textarea class="form-control" placeholder="Leave a comment here"
                                   asp-for="Quote2"
                                   id="floatingTextarea" style="height: 150px;"></textarea>
@@ -64,7 +64,7 @@
                         <input class="form-control bg-dark" asp-for="Image" id="formFile">
                         <span class="text-danger" asp-validation-for="Image"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
                     <div class="d-flex justify-content-center">
                         <h1> Previous Photo</h1>
                     </div>
