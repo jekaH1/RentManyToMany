@@ -93,7 +93,7 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             ApartmentCategory category = _appDbContext.ApartmentCategories.FirstOrDefault(x => x.Id == id);
             if (category is null) { return NotFound(); }
-            string path = Path.Combine(_env.WebRootPath, "uploads/sliders", category.ImgApart);
+            string path = Path.Combine(_env.WebRootPath, "uploads/categories", category.ImgApart);
             System.IO.File.Delete(path);
             _appDbContext.Remove(category);
             _appDbContext.SaveChanges();

@@ -91,13 +91,13 @@ namespace HouseRent.Areas.Manage.Controllers
                     ModelState.AddModelError("Image", "Up to 2mb files allowed");
                     return View(newSlider);
                 }
-                string path = Path.Combine(_env.WebRootPath, "uploads/settings", exSlider.Img);
+                string path = Path.Combine(_env.WebRootPath, "uploads/sliders", exSlider.Img);
                 if (System.IO.File.Exists(path))
                 {
 
                     System.IO.File.Delete(path);
                 }
-                exSlider.Img = newSlider.Image.SaveFile(_env.WebRootPath, "uploads/settings");
+                exSlider.Img = newSlider.Image.SaveFile(_env.WebRootPath, "uploads/sliders");
             }
             exSlider.Description = newSlider.Description;
             exSlider.Title1 = newSlider.Title1;
