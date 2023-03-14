@@ -4,6 +4,7 @@ using HouseRent.Helper;
 using HouseRent.Models;
 using HouseRent.Services;
 using HouseRent.ViewModels;
+using MailKit.Search;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -37,8 +38,8 @@ namespace HouseRent.Controllers
                 appUsers = _appDbContext.Users.ToList(),
                 Categories = _appDbContext.ApartmentCategories.ToList(),
                 GalleryImages = _appDbContext.GalleryImages.Take(6).ToList(),
-                aboutUs=_appDbContext.AboutUs.ToList(), 
-                
+                aboutUs = _appDbContext.AboutUs.ToList(),
+
             };
             return View(homeVM);
         }
@@ -134,7 +135,7 @@ namespace HouseRent.Controllers
             int Enddate = orderVM.EndRentDate.DayOfYear;
             int DayCount = Enddate - Startdate;
             int? TotalPrice = DayCount * apartment.Rentprice;
-            foreach (var item in _appDbContext.Orders.Where(x => x.IsCancelled == false).Where(x => x.IsOver == false).Where(x=>x.OrderStatus != Enum.OrderStatus.Rejected).Where(x => x.ApartmentId == apartment.Id).ToList())
+            foreach (var item in _appDbContext.Orders.Where(x => x.IsCancelled == false).Where(x => x.IsOver == false).Where(x => x.OrderStatus != Enum.OrderStatus.Rejected).Where(x => x.ApartmentId == apartment.Id).ToList())
             {
 
                 int date = item.StartRentDate.DayOfYear;
@@ -194,15 +195,13 @@ namespace HouseRent.Controllers
                 Fullname = orderVM.Fullname,
                 PhoneNumber = orderVM.PhoneNumber,
                 TotalPrice = TotalPrice,
-                AppUserId = orderVM.AppUserId,
+                AppUserId = orderVM?.AppUserId,
                 ApartmentId = orderVM.Apartment.Id,
                 Apartment = orderVM.Apartment,
                 OneDayPrice = orderVM.RentPrice,
                 IsCancelled = orderVM.IsCancelled,
             };
-            _emailService.Send(orderVM.eMail, "Rent House", "Your Reservation has been Placed,We will get in touch with you! ");
 
-            _appDbContext.Orders.Add(order);
             TempData.Put<Order>("order", order);
             return RedirectToAction("CheckOut", TempData.Get<Order>("order"));
         }
@@ -291,9 +290,18 @@ namespace HouseRent.Controllers
                 CVV = checkOutViewModel.CVV,
                 NameOncard = checkOutViewModel.NameOncard,
             };
+
             _appDbContext.Add(order);
             _appDbContext.SaveChanges();
-            return RedirectToAction("index","order");
+            if (User.Identity.IsAuthenticated is true)
+            {
+
+                return RedirectToAction("index", "order");
+            }
+            else
+            {
+                return RedirectToAction("AllApartments","home");
+            }
         }
 
         [HttpGet]

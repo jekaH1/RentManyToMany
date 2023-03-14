@@ -3904,6 +3904,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\0dd32a58-4307-4c89-89f6-c06a1a79dea6apartment-single-5.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HouseRent</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HouseRent</BasePath>
+      <RelativePath>uploads/apartments/124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\13130445-ae30-4719-bc0e-a88b10e6cf8aapartment-two.png))">
       <SourceType>Package</SourceType>
       <SourceId>HouseRent</SourceId>
@@ -4432,6 +4448,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HouseRent</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HouseRent</BasePath>
+      <RelativePath>uploads/apartments/59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\5c6dba86-2e94-4db4-8704-91ae83efe2b0apartment-five.png))">
       <SourceType>Package</SourceType>
       <SourceId>HouseRent</SourceId>
@@ -4479,6 +4511,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HouseRent</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HouseRent</BasePath>
+      <RelativePath>uploads/apartments/66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\7461697c-937b-408e-8872-e5a3a481b610apartment-single-5.jpg))">
       <SourceType>Package</SourceType>
@@ -4719,6 +4767,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\9643c57d-5a81-4deb-af95-5b45464f5e24apartment-single-5.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>HouseRent</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/HouseRent</BasePath>
+      <RelativePath>uploads/apartments/9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\apartments\99c53c4f-f997-495c-a245-6788f9b25295apartment-single-1.jpg))">
       <SourceType>Package</SourceType>

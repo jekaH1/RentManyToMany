@@ -40,7 +40,7 @@ namespace HouseRent.Areas.Manage.Controllers
         {
             Order order = _appDbContext.Orders.Include(x => x.OrderItems).Include(x => x.Apartment.ApartmentCategory).Include(x => x.Apartment.ApartmentFeatures).Include(x => x.Apartment.ApartmentImages).FirstOrDefault(x => x.Id == id);
             if (order == null) { return NotFound(); }
-            _emailService.Send(order.eMail, "Rent House", "Your Reservation has been accepted,Have a good vacation! ");
+            //_emailService.Send(order.eMail, "Rent House", "Your Reservation has been accepted,Have a good vacation! ");
             order.OrderStatus = Enum.OrderStatus.Accepted;
             _appDbContext.SaveChanges();
             return RedirectToAction("index");           
@@ -82,7 +82,7 @@ namespace HouseRent.Areas.Manage.Controllers
                 ModelState.AddModelError("DeleteMessage", "Enter Message");
                 return View(newOrder);
             }
-            _emailService.Send(exOrder.eMail, "Rent House", "Sorry,Your Reservation has been Rejected...For further detail check your account!");
+            //_emailService.Send(exOrder.eMail, "Rent House", "Sorry,Your Reservation has been Rejected...For further detail check your account!");
             exOrder.DeleteMessage= newOrder.DeleteMessage;
             exOrder.OrderStatus = Enum.OrderStatus.Rejected;
             _appDbContext.SaveChanges();

@@ -238,6 +238,8 @@
                                                 <input type="hidden" value="@Model.Apartment.RoomCategory" asp-for="Apartment.RoomCategory">
                                                 <input type="hidden" value="@Model.Apartment.AdressAndArea" asp-for="Apartment.AdressAndArea">
                                                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                                @*<input type="hidden" value="not" asp-for="@Model.AppUserId">*@
+
                                                 <button type="submit" asp-action="detail" asp-controller="home" class="button default-template-gradient button-radius">Request Booking</button>
                                                 @*<button type="submit" asp-action="detail" asp-controller="home">Reques</button>*@
 

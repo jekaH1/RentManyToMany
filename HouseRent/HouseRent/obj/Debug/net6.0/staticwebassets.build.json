@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "34zoToLnTU/ghPleGyC4ocKYiEaugYyS1b1mdHsejqY=",
+  "Hash": "Ge2Mr8zU2GfaA4CgfwGuCSKiZETckd/5mwd39Wt1zCc=",
   "Source": "HouseRent",
   "BasePath": "_content/HouseRent",
   "Mode": "Default",
@@ -4182,6 +4182,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\apartments\\0dd32a58-4307-4c89-89f6-c06a1a79dea6apartment-single-5.jpg"
     },
     {
+      "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg",
+      "SourceId": "HouseRent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\",
+      "BasePath": "_content/HouseRent",
+      "RelativePath": "uploads/apartments/124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\apartments\\124efd68-4524-4a3e-9ca1-57f90fccec44apartment-single-4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\13130445-ae30-4719-bc0e-a88b10e6cf8aapartment-two.png",
       "SourceId": "HouseRent",
       "SourceType": "Discovered",
@@ -4743,6 +4760,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\apartments\\5909d070-1545-41fc-9a95-a7e432aceec2apartment-single-2.jpg"
     },
     {
+      "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg",
+      "SourceId": "HouseRent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\",
+      "BasePath": "_content/HouseRent",
+      "RelativePath": "uploads/apartments/59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\apartments\\59efb10e-dbca-45ee-b04f-9f0df1e28a3capartment-single-3.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\5c6dba86-2e94-4db4-8704-91ae83efe2b0apartment-five.png",
       "SourceId": "HouseRent",
       "SourceType": "Discovered",
@@ -4792,6 +4826,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\apartments\\61daef75-1a19-4065-a8a6-dd5ec90ca254apartment-single-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg",
+      "SourceId": "HouseRent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\",
+      "BasePath": "_content/HouseRent",
+      "RelativePath": "uploads/apartments/66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\apartments\\66170942-3e70-4e55-9c33-e2b0b068e142apartment-single-5.jpg"
     },
     {
       "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\7461697c-937b-408e-8872-e5a3a481b610apartment-single-5.jpg",
@@ -5047,6 +5098,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\apartments\\9643c57d-5a81-4deb-af95-5b45464f5e24apartment-single-5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg",
+      "SourceId": "HouseRent",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\",
+      "BasePath": "_content/HouseRent",
+      "RelativePath": "uploads/apartments/9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\apartments\\9867ebc7-5a78-4efb-a27e-58e1e00c00e6apartment-single-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Jake\\Desktop\\New folder\\RentManyToMany\\HouseRent\\HouseRent\\wwwroot\\uploads\\apartments\\99c53c4f-f997-495c-a245-6788f9b25295apartment-single-1.jpg",
