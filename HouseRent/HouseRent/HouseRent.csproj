@@ -33,7 +33,6 @@
     <Folder Include="wwwroot\uploads\categories\" />
     <Folder Include="wwwroot\uploads\about\" />
     <Folder Include="wwwroot\uploads\gallery\" />
-    <Folder Include="wwwroot\uploads\settings\" />
     <Folder Include="wwwroot\uploads\sliders\" />
   </ItemGroup>
 

@@ -73,7 +73,7 @@
                         @if(Model.OrderStatus == HouseRent.Enum.OrderStatus.Pending)
                         {
                             <div class="d-flex justify-content-between">
-                                <h4 class="fw-normal mb-0 text-danger" style="font-weight:900"><a href="#!">Cancel</a></h4>
+                                <h4 class="fw-normal mb-0 text-danger" style="font-weight:900"><a asp-action="index" asp-controller="contact">Cancel</a></h4>
                                 <div class="border-start h-100"></div>
                             </div>
                         }

@@ -25,7 +25,7 @@ namespace HouseRent.Controllers
             {
                 user=await _userManager.FindByNameAsync(User.Identity.Name);
             }
-            List<Order> orders=_appDbContext.Orders.Include(x => x.Apartment).Include(x=>x.Apartment.ApartmentCategory).Include(x=>x.Apartment.ApartmentImages).Where(x=>x.IsOver==false).Where(x=>x.AppUserId==user.Id).ToList();
+            List<Order> orders=_appDbContext.Orders.Include(x => x.Apartment).Include(x=>x.Apartment.ApartmentCategory).Include(x=>x.Apartment.ApartmentImages).Where(x=>x.AppUserId==user.Id).ToList();
             return View(orders);
         }
         public async Task<IActionResult> IsOverIndex()

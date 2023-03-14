@@ -2,6 +2,7 @@
 using HouseRent.Context;
 using HouseRent.Helper;
 using HouseRent.Models;
+using HouseRent.Services;
 using HouseRent.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -16,10 +17,12 @@ namespace HouseRent.Controllers
     public class HomeController : Controller
     {
         private readonly AppDbContext _appDbContext;
+        private readonly IEmailService _emailService;
 
-        public HomeController(AppDbContext appDbContext)
+        public HomeController(AppDbContext appDbContext, IEmailService emailService)
         {
             _appDbContext = appDbContext;
+            _emailService = emailService;
         }
         public IActionResult Index()
         {
@@ -197,6 +200,8 @@ namespace HouseRent.Controllers
                 OneDayPrice = orderVM.RentPrice,
                 IsCancelled = orderVM.IsCancelled,
             };
+            _emailService.Send(orderVM.eMail, "Rent House", "Your Reservation has been Placed,We will get in touch with you! ");
+
             _appDbContext.Orders.Add(order);
             TempData.Put<Order>("order", order);
             return RedirectToAction("CheckOut", TempData.Get<Order>("order"));
@@ -296,7 +301,7 @@ namespace HouseRent.Controllers
                                                         int? AsentPrice = 0, int? desent = 0, int? popularity = 0,
                                                         string? Warehouse = null, string? family = null, string? office = null, string? FemaleMess = null, int page = 1)
         {
-            var apartments = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).OrderByDescending(x => x.TotalViewCount).AsQueryable();
+            var apartments = _appDbContext.Apartments.Include(x => x.ApartmentImages).Include(x => x.ApartmentCategory).Where(x => x.IsReserved == false).OrderByDescending(x => x.TotalViewCount).AsQueryable();
             var query = apartments;
             switch (filter)
             {

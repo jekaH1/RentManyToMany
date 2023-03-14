@@ -10,10 +10,12 @@
     <a asp-action="endedindex" asp-controller="order" style="text-decoration:underline">Previous Orders</a>
     </div>*@
 </div>
-@if (Model is null)
+@if (Model.Count == 0)
 {
-    <h1 style="padding-top:300px; padding-bottom:300px;" class="d-flex justify-content-center ">
+    <h1 style="padding-top:300px;" class="d-flex justify-content-center ">
         You have no reservations before :(</h1>
+    <a class="d-flex justify-content-center " style="padding-bottom:300px; text-decoration:underline; font-weight:600" asp-action="allapartments" asp-controller="home" style="text-decoration:underline">Go Shop!</a>
+
 }
 else
 {

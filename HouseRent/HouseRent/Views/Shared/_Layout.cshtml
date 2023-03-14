@@ -91,7 +91,7 @@
                         <div class="logo-area tb-cell">
                             <div class="site-logo">
                                 <a asp-action="index" asp-controller="home">
-                                    <img src="~/assets/images/logo.png" alt="site-logo" />
+                                    <img src="~/uploads/settings/@settingsRHs.FirstOrDefault(x=>x.Key=="Image")?.Value" alt="site-logo" />
                                 </a>
                             </div><!-- /.site-logo -->
                         </div><!-- /.logo-area -->
@@ -114,12 +114,13 @@
                     <div class="col-md-7 col-sm-7 mobile-center">
                         <div class="site-logo">
                             <a asp-action="index" asp-controller="home">
-                                <img src="~/assets/images/logo.png" alt="site-logo" />
+                                <img src="~/uploads/settings/@settingsRHs.FirstOrDefault(x=>x.Key=="Image")?.Value" alt="site-logo" />
                             </a>
                         </div><!-- /.site-logo -->
                     </div><!-- /.col-md-8 -->
                     <div class="col-md-5 col-sm-5 mobile-center">
                         <div class="left-content">
+
                             <ul>
                                 <li>
                                     <a href="#"><i class="fa fa-phone-square"></i>Call Us - @settingsRHs.FirstOrDefault(x=>x.Key=="Number2")?.Value</a>
@@ -127,25 +128,31 @@
                                 @if (User.Identity.IsAuthenticated is false)
                                 {
                                     <li>
-                                        <a asp-action="login" asp-controller="useridentity"><i class="fa fa-address-book"></i>Login</a>
+                                        <div class="dropdown">
+                                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Menu
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" asp-action="login" asp-controller="useridentity"><i class="fa fa-address-book"></i>Login</a>
+                                                <a class="dropdown-item" asp-action="register" asp-controller="useridentity"><i class="fa fa-address-book"></i>Register</a>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li>
-                                        <a asp-action="register" asp-controller="useridentity"><i class="fa fa-address-book"></i>Register</a>
-                                    </li>
-
                                 }
                                 else
                                 {
-
                                     <li>
-                                        <i class="fa fa-user"></i><p1 class="text-success">@User.Identity.Name</p1>
-                                        <a asp-action="logout" asp-controller="useridentity"><i class="fa fa-sign-out"></i></a>
-                                        <a asp-action="index" asp-controller="order"><p1>Orders</p1><i class="fa-solid fa-house"></i></a>
+                                        <div class="dropdown">
+                                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                @User.Identity.Name
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" asp-action="index" asp-controller="order">Orders<i class="fa-solid fa-house" style="padding-left:5px;"></i></a>
+                                                <a class="dropdown-item" asp-action="logout" asp-controller="useridentity">Logout<i class="fa-solid fa-right-to-bracket" style="padding-left:5px;"></i></a>
+                                            </div>
+                                        </div>
                                     </li>
-
                                 }
-
-
                             </ul>
                         </div><!-- /.left-content -->
                     </div><!-- /.col-md-4 -->
@@ -195,7 +202,7 @@
                                         <a asp-action="index" asp-controller="blog">Blogs</a>
                                     </li>
                                     @*<li>
-                                        <a asp-action="Login" asp-controller="Adminlogin" asp-area="manage" target="_blank">Dashboard</a>
+                                    <a asp-action="Login" asp-controller="Adminlogin" asp-area="manage" target="_blank">Dashboard</a>
                                     </li>*@
                                     <li> <a asp-action="AllApartments" asp-controller="home">All Apartments</a></li>
                                     @*<li>
@@ -424,7 +431,7 @@
                             </h3><!-- /.widget-title -->
                         </div><!-- /.widget-title-area -->
                         <div class="widget-about-content">
-                            <img src="~/assets/images/footer-logo.png" alt="house" />
+                            <img src="~/uploads/settings/@settingsRHs.FirstOrDefault(x=>x.Key=="Image")?.Value" alt="house" />
                             <p>@settingsRHs.FirstOrDefault(x=>x.Key=="About")?.Value</p>
                             <a href="#" class="button">More</a>
                         </div><!-- /.widget-content -->
